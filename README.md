@@ -1,7 +1,7 @@
 # python-AtoZed
 Introduction course to Python
 
-Welcome to the Python-AtoZed Introduction Course!  
+Welcome to Python-AtoZed!  
 This course is designed to help you get started with Python programming.  
 Covering everything from the basic syntax to more advanced topics like Object-Oriented Programming and working with modules and libraries.  
 It also includes homeworks:  
