@@ -36,7 +36,7 @@ Parameters and arguments: Understand function input.
 Return statements: Learn how to return values from functions.  
 
 
-Extra
+Extra  
 5. Introduction to OOP (Object-Oriented Programming):  
 Classes and objects: Dive into object-oriented programming.  
 Attributes and methods: Explore the concepts of attributes and methods in classes.  
