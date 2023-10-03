@@ -37,12 +37,12 @@ Return statements: Learn how to return values from functions.
 
 
 Extra
-1. Introduction to OOP (Object-Oriented Programming):  
+5. Introduction to OOP (Object-Oriented Programming):  
 Classes and objects: Dive into object-oriented programming.  
 Attributes and methods: Explore the concepts of attributes and methods in classes.  
 Constructors and inheritance (brief overview): Get a glimpse of advanced OOP concepts.  
 
-2. Modules and libraries:  
+6. Modules and libraries:  
 Importing modules and using functions from them: Learn how to extend Python's capabilities.  
 Introduction to commonly used libraries (e.g., math, random): Discover useful libraries for various tasks.  
 Intro to custom modules: Create and use your own Python modules.  
