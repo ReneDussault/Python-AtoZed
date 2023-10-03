@@ -20,10 +20,10 @@ Variables and Data types: Covering integers, floats, strings, and booleans.
 Basic Variables operations: Perform arithmetic and string concatenation.  
 
 2. Data Structures:
-Lists, indexing, slicing: Dive into Python lists and their operations.
-Tuples and their immutability: Understand the characteristics of tuples.
-Dictionaries and key-value pairs: Explore the power of dictionaries.
-Sets for unique values: Learn how to work with sets.
+Lists, indexing, slicing: Dive into Python lists and their operations.  
+Tuples and their immutability: Understand the characteristics of tuples.  
+Dictionaries and key-value pairs: Explore the power of dictionaries.  
+Sets for unique values: Learn how to work with sets.  
 
 3. Control Flow:  
 Conditional statements (if, elif, else): Master decision-making in Python.  
