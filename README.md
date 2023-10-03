@@ -14,23 +14,24 @@ Course Outline
 1. Basic Syntax:  
 Printing output with print(): Learn how to display information in Python using the print() function.  
 Commenting code with #: Understand the importance of comments in your code.  
-Multiline comment: the docstring """ """: Explore how to create docstrings for documentation.  
+Multiline comment: the docstring """ """  
+Explore how to create docstrings for documentation.   
 Indentation and code blocks: Python's unique way of structuring code.  
 Variables and Data types: Covering integers, floats, strings, and booleans.  
 Basic Variables operations: Perform arithmetic and string concatenation.  
 
-2. Data Structures:
+3. Data Structures:
 Lists, indexing, slicing: Dive into Python lists and their operations.  
 Tuples and their immutability: Understand the characteristics of tuples.  
 Dictionaries and key-value pairs: Explore the power of dictionaries.  
 Sets for unique values: Learn how to work with sets.  
 
-3. Control Flow:  
+4. Control Flow:  
 Conditional statements (if, elif, else): Master decision-making in Python.  
 Loops (for loops and while loops): Understand different types of loops.  
 Using range() for iteration: Explore how to create sequences of numbers for iteration.  
 
-4. Functions:  
+5. Functions:  
 Defining and calling functions: Write and use your own functions.  
 Parameters and arguments: Understand function input.  
 Return statements: Learn how to return values from functions.  
