@@ -54,7 +54,7 @@ Intro to custom modules: Create and use your own Python modules.
 Getting Started  
 Clone this repository to your local machine.  
 Follow the course outline and explore each topic in order.  
-Each topic may have associated code examples and exercises in its respective folder.  
+Each topic may have associated code examples and exercises in its respective folder (WIP).  
 
 Feedback  
 I'm always looking to improve this course.  
