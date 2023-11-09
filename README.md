@@ -13,42 +13,42 @@ Check out the main course file here: [python-AtoZed.ipynb](https://github.com/Re
 
 Course Outline  
 1. Basic Syntax:  
-Printing output with print(): Learn how to display information in Python using the print() function.  
-Commenting code with #: Understand the importance of comments in your code.  
-Multiline comment: the docstring """ """  
-Explore how to create docstrings for documentation.   
-Indentation and code blocks: Python's unique way of structuring code.  
-Variables and Data types: Covering integers, floats, strings, and booleans.  
-Basic Variables operations: Perform arithmetic and string concatenation.  
+* Printing output with print(): Learn how to display information in Python using the print() function.  
+* Commenting code with #: Understand the importance of comments in your code.  
+* Multiline comment: the docstring """ """  
+* Explore how to create docstrings for documentation.   
+* Indentation and code blocks: Python's unique way of structuring code.  
+* Variables and Data types: Covering integers, floats, strings, and booleans.  
+* Basic Variables operations: Perform arithmetic and string concatenation.  
 
 3. Data Structures:
-Lists, indexing, slicing: Dive into Python lists and their operations.  
-Tuples and their immutability: Understand the characteristics of tuples.  
-Dictionaries and key-value pairs: Explore the power of dictionaries.  
-Sets for unique values: Learn how to work with sets.  
+* Lists, indexing, slicing: Dive into Python lists and their operations.  
+* Tuples and their immutability: Understand the characteristics of tuples.  
+* Dictionaries and key-value pairs: Explore the power of dictionaries.  
+* Sets for unique values: Learn how to work with sets.  
 
 4. Control Flow:  
-Conditional statements (if, elif, else): Master decision-making in Python.  
-Loops (for loops and while loops): Understand different types of loops.  
-Using range() for iteration: Explore how to create sequences of numbers for iteration.  
+* Conditional statements (if, elif, else): Master decision-making in Python.  
+* Loops (for loops and while loops): Understand different types of loops.  
+* Using range() for iteration: Explore how to create sequences of numbers for iteration.  
 
 5. Functions:  
-Defining and calling functions: Write and use your own functions.  
-Parameters and arguments: Understand function input.  
-Return statements: Learn how to return values from functions.  
+* Defining and calling functions: Write and use your own functions.  
+* Parameters and arguments: Understand function input.  
+* Return statements: Learn how to return values from functions.  
 
 
 Extra  
   
 5. Introduction to OOP (Object-Oriented Programming):  
-Classes and objects: Dive into object-oriented programming.  
-Attributes and methods: Explore the concepts of attributes and methods in classes.  
-Constructors and inheritance (brief overview): Get a glimpse of advanced OOP concepts.  
+* Classes and objects: Dive into object-oriented programming.  
+* Attributes and methods: Explore the concepts of attributes and methods in classes.  
+* Constructors and inheritance (brief overview): Get a glimpse of advanced OOP concepts.  
 
 6. Modules and libraries:  
-Importing modules and using functions from them: Learn how to extend Python's capabilities.  
-Introduction to commonly used libraries (e.g., math, random): Discover useful libraries for various tasks.  
-Intro to custom modules: Create and use your own Python modules.  
+* Importing modules and using functions from them: Learn how to extend Python's capabilities.  
+* Introduction to commonly used libraries (e.g., math, random): Discover useful libraries for various tasks.  
+* Intro to custom modules: Create and use your own Python modules.  
 
 
 Getting Started  
