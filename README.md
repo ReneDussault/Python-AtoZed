@@ -54,13 +54,13 @@ It also includes homeworks:
 * Intro to custom modules: Create and use your own Python modules.  
 
 
-Getting Started  
+## Getting Started  
 Clone this repository to your local machine.  
 Follow the course outline and explore each topic in order.  
 Each topic has associated code examples and exercises in its respective folder (WIP).  
 
-Feedback  
+## Feedback  
 I'm always looking to improve this course.  
 If you have any feedback, questions, or suggestions, please feel free to create an issue in this repository.  
 
-Happy coding, and enjoy your journey through Python!
+# Happy coding, and enjoy your journey through Python!
