@@ -1,5 +1,6 @@
 # python-AtoZed
-## Introduction course to Python
+
+### Introduction course to Python
 
 #### Welcome to Python-AtoZed!  
 #### This course is designed to help you get started with Python programming.  
@@ -9,7 +10,7 @@
 * medium-hard question to test your knowledge before moving on to the next section.
 
 ## !!! Before you start. !!!
-## !!! Make sure to properly setup vscode and jupyter. !!!
+## !!! Make sure to properly setup vscode and jupyter notebook. !!!
 
 #### Whether you're a beginner or looking to refresh your Python skills, this course has something for everyone.  
 #### Check out the main course file here: [python-AtoZed.ipynb](https://github.com/ReneDussault/python-AtoZed/blob/main/python-AtoZed.ipynb)
