@@ -8,7 +8,8 @@
 * Easy questions to recap a section  
 * medium-hard question to test your knowledge before moving on to the next section.
 
-### !!! Make sure to properly setup vscode and jupyter. !!!
+## !!! Before you start. !!!
+## !!! Make sure to properly setup vscode and jupyter. !!!
 
 #### Whether you're a beginner or looking to refresh your Python skills, this course has something for everyone.  
 #### Check out the main course file here: [python-AtoZed.ipynb](https://github.com/ReneDussault/python-AtoZed/blob/main/python-AtoZed.ipynb)
