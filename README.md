@@ -14,7 +14,7 @@ It also includes homeworks:
 #### Whether you're a beginner or looking to refresh your Python skills, this course has something for everyone.  
 #### Check out the main course file here: [python-AtoZed.ipynb](https://github.com/ReneDussault/python-AtoZed/blob/main/python-AtoZed.ipynb)
 
-### Course Outline  
+# Course Outline  
 #### 1. Basic Syntax:  
 * Printing output with print(): Learn how to display information in Python using the print() function.  
 * Commenting code with #: Understand the importance of comments in your code.  
