@@ -24,24 +24,25 @@ It also includes homeworks:
 * Variables and Data types: Covering integers, floats, strings, and booleans.  
 * Basic Variables operations: Perform arithmetic and string concatenation.  
 
+
 #### 2. Data Structures:
 * Lists, indexing, slicing: Dive into Python lists and their operations.  
 * Tuples and their immutability: Understand the characteristics of tuples.  
 * Dictionaries and key-value pairs: Explore the power of dictionaries.  
 * Sets for unique values: Learn how to work with sets.  
 
+
 #### 3. Control Flow:  
 * Conditional statements (if, elif, else): Master decision-making in Python.  
 * Loops (for loops and while loops): Understand different types of loops.  
 * Using range() for iteration: Explore how to create sequences of numbers for iteration.  
+
 
 #### 4. Functions:  
 * Defining and calling functions: Write and use your own functions.  
 * Parameters and arguments: Understand function input.  
 * Return statements: Learn how to return values from functions.  
 
-
-### Extra  
   
 #### 5. Introduction to OOP (Object-Oriented Programming):  
 * Classes and objects: Dive into object-oriented programming.  
