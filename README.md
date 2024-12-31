@@ -1,6 +1,6 @@
 # python-AtoZed
 
-### Introduction course to Python
+## Introduction course to Python
 
 #### Welcome to Python-AtoZed!  
 This course is designed to help you get started with Python programming.  
