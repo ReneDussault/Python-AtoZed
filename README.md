@@ -58,7 +58,7 @@ It also includes homeworks:
 ## Getting Started  
 Clone this repository to your local machine.  
 Follow the course outline and explore each topic in order.  
-Each topic has associated code examples and exercises in its respective folder (WIP).  
+Each topic has associated code examples and exercises in its respective notebook file (WIP).  
 
 ## Feedback  
 I'm always looking to improve this course.  
