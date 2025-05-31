@@ -70,4 +70,4 @@ If you have any feedback, questions, or suggestions, please feel free to create 
 ## License
 
 - **Code**: Licensed under the [MIT License](./LICENSE.txt).
-- **Course Content**: Licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](./https://github.com/ReneDussault/Python-AtoZed/blob/main/LICENSE_CC_BY.txt).
+- **Course Content**: Licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE_CC_BY.txt).
