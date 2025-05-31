@@ -65,3 +65,9 @@ I'm always looking to improve this course.
 If you have any feedback, questions, or suggestions, please feel free to create an issue in this repository.  
 
 # Happy coding, and enjoy your journey through Python!
+
+
+## License
+
+- **Code**: Licensed under the [MIT License](./LICENSE).
+- **Course Content**: Licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE-CONTENT.txt).
