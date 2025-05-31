@@ -12,7 +12,7 @@ It also includes homeworks:
 ## !!! Before you start. Make sure to properly setup vscode and jupyter notebook. !!!
 
 #### Whether you're a beginner or looking to refresh your Python skills, this course has something for everyone.  
-#### Check out the main course file here: [python-AtoZed.ipynb](https://github.com/ReneDussault/python-AtoZed/blob/main/python-AtoZed.ipynb)
+#### Check out the main course file here: [python-AtoZed.ipynb](https://github.com/ReneDussault/python-AtoZed/blob/main/Theory%20-%20Main%20Course/python-AtoZed.ipynb)
 
 # Course Outline  
 #### 1. Basic Syntax:  
