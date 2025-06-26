@@ -56,7 +56,13 @@ It also includes homeworks:
 
 
 ## Getting Started  
-Clone this repository to your local machine.  
+*ADD BINDER SETUP GUIDE*  
+*WIP* MIGHT GO WITH [BINDER](https://mybinder.org/) *WIP*  
+*ADD BINDER SETUP GUIDE*
+
+
+~~Clone this repository to your local machine.~~  
+~~Install python/jupyter notebook in vscode.~~  
 Follow the course outline and explore each topic in order.  
 Each topic has associated code examples and exercises in its respective notebook file (WIP).  
 
