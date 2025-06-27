@@ -63,7 +63,7 @@ Click the badge below to launch the course instantly in your browser:
 3. **Open the course:**
    - Launch VS Code
    - File > Open Folder > `python-AtoZed`
-   - Open/extend the `theory` folder and open the `python-atozed.ipynb` file (double click)
+   - Open/expand the `theory` folder and open the `python-atozed.ipynb` file (double click)
    - Select your Python interpreter when prompted (after running a code cell)
 
 4. **Start learning:**
