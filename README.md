@@ -55,7 +55,7 @@ Click the badge below to launch the course instantly in your browser:
    ```
 
 2. **Install VS Code extensions:**
-- These steps should be done inside VScode, but I'll provide links to the extensions to get you started.
+   These steps should be done inside VScode, but I'll provide links to the extensions to get you started.
    - [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
    - [Jupyter Extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
@@ -66,9 +66,10 @@ Click the badge below to launch the course instantly in your browser:
    - Select your Python interpreter when prompted
 
 4. **Start learning:**
-   - Run code cells with `Ctrl+Enter` (will keep the current cell selected) 
-   or Shift+Enter (will move you down to the next cell)
-   - Follow the course from start to finish or pick and choose what you want from the table of content
+   - Run code cells with `Ctrl+Enter` (keeps current cell selected) or `Shift+Enter` (moves to next cell)
+   - Follow the course from start to finish or jump to specific topics using the table of contents
+
+> **Note**: You can use any IDE that supports Python and Jupyter notebooks!
 
 ---
 
@@ -121,7 +122,7 @@ Click the badge below to launch the course instantly in your browser:
 ## Contributing & Feedback
 
 Found an issue or have suggestions? Please:
-- [Create an issue](https://github.com/YourUsername/python-AtoZed/issues)
+- [Create an issue](https://github.com/ReneDussault/python-AtoZed/issues)
 - Submit a pull request
 - Share your feedback
 
