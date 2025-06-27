@@ -137,12 +137,4 @@ Your input helps make this course better for everyone!
 
 ---
 
-## Get Started Today!
-
-Ready to master Python? Choose your preferred method:
-
-- **Quick Start**: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ReneDussault/Python-AtoZed/HEAD)
-- **Local Setup**: Follow the installation guide above
-- **Main Course**: [Open python-atozed.ipynb](theory/python-atozed.ipynb)
-
 Happy coding!
