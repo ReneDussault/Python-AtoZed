@@ -75,31 +75,31 @@ Click the badge below to launch the course instantly in your browser:
 
 ## Course Outline
 
-### [1. Basic Syntax](theory/python-atozed.ipynb#1.-Basic-Syntax)
+### 1. Basic Syntax
 - Print function and output
 - Comments and documentation
 - Code indentation and blocks
 - Variables and data types (int, float, str, bool)
 - Basic operators (arithmetic, comparison, logical)
 
-### [2. Data Structures](theory/python-atozed.ipynb#2.-Data-Structures)
+### 2. Data Structures
 - **Lists**: Indexing, slicing, and list comprehensions
 - **Tuples**: Immutable sequences and unpacking
 - **Dictionaries**: Key-value pairs and methods
 - **Sets**: Unique values and set operations
 
-### [3. Flow Control](theory/python-atozed.ipynb#3.-Flow-Control)
+### 3. Flow Control
 - Conditional statements (`if`, `elif`, `else`)
 - For loops and while loops
 - Loop control (`break`, `continue`, `pass`)
 - Range and enumerate functions
 
-### [4. Functions](theory/python-atozed.ipynb#4.-Functions)
+### 4. Functions
 - Defining and calling functions
 - Parameters, arguments, and return values
 - Lambda functions for quick operations
 
-### [5. Object-Oriented Programming](theory/python-atozed.ipynb#5.-Introduction-to-OOP)
+### 5. Object-Oriented Programming
 - Classes and objects
 - Constructors and instance methods
 - Inheritance and method overriding
@@ -107,12 +107,12 @@ Click the badge below to launch the course instantly in your browser:
 - Polymorphism and composition
 - Magic methods and operator overloading
 
-### [6. Modules and Libraries](theory/python-atozed.ipynb#6.-Modules-and-Libraries)
+### 6. Modules and Libraries
 - Importing and using modules
 - Standard library exploration
 - Creating custom modules and packages
 
-### [BONUS: Decorators](theory/python-atozed.ipynb#BONUS:-Decorators)
+### BONUS: Decorators
 - Understanding decorators
 - Built-in decorators (`@property`, `@classmethod`, `@staticmethod`)
 - Creating custom decorators
