@@ -1,4 +1,4 @@
-# python-AtoZed
+# Python - A to Zed
 
 ## Complete Introduction to Python Programming
 
