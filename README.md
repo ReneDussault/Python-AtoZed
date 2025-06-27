@@ -77,67 +77,67 @@ Click the badge below to launch the course instantly in your browser:
 ## Course Outline
 
 Introduction
-
 Basic Syntax
 
-    Printing output with print().
-    Commenting
-    Multiline comment (docstring)
-    Indentation
-    Data Types and variables (integers, floats, strings, booleans)
-    Basic Operators
+ Printing output with print()
+ Commenting
+ Multiline comment (docstring)
+ Indentation
+ Data Types and variables (integers, floats, strings, booleans)
+ Basic Operators
 
 Data Structures
 
-    Lists, indexing, slicing
-    List Comprehension
-    Tuples and their immutability
-    Dictionaries and key-value pairs
-    Sets for unique values
-    More Examples
+ Lists, indexing, slicing
+ List Comprehension
+ Tuples and their immutability
+ Dictionaries and key-value pairs
+ Sets for unique values
+ More Examples
 
 Flow Control
 
-    Conditional Statements (if, elif, else)
-    For Loops
-    While Loops
-    Loop Control Statements
-        continue
-        break
-        pass
-    Range and Enumerate Functions
-    Summary of Flow Control
+ Conditional Statements (if, elif, else)
+ For Loops
+ While Loops
+ Loop Control Statements
+     continue
+     break
+     pass
+ Range and Enumerate Functions
+ Summary of Flow Control
 
 Functions
 
-    Defining and Calling Functions
-    Parameters and Arguments
-    Return Statements
-    Lambda Function
+ Defining and Calling Functions
+ Parameters and Arguments
+ Return Statements
+ Lambda Function
 
 Introduction to OOP
 
-    Classes and Objects
-    The init Method (Constructor)
-    Attributes and Methods
-    Inheritance
-    Encapsulation
-    Polymorphism
-    Composition
-    Magic Methods
+ Classes and Objects
+ The init Method (Constructor)
+ Attributes and Methods
+ Inheritance
+ Encapsulation
+ Polymorphism
+ Composition
+ Magic Methods
 
 Modules and Libraries
 
-    Importing Modules
-    Standard Libraries
-    Custom Modules
-    Summary of Modules and Packages
+ Importing Modules
+ Standard Libraries
+ Custom Modules
+ Summary of Modules and Packages
 
 BONUS: Decorators
 
-    What is a Decorator?
-    Built-in Decorators (@property, @classmethod, @staticmethod)
-    Custom Function Decorators
+ What is a Decorator?
+ Built-in Decorators (@property, @classmethod, @staticmethod)
+ Custom Function Decorators
+
 
 ---
 
