@@ -87,11 +87,13 @@ Basic Syntax
 - Multiline comment (docstring)
 - Indentation
 - Data Types and variables (integers, floats, strings, booleans)
+- String Methods
 - Basic Operators
 
 Data Structures
 
 - Lists, indexing, slicing
+- List Methods
 - List Comprehension
 - Tuples and their immutability
 - Dictionaries and key-value pairs
