@@ -13,7 +13,7 @@ Whether you're a complete beginner or coming from another programming language, 
 - **Functions**: Write reusable code with functions and lambda expressions
 - **Object-Oriented Programming**: Classes, inheritance, encapsulation, and polymorphism
 - **Modules & Libraries**: Organize code and use Python's extensive ecosystem
-- **BONUS**: Decorators and advanced Python features
+- **BONUS**: Decorators
 
 ### Course Features
 - **Complete Course**: All topics covered in one comprehensive notebook
