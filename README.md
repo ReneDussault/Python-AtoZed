@@ -15,7 +15,7 @@ Whether you're a complete beginner or coming from another programming language, 
 - **Modules & Libraries**: Organize code and use Python's extensive ecosystem
 - **BONUS**: Decorators
 
-### Course Structure
+### Course Features
 - **Beginner Friendly**: Starts with absolute basics
 - **Progressive Learning**: Each section builds on previous knowledge
 - **Practical Focus**: Every concept includes working code examples
