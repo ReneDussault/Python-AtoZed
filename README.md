@@ -76,47 +76,68 @@ Click the badge below to launch the course instantly in your browser:
 
 ## Course Outline
 
-### 1. Basic Syntax
-- Print function and output
-- Comments and documentation
-- Code indentation and blocks
-- Variables and data types (int, float, str, bool)
-- Basic operators (arithmetic, comparison, logical)
+Introduction
 
-### 2. Data Structures
-- Lists: Indexing, slicing, and list comprehensions
-- Tuples: Immutable sequences and unpacking
-- Dictionaries: Key-value pairs and methods
-- Sets: Unique values and set operations
+Basic Syntax
 
-### 3. Flow Control
-- Conditional statements (`if`, `elif`, `else`)
-- For loops and while loops
-- Loop control (`break`, `continue`, `pass`)
-- Range and enumerate functions
+    Printing output with print().
+    Commenting
+    Multiline comment (docstring)
+    Indentation
+    Data Types and variables (integers, floats, strings, booleans)
+    Basic Operators
 
-### 4. Functions
-- Defining and calling functions
-- Parameters, arguments, and return values
-- Lambda functions for quick operations
+Data Structures
 
-### 5. Object-Oriented Programming
-- Classes and objects
-- Constructors and instance methods
-- Inheritance and method overriding
-- Encapsulation and data hiding
-- Polymorphism and composition
-- Magic methods and operator overloading
+    Lists, indexing, slicing
+    List Comprehension
+    Tuples and their immutability
+    Dictionaries and key-value pairs
+    Sets for unique values
+    More Examples
 
-### 6. Modules and Libraries
-- Importing and using modules
-- Standard library exploration
-- Creating custom modules and packages
+Flow Control
 
-### BONUS: Decorators
-- Understanding decorators
-- Built-in decorators (`@property`, `@classmethod`, `@staticmethod`)
-- Creating custom decorators
+    Conditional Statements (if, elif, else)
+    For Loops
+    While Loops
+    Loop Control Statements
+        continue
+        break
+        pass
+    Range and Enumerate Functions
+    Summary of Flow Control
+
+Functions
+
+    Defining and Calling Functions
+    Parameters and Arguments
+    Return Statements
+    Lambda Function
+
+Introduction to OOP
+
+    Classes and Objects
+    The init Method (Constructor)
+    Attributes and Methods
+    Inheritance
+    Encapsulation
+    Polymorphism
+    Composition
+    Magic Methods
+
+Modules and Libraries
+
+    Importing Modules
+    Standard Libraries
+    Custom Modules
+    Summary of Modules and Packages
+
+BONUS: Decorators
+
+    What is a Decorator?
+    Built-in Decorators (@property, @classmethod, @staticmethod)
+    Custom Function Decorators
 
 ---
 
