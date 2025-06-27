@@ -143,6 +143,7 @@ BONUS: Decorators
 
 ## Contributing & Feedback
 
+This is a work in progress.  
 Found an issue or have suggestions? Please:
 - [Create an issue](https://github.com/ReneDussault/python-AtoZed/issues)
 - Submit a pull request
