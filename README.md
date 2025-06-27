@@ -83,10 +83,10 @@ Click the badge below to launch the course instantly in your browser:
 - Basic operators (arithmetic, comparison, logical)
 
 ### 2. Data Structures
-- **Lists**: Indexing, slicing, and list comprehensions
-- **Tuples**: Immutable sequences and unpacking
-- **Dictionaries**: Key-value pairs and methods
-- **Sets**: Unique values and set operations
+- Lists: Indexing, slicing, and list comprehensions
+- Tuples: Immutable sequences and unpacking
+- Dictionaries: Key-value pairs and methods
+- Sets: Unique values and set operations
 
 ### 3. Flow Control
 - Conditional statements (`if`, `elif`, `else`)
