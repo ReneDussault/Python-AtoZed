@@ -7,7 +7,7 @@ This comprehensive course takes you from Python basics to advanced concepts like
 Whether you're a complete beginner or coming from another programming language, this course provides hands-on learning with practical examples and exercises.
 
 ### What You'll Learn
-- **Solid Foundation**: Master Python syntax, data types, and core concepts
+- **Solid Foundation**: Python syntax, data types, and core concepts
 - **Data Structures**: Work with lists, tuples, dictionaries, and sets
 - **Control Flow**: Understand conditionals, loops, and program logic
 - **Functions**: Write reusable code with functions and lambda expressions
