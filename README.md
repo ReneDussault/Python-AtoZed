@@ -102,9 +102,9 @@ Flow Control
 - For Loops
 - While Loops
 - Loop Control Statements  
-     continue  
-     break  
-     pass  
+  - continue  
+  - break  
+  - pass  
 - Range and Enumerate Functions
 - Summary of Flow Control
 
