@@ -101,10 +101,10 @@ Flow Control
 - Conditional Statements (if, elif, else)
 - For Loops
 - While Loops
-- Loop Control Statements
-     continue
-     break
-     pass
+- Loop Control Statements  
+     continue  
+     break  
+     pass  
 - Range and Enumerate Functions
 - Summary of Flow Control
 
