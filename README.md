@@ -15,17 +15,11 @@ Whether you're a complete beginner or coming from another programming language, 
 - **Modules & Libraries**: Organize code and use Python's extensive ecosystem
 - **BONUS**: Decorators
 
-### Course Features
-- **Complete Course**: All topics covered in one comprehensive notebook
-- **Practical Examples**: Real code examples you can run and modify
-- **Interactive Learning**: Jupyter notebook format for hands-on practice
-- **Exercises & Summaries**: Reinforce learning with practice problems
-- **Beginner Friendly**: Clear explanations with step-by-step progression
-
 ### Course Structure
 - **Beginner Friendly**: Starts with absolute basics
 - **Progressive Learning**: Each section builds on previous knowledge
 - **Practical Focus**: Every concept includes working code examples
+- **Exercises & Summaries**: Reinforce learning with practice problems
 - **Interactive**: Designed for Jupyter notebooks with immediate feedback
 - **Comprehensive**: Covers everything needed for Python proficiency
 
