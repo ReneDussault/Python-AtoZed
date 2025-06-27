@@ -1,80 +1,153 @@
 # python-AtoZed
 
-## Introduction course to Python
+## Complete Introduction to Python Programming
 
-#### Welcome to Python-AtoZed!  
-This course is designed to help you get started with Python programming.  
-Covering everything from the basic syntax to more advanced topics like Object-Oriented Programming and working with modules and libraries.  
-It also includes homeworks:  
-* Easy questions to recap a section  
-* medium-hard question to test your knowledge before moving on to the next section.
+Welcome to **Python-AtoZed**!  
+This comprehensive course takes you from Python basics to advanced concepts like Object-Oriented Programming, modules, and decorators.  
+Whether you're a complete beginner or coming from another programming language, this course provides hands-on learning with practical examples and exercises.
 
-## !!! Before you start. !!!
-## !!! Make sure to properly setup vscode and jupyter notebook. !!!
+### What You'll Learn
+- **Solid Foundation**: Master Python syntax, data types, and core concepts
+- **Data Structures**: Work with lists, tuples, dictionaries, and sets
+- **Control Flow**: Understand conditionals, loops, and program logic
+- **Functions**: Write reusable code with functions and lambda expressions
+- **Object-Oriented Programming**: Classes, inheritance, encapsulation, and polymorphism
+- **Modules & Libraries**: Organize code and use Python's extensive ecosystem
+- **BONUS**: Decorators and advanced Python features
 
-#### Whether you're a beginner or looking to refresh your Python skills, this course has something for everyone.  
-#### Check out the main course file here: [python-AtoZed.ipynb](https://github.com/ReneDussault/python-AtoZed/blob/main/theory/python-atozed.ipynb)
+### Course Features
+- **Complete Course**: All topics covered in one comprehensive notebook
+- **Practical Examples**: Real code examples you can run and modify
+- **Interactive Learning**: Jupyter notebook format for hands-on practice
+- **Exercises & Summaries**: Reinforce learning with practice problems
+- **Beginner Friendly**: Clear explanations with step-by-step progression
 
-# Course Outline  
-#### 1. Basic Syntax:  
-* Printing output with print(): Learn how to display information in Python using the print() function.  
-* Commenting code with #: Understand the importance of comments in your code.  
-* Multiline comment: the docstring """ """  
-* Explore how to create docstrings for documentation.   
-* Indentation and code blocks: Python's unique way of structuring code.  
-* Variables and Data types: Covering integers, floats, strings, and booleans.  
-* Basic Variables operations: Perform arithmetic and string concatenation.  
+### Course Structure
+- **Beginner Friendly**: Starts with absolute basics
+- **Progressive Learning**: Each section builds on previous knowledge
+- **Practical Focus**: Every concept includes working code examples
+- **Interactive**: Designed for Jupyter notebooks with immediate feedback
+- **Comprehensive**: Covers everything needed for Python proficiency
 
+## Quick Start (No Installation Required)
 
-#### 2. Data Structures:
-* Lists, indexing, slicing: Dive into Python lists and their operations.  
-* Tuples and their immutability: Understand the characteristics of tuples.  
-* Dictionaries and key-value pairs: Explore the power of dictionaries.  
-* Sets for unique values: Learn how to work with sets.  
+### Launch in MyBinder
+Click the badge below to launch the course instantly in your browser:
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ReneDussault/Python-AtoZed/HEAD)
 
-#### 3. Control Flow:  
-* Conditional statements (if, elif, else): Master decision-making in Python.  
-* Loops (for loops and while loops): Understand different types of loops.  
-* Using range() for iteration: Explore how to create sequences of numbers for iteration.  
+**MyBinder** provides a free, interactive environment where you can:
+- Run the course without installing anything
+- Modify and experiment with code examples
+- Save your progress (temporarily)
+- Access from any device with a web browser
+- [Optional] Settings > Theme > Dark Mode (at night, to save your eyes)
 
+> **Note**: MyBinder sessions are temporary. Download your work if you want to keep changes.
 
-#### 4. Functions:  
-* Defining and calling functions: Write and use your own functions.  
-* Parameters and arguments: Understand function input.  
-* Return statements: Learn how to return values from functions.  
+---
 
-  
-#### 5. Introduction to OOP (Object-Oriented Programming):  
-* Classes and objects: Dive into object-oriented programming.  
-* Attributes and methods: Explore the concepts of attributes and methods in classes.  
-* Constructors and inheritance (brief overview): Get a glimpse of advanced OOP concepts.  
+## Local Setup (Recommended for Long-term Learning)
 
-#### 6. Modules and libraries:  
-* Importing modules and using functions from them: Learn how to extend Python's capabilities.  
-* Introduction to commonly used libraries (e.g., math, random): Discover useful libraries for various tasks.  
-* Intro to custom modules: Create and use your own Python modules.  
+### Prerequisites
+- [Python 3.8+](https://www.python.org/downloads/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
+### Installation Steps
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/ReneDussault/python-AtoZed.git
+   cd python-AtoZed
+   ```
 
-## Getting Started  
-*ADD BINDER SETUP GUIDE*  
-*WIP* MIGHT GO WITH [BINDER](https://mybinder.org/) *WIP*  
-*ADD BINDER SETUP GUIDE*
+2. **Install VS Code extensions:**
+- These steps should be done inside VScode, but I'll provide links to the extensions to get you started.
+   - [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+   - [Jupyter Extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
+3. **Open the course:**
+   - Launch VS Code
+   - Open the `python-AtoZed` folder
+   - Navigate to `theory/python-atozed.ipynb`
+   - Select your Python interpreter when prompted
 
-~~Clone this repository to your local machine.~~  
-~~Install python/jupyter notebook in vscode.~~  
-Follow the course outline and explore each topic in order.  
-Each topic has associated code examples and exercises in its respective notebook file (WIP).  
+4. **Start learning:**
+   - Run code cells with `Ctrl+Enter` (will keep the current cell selected) 
+   or Shift+Enter (will move you down to the next cell)
+   - Follow the course from start to finish or pick and choose what you want from the table of content
 
-## Feedback  
-I'm always looking to improve this course.  
-If you have any feedback, questions, or suggestions, please feel free to create an issue in this repository.  
+---
 
-# Happy coding, and enjoy your journey through Python!
+## Course Outline
 
+### [1. Basic Syntax](theory/python-atozed.ipynb#1.-Basic-Syntax)
+- Print function and output
+- Comments and documentation
+- Code indentation and blocks
+- Variables and data types (int, float, str, bool)
+- Basic operators (arithmetic, comparison, logical)
+
+### [2. Data Structures](theory/python-atozed.ipynb#2.-Data-Structures)
+- **Lists**: Indexing, slicing, and list comprehensions
+- **Tuples**: Immutable sequences and unpacking
+- **Dictionaries**: Key-value pairs and methods
+- **Sets**: Unique values and set operations
+
+### [3. Flow Control](theory/python-atozed.ipynb#3.-Flow-Control)
+- Conditional statements (`if`, `elif`, `else`)
+- For loops and while loops
+- Loop control (`break`, `continue`, `pass`)
+- Range and enumerate functions
+
+### [4. Functions](theory/python-atozed.ipynb#4.-Functions)
+- Defining and calling functions
+- Parameters, arguments, and return values
+- Lambda functions for quick operations
+
+### [5. Object-Oriented Programming](theory/python-atozed.ipynb#5.-Introduction-to-OOP)
+- Classes and objects
+- Constructors and instance methods
+- Inheritance and method overriding
+- Encapsulation and data hiding
+- Polymorphism and composition
+- Magic methods and operator overloading
+
+### [6. Modules and Libraries](theory/python-atozed.ipynb#6.-Modules-and-Libraries)
+- Importing and using modules
+- Standard library exploration
+- Creating custom modules and packages
+
+### [BONUS: Decorators](theory/python-atozed.ipynb#BONUS:-Decorators)
+- Understanding decorators
+- Built-in decorators (`@property`, `@classmethod`, `@staticmethod`)
+- Creating custom decorators
+
+---
+
+## Contributing & Feedback
+
+Found an issue or have suggestions? Please:
+- [Create an issue](https://github.com/YourUsername/python-AtoZed/issues)
+- Submit a pull request
+- Share your feedback
+
+Your input helps make this course better for everyone!
+
+---
 
 ## License
 
-- **Code**: Licensed under the [MIT License](./LICENSE.txt).
-- **Course Content**: Licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE_CC_BY.txt).
+- **Code Examples**: [MIT License](./LICENSE.txt)
+- **Course Content**: [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE_CC_BY.txt)
+
+---
+
+## Get Started Today!
+
+Ready to master Python? Choose your preferred method:
+
+- **Quick Start**: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ReneDussault/Python-AtoZed/HEAD)
+- **Local Setup**: Follow the installation guide above
+- **Main Course**: [Open python-atozed.ipynb](theory/python-atozed.ipynb)
+
+Happy coding!
