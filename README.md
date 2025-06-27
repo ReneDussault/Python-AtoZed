@@ -23,6 +23,8 @@ Whether you're a complete beginner or coming from another programming language, 
 - **Interactive**: Designed for Jupyter notebooks with immediate feedback
 - **Comprehensive**: Covers everything needed for Python proficiency
 
+Main course file can be found in the theory [folder > python-atozed.ipynb](https://github.com/ReneDussault/Python-AtoZed/blob/main/theory/python-atozed.ipynb)
+
 ## Quick Start (No Installation Required)
 
 ### Launch in MyBinder
