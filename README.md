@@ -32,6 +32,7 @@ Click the badge below to launch the course instantly in your browser:
 
 **MyBinder** provides a free, interactive environment where you can:
 - Run the course without installing anything
+- No login needed
 - Modify and experiment with code examples
 - Save your progress (temporarily)
 - Access from any device with a web browser
