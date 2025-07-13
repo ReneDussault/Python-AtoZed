@@ -3,8 +3,8 @@
 ## Complete Introduction to Python Programming
 
 Welcome to **Python-AtoZed**!  
-This comprehensive course takes you from Python basics to advanced concepts like Object-Oriented Programming, modules, and decorators.  
-Whether you're a complete beginner or coming from another programming language, this course provides hands-on learning with practical examples and exercises.
+This introduction course takes you from Python basics to advanced concepts like Object-Oriented Programming, modules, and decorators.  
+Whether you're a complete beginner or coming from another programming language, this course provides hands-on learning with practical examples, exercises, and **interactive quizzes**.
 
 ### What You'll Learn
 - **Solid Foundation**: Python syntax, data types, and core concepts
@@ -19,6 +19,9 @@ Whether you're a complete beginner or coming from another programming language, 
 - **Beginner Friendly**: Starts with absolute basics
 - **Progressive Learning**: Each section builds on previous knowledge
 - **Practical Focus**: Every concept includes working code examples
+- **Interactive Quizzes**: Test your knowledge with section-specific quizzes
+- **Immediate Feedback**: Get instant results and explanations
+- **Progress Tracking**: Monitor your learning with scoring and timing
 - **Exercises & Summaries**: Reinforce learning with practice problems
 - **Interactive**: Designed for Jupyter notebooks with immediate feedback
 - **Comprehensive**: Covers everything needed for Python proficiency
@@ -36,6 +39,7 @@ Click the badge below to launch the course instantly in your browser:
 - Run the course without installing anything
 - No login needed
 - Modify and experiment with code examples
+- Take interactive quizzes to test your knowledge
 - Save your progress (temporarily)
 - Access from any device with a web browser
 - [Optional] Settings > Theme > Dark Mode (at night, to save your eyes)
@@ -72,16 +76,74 @@ Click the badge below to launch the course instantly in your browser:
    - Run code cells with `Ctrl+Enter` (keeps current cell selected) or `Shift+Enter` (moves to next cell)
    - Follow the course from start to finish or jump to specific topics using the table of contents
 
+5. **Test your knowledge:**
+   - Navigate to the `quizzes` folder
+   - Run `python interactive_quiz.py` to access the quiz system
+   - Choose from section-specific quizzes or take the comprehensive final exam
+
 > **Note**: You can use any IDE that supports Python and Jupyter notebooks!
+
+---
+
+## Interactive Quiz System
+
+### 🐍 Test Your Python Knowledge!
+
+The course includes a comprehensive quiz system with:
+
+#### **Available Quizzes:**
+- **Section 1**: Basic Syntax (13 questions)
+- **Section 2**: Data Structures (11 questions)  
+- **Section 3**: Flow Control (12 questions)
+- **Section 4**: Functions (10 questions)
+- **Section 5**: Object-Oriented Programming (10 questions)
+- **Section 6**: Modules and Libraries (10 questions)
+- **Final Quiz**: Comprehensive Assessment (25 questions)
+
+#### **Features:**
+- ✅ **Multiple Choice Questions** with instant feedback
+- ✅ **Code Output Questions** to test practical understanding
+- ✅ **True/False Questions** for concept verification
+- ✅ **Progress Tracking** with scores and timing
+- ✅ **Grade System** (A-F) based on performance
+- ✅ **Terminal-based Interface** - no additional setup required
+
+#### **How to Use:**
+```bash
+# Navigate to the quizzes folder
+cd quizzes
+
+# Run the interactive quiz system
+python interactive_quiz.py
+
+# Choose a quiz (1-7) and start testing your knowledge!
+```
+
+#### **Sample Quiz Flow:**
+```
+Welcome to Section 1: Basic Syntax Quiz
+========================================
+Question 1:
+Which of the following is the correct way to create a comment in Python?
+
+a) // This is a comment
+b) # This is a comment  
+c) /* This is a comment */
+d) <!-- This is a comment -->
+
+Your answer: b
+✅ Correct!
+
+Final Score: 12/13 (92.3%) - Grade: A - Excellent!
+```
 
 ---
 
 ## Course Outline
 
-Introduction
+**Introduction**
 
-Basic Syntax
-
+**Basic Syntax**
 - Printing output with print()
 - Commenting
 - Multiline comment (docstring)
@@ -90,8 +152,7 @@ Basic Syntax
 - String Methods
 - Basic Operators
 
-Data Structures
-
+**Data Structures**
 - Lists, indexing, slicing
 - List Methods
 - List Comprehension
@@ -100,8 +161,7 @@ Data Structures
 - Sets for unique values
 - More Examples
 
-Flow Control
-
+**Flow Control**
 - Conditional Statements (if, elif, else)
 - For Loops
 - While Loops
@@ -112,15 +172,13 @@ Flow Control
 - Range and Enumerate Functions
 - Summary of Flow Control
 
-Functions
-
+**Functions**
 - Defining and Calling Functions
 - Parameters and Arguments
 - Return Statements
 - Lambda Function
 
-Introduction to OOP
-
+**Introduction to OOP**
 - Classes and Objects
 - The init Method (Constructor)
 - Attributes and Methods
@@ -130,15 +188,13 @@ Introduction to OOP
 - Composition
 - Magic Methods
 
-Modules and Libraries
-
+**Modules and Libraries**
 - Importing Modules
 - Standard Libraries
 - Custom Modules
 - Summary of Modules and Packages
 
-BONUS: Decorators
-
+**BONUS: Decorators**
 - What is a Decorator?
 - Built-in Decorators (@property, @classmethod, @staticmethod)
 - Custom Function Decorators
@@ -164,4 +220,4 @@ Your input helps make this course better for everyone!
 
 ---
 
-Happy coding!
+Happy coding! 🐍
