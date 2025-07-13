@@ -11,17 +11,20 @@ b) break
 c) pass
 d) return
 
-### 2. What does the `continue` statement do in a loop?
+### 2. What does the continue statement do in a loop?
 a) Exits the loop  
 b) Skips the current iteration  
 c) Does nothing  
 d) Restarts the loop
 
-### 3. What will `range(1, 5)` generate?
+### 3. What will this code generate?
+```python
+range(1, 5)
+```
 a) [1, 2, 3, 4]
 b) [1, 2, 3, 4, 5]
 c) [0, 1, 2, 3, 4]
-d) [2, 3, 4, 5]`
+d) [2, 3, 4, 5]
 
 ### 4. Which loop is best when you don't know how many iterations you need?
 a) for loop  
@@ -29,7 +32,7 @@ b) while loop
 c) do-while loop  
 d) foreach loop
 
-### 5. What is the purpose of `try-except` blocks?
+### 5. What is the purpose of try-except blocks?
 a) To repeat code  
 b) To handle errors  
 c) To define functions  
@@ -102,9 +105,9 @@ d) 0, 1, 2
 a) ValueError
 b) TypeError
 c) IndexError
-d) KeyError`
+d) KeyError
 
-### 12. What's the difference between `range(5)` and `range(1, 5)`?
+### 12. What's the difference between range(5) and range(1, 5)?
 a) No difference  
 b) First includes 0, second starts from 1  
 c) First generates 5 numbers, second generates 4  
