@@ -1,8 +1,3 @@
-"""
-Interactive Python Quiz System
-Run this script to take any of the quizzes interactively
-"""
-
 import json
 import time
 import re
@@ -32,7 +27,7 @@ class PythonQuiz:
         print()
         
         for key, value in options.items():
-            if value:  # Only show non-empty options
+            if value:
                 print(f"{key}) {value}")
         
         while True:
@@ -69,7 +64,6 @@ class PythonQuiz:
         if self.total_questions > 0:
             print(f"Percentage: {(self.score/self.total_questions)*100:.1f}%")
             
-            # Grade assignment
             percentage = (self.score/self.total_questions)*100
             if percentage >= 90:
                 grade = "A - Excellent!"
@@ -88,11 +82,9 @@ class PythonQuiz:
         print(f"{'='*50}")
 
 class QuizParser:
-    """Parses markdown quiz files into question dictionaries"""
-    
+
     @staticmethod
     def parse_quiz_file(file_path):
-        """Parse a markdown quiz file and return list of questions"""
         if not os.path.exists(file_path):
             print(f"Error: Quiz file not found: {file_path}")
             return []
@@ -103,10 +95,9 @@ class QuizParser:
         questions = []
         answer_key = QuizParser._extract_answer_key(content)
         
-        # Split content into sections
         sections = content.split('###')
         
-        for i, section in enumerate(sections[1:], 1):  # Skip first empty section
+        for i, section in enumerate(sections[1:], 1):
             if 'Answer Key' in section:
                 break
                 
@@ -119,29 +110,24 @@ class QuizParser:
 
     @staticmethod
     def _extract_answer_key(content):
-        """Extract answer key from markdown content"""
         answer_key = {}
         
-        # Find answer key section
         answer_section_match = re.search(r'## Answer Key\s*(.*?)(?=##|$)', content, re.DOTALL)
         if answer_section_match:
             answer_section = answer_section_match.group(1)
             
-            # Extract individual answers - handle multiple formats
             lines = answer_section.strip().split('\n')
             for line in lines:
                 line = line.strip()
                 if not line:
                     continue
                     
-                # Format: "8. b) explanation" 
                 match1 = re.match(r'(\d+)\.\s*([a-d])\)', line, re.IGNORECASE)
                 if match1:
                     question_num, answer = match1.groups()
                     answer_key[int(question_num)] = answer.lower()
                     continue
                 
-                # Format: "8. True" or "8. False" 
                 match2 = re.match(r'(\d+)\.\s*(True|False)', line, re.IGNORECASE)
                 if match2:
                     question_num, answer_text = match2.groups()
@@ -150,11 +136,11 @@ class QuizParser:
                     answer_key[int(question_num)] = answer_letter
                     continue
                     
-                # Format: "8. False (explanation)"
                 match3 = re.match(r'(\d+)\.\s*(True|False)\s*\(', line, re.IGNORECASE)
                 if match3:
                     question_num, answer_text = match3.groups()
-                    # Map True/False to a/b
+
+                    # map True/False to a/b
                     answer_letter = 'a' if answer_text.lower() == 'true' else 'b'
                     answer_key[int(question_num)] = answer_letter
                     continue
@@ -164,21 +150,17 @@ class QuizParser:
 
     @staticmethod
     def _parse_question_section(section, question_num, answer_key):
-        """Parse individual question section"""
         lines = section.strip().split('\n')
         
         if not lines:
             return None
         
-        # Extract question text (can be multiple lines)
         question_lines = []
         option_start = None
         
-        # Find where options start
         for i, line in enumerate(lines):
             line_stripped = line.strip()
             
-            # Stop if we hit a section header (##)
             if line_stripped.startswith('##'):
                 break
                 
@@ -187,28 +169,23 @@ class QuizParser:
                 break
             question_lines.append(line)
         
-        # Join all question lines
         question_text = '\n'.join(question_lines).strip()
         
-        # Remove question number if present
         if question_text.startswith(f'{question_num}.'):
             question_text = question_text[len(f'{question_num}.'):].strip()
         
-        # Clean up markdown artifacts
-        question_text = re.sub(r'^#{1,6}\s*', '', question_text, flags=re.MULTILINE)  # Remove headers
-        question_text = re.sub(r'```python\s*\n', '', question_text)  # Remove ```python
-        question_text = re.sub(r'```\s*\n', '', question_text)       # Remove closing ```
-        question_text = re.sub(r'```', '', question_text)            # Remove any remaining ```
+        question_text = re.sub(r'^#{1,6}\s*', '', question_text, flags=re.MULTILINE)
+        question_text = re.sub(r'```python\s*\n', '', question_text)
+        question_text = re.sub(r'```\s*\n', '', question_text)
+        question_text = re.sub(r'```', '', question_text)
         question_text = question_text.strip()
         
-        # Extract options
         options = {'a': '', 'b': '', 'c': '', 'd': ''}
         
         if option_start is not None:
             for line in lines[option_start:]:
                 line = line.strip()
                 
-                # Stop if we hit a section header
                 if line.startswith('##'):
                     break
                     
@@ -221,7 +198,6 @@ class QuizParser:
                     option_text = line[2:].strip()
                     options[option_letter] = option_text
         
-        # Get correct answer
         correct_answer = answer_key.get(question_num, 'a')
         
         return {
@@ -232,7 +208,6 @@ class QuizParser:
 
 
 def run_quiz_from_file(file_path, quiz_name):
-    """Run a quiz from a markdown file"""
     questions = QuizParser.parse_quiz_file(file_path)
     
     if not questions:
@@ -285,6 +260,10 @@ def final_quiz():
 
 
 if __name__ == "__main__":
+    print()
+    print()
+    print()
+    print("Welcome to the Python A-to-Z Interactive Quiz System!")
     print("🐍 Python A-to-Z Quiz System 🐍")
     print("="*40)
     print("1. Section 1: Basic Syntax")
