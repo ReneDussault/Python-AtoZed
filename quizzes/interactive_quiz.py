@@ -14,6 +14,7 @@ class PythonQuiz:
         print(f"{'='*50}")
         print("Instructions:")
         print("- Answer each question by typing a, b, c, or d")
+        print("- For True/False questions, type 'a' for True and 'b' for False")
         print("- Type 'quit' to exit at any time")
         print("- Good luck!\n")
         
