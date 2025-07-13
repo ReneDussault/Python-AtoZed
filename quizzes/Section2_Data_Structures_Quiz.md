@@ -39,7 +39,10 @@ b) person["name"]
 c) person.name
 d) person->name
 
-### 6. What will `len([1, 2, 3, 4])` return?
+### 6. What will this code return?
+```python
+len([1, 2, 3, 4])
+```
 a) 3  
 b) 4  
 c) 5  
@@ -56,10 +59,10 @@ b) [2, 4, 6, 8, 10]
 c) [0, 1, 2, 3, 4]
 d) [1, 2, 3, 4, 5]
 
-### 8. Which list comprehension creates a list of even numbers from 0 to 10?
+### 8. Which list comprehension creates a list of even numbers from 0 to 10(inclusive)?
 a) [x for x in range(11) if x % 2 == 0]
 b) [x for x in range(10) if x % 2 == 1]
-c) [x * 2 for x in range(5)]
+c) [x * 2 for x in range(6)]
 d) Both a and c
 
 ## Code Analysis Questions (5 points)
@@ -100,7 +103,7 @@ d) 4
 ## Answer Key
 1. c) List
 2. b) 2
-3. c) append()
+3. c) my_list.append()
 4. c) Unique elements only
 5. b) person["name"]
 6. b) 4
