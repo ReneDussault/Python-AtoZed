@@ -95,12 +95,10 @@ class QuizParser:
         questions = []
         answer_key = QuizParser._extract_answer_key(content)
         
-        sections = content.split('###')
+        content_before_answers = content.split('## Answer Key')[0]
+        sections = content_before_answers.split('###')
         
         for i, section in enumerate(sections[1:], 1):
-            if 'Answer Key' in section:
-                break
-                
             question_data = QuizParser._parse_question_section(section, i, answer_key)
             if question_data:
                 questions.append(question_data)
@@ -122,25 +120,17 @@ class QuizParser:
                 if not line:
                     continue
                     
+                # match letter answers: "1. a)" or "1. b)"
                 match1 = re.match(r'(\d+)\.\s*([a-d])\)', line, re.IGNORECASE)
                 if match1:
                     question_num, answer = match1.groups()
                     answer_key[int(question_num)] = answer.lower()
                     continue
                 
-                match2 = re.match(r'(\d+)\.\s*(True|False)', line, re.IGNORECASE)
+                # match True/False (with optional parentheses): "1. True" or "1. False (T/F)"
+                match2 = re.match(r'(\d+)\.\s*(True|False)(?:\s*\([^)]*\))?', line, re.IGNORECASE)
                 if match2:
                     question_num, answer_text = match2.groups()
-                    # Map True/False to a/b
-                    answer_letter = 'a' if answer_text.lower() == 'true' else 'b'
-                    answer_key[int(question_num)] = answer_letter
-                    continue
-                    
-                match3 = re.match(r'(\d+)\.\s*(True|False)\s*\(', line, re.IGNORECASE)
-                if match3:
-                    question_num, answer_text = match3.groups()
-
-                    # map True/False to a/b
                     answer_letter = 'a' if answer_text.lower() == 'true' else 'b'
                     answer_key[int(question_num)] = answer_letter
                     continue

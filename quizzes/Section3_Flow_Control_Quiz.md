@@ -94,9 +94,9 @@ numbers = [1, 2, 3]
 for i, num in enumerate(numbers):
     print(f"{i}: {num}")
 ```
-a) 1: 1, 2: 2, 3: 3  
-b) 0: 1, 1: 2, 2: 3  
-c) 1, 2, 3  
+a) 1: 1, 2: 2, 3: 3
+b) 0: 1, 1: 2, 2: 3
+c) 1, 2, 3
 d) 0, 1, 2
 
 ## Problem Solving Questions (5 points)
@@ -108,9 +108,9 @@ c) IndexError
 d) KeyError
 
 ### 12. What's the difference between range(5) and range(1, 5)?
-a) No difference  
-b) First includes 0, second starts from 1  
-c) First generates 5 numbers, second generates 4  
+a) No difference
+b) First includes 0, second starts from 1
+c) First generates 5 numbers, second generates 4
 d) Both b and c
 
 ---
