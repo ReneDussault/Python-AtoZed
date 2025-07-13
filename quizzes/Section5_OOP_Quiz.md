@@ -6,10 +6,10 @@
 ## Multiple Choice Questions (20 points)
 
 ### 1. What is the special method called when an object is created?
-a) `__create__`  
-b) `__new__`  
-c) `__init__`  
-d) `__start__`
+a) __create__
+b) __new__
+c) __init__
+d) __start__
 
 ### 2. Which principle hides internal details of a class?
 a) Inheritance  
@@ -17,17 +17,17 @@ b) Polymorphism
 c) Encapsulation  
 d) Abstraction
 
-### 3. What does `super()` do in a child class?
+### 3. What does super() do in a child class?
 a) Creates a new object  
 b) Calls parent class methods  
 c) Deletes the parent class  
 d) Makes the class static
 
 ### 4. Which is the correct way to create a private attribute?
-a) `private name`  
-b) `_name`  
-c) `__name`  
-d) `#name`
+a) private name
+b) _name
+c) __name
+d) #name
 
 ### 5. What is polymorphism in OOP?
 a) Having multiple classes  
@@ -49,9 +49,9 @@ class Dog:
 my_dog = Dog("Buddy")
 print(my_dog.bark())
 ```
-a) `Dog says Woof!`  
-b) `Buddy says Woof!`  
-c) `name says Woof!`  
+a) Dog says Woof!
+b) Buddy says Woof!
+c) name says Woof!
 d) Error
 
 ### 7. What will this code output?
@@ -67,8 +67,8 @@ class Cat(Animal):
 my_cat = Cat()
 print(my_cat.speak())
 ```
-a) `Some sound`  
-b) `Meow`  
+a) Some sound
+b) Meow
 c) Both  
 d) Error
 
@@ -108,13 +108,13 @@ d) Inheritance is newer
 ---
 
 ## Answer Key
-1. c) `__init__`
+1. c) __init__
 2. c) Encapsulation
 3. b) Calls parent class methods
-4. c) `__name`
+4. c) __name
 5. b) Using the same interface for different types
-6. b) `Buddy says Woof!`
-7. b) `Meow`
+6. b) Buddy says Woof!
+7. b) Meow
 8. c) 1, 0
 9. a) When classes share common attributes/methods
 10. b) Composition is "has-a", inheritance is "is-a"

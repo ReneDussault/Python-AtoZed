@@ -6,10 +6,10 @@
 ## Multiple Choice Questions (15 points)
 
 ### 1. Which statement is used to exit a loop prematurely?
-a) `continue`  
-b) `break`  
-c) `pass`  
-d) `return`
+a) continue
+b) break
+c) pass
+d) return
 
 ### 2. What does the `continue` statement do in a loop?
 a) Exits the loop  
@@ -18,16 +18,16 @@ c) Does nothing
 d) Restarts the loop
 
 ### 3. What will `range(1, 5)` generate?
-a) `[1, 2, 3, 4]`  
-b) `[1, 2, 3, 4, 5]`  
-c) `[0, 1, 2, 3, 4]`  
-d) `[2, 3, 4, 5]`
+a) [1, 2, 3, 4]
+b) [1, 2, 3, 4, 5]
+c) [0, 1, 2, 3, 4]
+d) [2, 3, 4, 5]`
 
 ### 4. Which loop is best when you don't know how many iterations you need?
-a) `for` loop  
-b) `while` loop  
-c) `do-while` loop  
-d) `foreach` loop
+a) for loop  
+b) while loop  
+c) do-while loop  
+d) foreach loop
 
 ### 5. What is the purpose of `try-except` blocks?
 a) To repeat code  
@@ -99,10 +99,10 @@ d) 0, 1, 2
 ## Problem Solving Questions (5 points)
 
 ### 11. Which exception would you catch for invalid user input when converting to int?
-a) `ValueError`  
-b) `TypeError`  
-c) `IndexError`  
-d) `KeyError`
+a) ValueError
+b) TypeError
+c) IndexError
+d) KeyError`
 
 ### 12. What's the difference between `range(5)` and `range(1, 5)`?
 a) No difference  
@@ -113,15 +113,15 @@ d) Both b and c
 ---
 
 ## Answer Key
-1. b) `break`
+1. b) break
 2. b) Skips the current iteration
-3. a) `[1, 2, 3, 4]`
-4. b) `while` loop
+3. a) [1, 2, 3, 4]
+4. b) while loop
 5. b) To handle errors
 6. b) 0, 2
 7. a) 0, 1, 2
 8. b) 0, 1, 2
 9. c) "Error caught"
 10. b) 0: 1, 1: 2, 2: 3
-11. a) `ValueError`
+11. a) ValueError
 12. d) Both b and c

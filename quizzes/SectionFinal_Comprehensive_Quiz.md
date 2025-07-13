@@ -17,31 +17,31 @@ c) 53
 d) Error
 
 ### 2. Which of these creates a multi-line string? (2 points)
-a) `"line1\nline2"`  
-b) `"""line1\nline2"""`  
+a) "line1\nline2"  
+b) """line1\nline2"""  
 c) Both a and b  
 d) Only b
 
-### 3. What's the result of `10 // 3 * 2`? (2 points)
+### 3. What's the result of 10 // 3 * 2? (2 points)
 a) 6  
 b) 6.67  
 c) 6.0  
 d) 7
 
-### 4. Which comparison returns `True`? (3 points)
-a) `5 == "5"`  
-b) `5 != "5"`  
-c) `"hello" > "world"`  
-d) `None == False`
+### 4. Which comparison returns True? (3 points)
+a) 5 == "5"  
+b) 5 != "5"  
+c) "hello" > "world"  
+d) None == False
 
 ### 5. What's the correct f-string syntax? (5 points)
 ```python
 name = "Python"
 age = 30
 ```
-a) `f"Hello {name}, you are {age} years old"`  
-b) `"Hello {name}, you are {age} years old".format()`  
-c) `"Hello " + name + ", you are " + str(age) + " years old"`  
+a) f"Hello {name}, you are {age} years old"  
+b) "Hello {name}, you are {age} years old".format()  
+c) "Hello " + name + ", you are " + str(age) + " years old"  
 d) All are correct
 
 ---
@@ -59,10 +59,10 @@ c) 3
 d) Error
 
 ### 7. Which list comprehension creates squares of even numbers 0-10? (5 points)
-a) `[x**2 for x in range(11) if x % 2 == 0]`  
-b) `[x for x in range(11) if x**2 % 2 == 0]`  
-c) `[(x**2) % 2 == 0 for x in range(11)]`  
-d) `[x**2 % 2 == 0 for x in range(11)]`
+a) [x**2 for x in range(11) if x % 2 == 0]  
+b) [x for x in range(11) if x**2 % 2 == 0]  
+c) [(x**2) % 2 == 0 for x in range(11)]  
+d) [x**2 % 2 == 0 for x in range(11)]
 
 ### 8. What will this code output? (5 points)
 ```python
@@ -70,16 +70,16 @@ my_dict = {"a": 1, "b": 2}
 my_dict.update({"c": 3, "a": 10})
 print(my_dict)
 ```
-a) `{"a": 1, "b": 2, "c": 3}`  
-b) `{"a": 10, "b": 2, "c": 3}`  
+a) {"a": 1, "b": 2, "c": 3}  
+b) {"a": 10, "b": 2, "c": 3}  
 c) Error  
-d) `{"a": [1, 10], "b": 2, "c": 3}`
+d) {"a": [1, 10], "b": 2, "c": 3}
 
 ### 9. Which operation removes duplicates from a list? (5 points)
-a) `list(set(my_list))`  
-b) `my_list.unique()`  
-c) `remove_duplicates(my_list)`  
-d) `my_list.distinct()`
+a) list(set(my_list))  
+b) my_list.unique()  
+c) remove_duplicates(my_list)  
+d) my_list.distinct()
 
 ---
 
@@ -197,22 +197,22 @@ class Car(Vehicle):
 my_car = Car("Toyota", "Camry")
 print(my_car.start())
 ```
-a) `Toyota starting`  
-b) `Toyota Camry starting with engine`  
-c) `Camry starting with engine`  
+a) Toyota starting  
+b) Toyota Camry starting with engine  
+c) Camry starting with engine  
 d) Error
 
-### 17. What's the purpose of `@property` decorator? (5 points)
+### 17. What's the purpose of @property decorator? (5 points)
 a) Makes method private  
 b) Makes method static  
 c) Allows method to be accessed like an attribute  
 d) Makes method abstract
 
 ### 18. Which demonstrates composition? (5 points)
-a) `class Car(Vehicle): pass`  
-b) `class Car: def __init__(self): self.engine = Engine()`  
-c) `class Car: @staticmethod def info(): pass`  
-d) `class Car: pass`
+a) class Car(Vehicle): pass  
+b) class Car: def __init__(self): self.engine = Engine()  
+c) class Car: @staticmethod def info(): pass  
+d) class Car: pass
 
 ---
 
@@ -226,16 +226,16 @@ from random import randint
 print(type(m.pi))
 print(type(randint))
 ```
-a) `<class 'float'>, <class 'int'>`  
-b) `<class 'float'>, <class 'function'>`  
-c) `<class 'math'>, <class 'random'>`  
+a) <class 'float'>, <class 'int'>  
+b) <class 'float'>, <class 'function'>  
+c) <class 'math'>, <class 'random'>  
 d) Error
 
 ### 20. Which import statement is most specific and recommended? (5 points)
-a) `from math import *`  
-b) `import math`  
-c) `from math import sqrt, pi`  
-d) `import math.sqrt`
+a) from math import *  
+b) import math  
+c) from math import sqrt, pi  
+d) import math.sqrt
 
 ---
 
@@ -247,10 +247,10 @@ numbers = [1, 2, 3, 4, 5]
 result = list(filter(lambda x: x % 2 == 0, map(lambda x: x**2, numbers)))
 print(result)
 ```
-a) `[4, 16]`  
-b) `[2, 4]`  
-c) `[1, 9, 25]`  
-d) `[1, 4, 9, 16, 25]`
+a) [4, 16]  
+b) [2, 4]  
+c) [1, 9, 25]  
+d) [1, 4, 9, 16, 25]
 
 ### 22. What design pattern does this represent? (5 points)
 ```python

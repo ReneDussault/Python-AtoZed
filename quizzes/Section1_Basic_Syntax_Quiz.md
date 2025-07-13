@@ -6,10 +6,10 @@
 ## Multiple Choice Questions (10 points)
 
 ### 1. Which of the following is the correct way to create a comment in Python?
-a) `// This is a comment`  
-b) `# This is a comment`  
-c) `/* This is a comment */`  
-d) `<!-- This is a comment -->`
+a) // This is a comment
+b) # This is a comment
+c) /* This is a comment */
+d) <!-- This is a comment -->
 
 ### 2. What will be the output of: `print(10 // 3)`?
 a) 3.33  
@@ -18,22 +18,22 @@ c) 3
 d) 4
 
 ### 3. Which operator is used for exponentiation in Python?
-a) `^`  
-b) `**`  
-c) `pow`  
-d) `exp`
+a) ^
+b) **
+c) pow
+d) exp
 
 ### 4. What is the correct way to check if two values are equal?
-a) `=`  
-b) `==`  
-c) `!=`  
-d) `is`
+a) =
+b) ==
+c) !=
+d) is
 
 ### 5. Which of the following is NOT a valid Python variable name?
-a) `my_variable`  
-b) `_variable`  
-c) `2variable`  
-d) `variable2`
+a) my_variable
+b) _variable
+c) 2variable
+d) variable2
 
 ## True/False Questions (5 points)
 
@@ -83,14 +83,14 @@ d) None
 ---
 
 ## Answer Key
-1. b) `# This is a comment`
+1. b) # This is a comment
 2. c) 3
-3. b) `**`
-4. b) `==`
-5. c) `2variable`
+3. b) **
+4. b) ==
+5. c) 2variable
 6. True
 7. True
-8. False (5.0 is float, 5 is int)
+8. False
 9. True
 10. False
 11. a) 1
