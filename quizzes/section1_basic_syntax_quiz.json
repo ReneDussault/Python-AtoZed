@@ -1,0 +1,395 @@
+{
+    "quiz_title": "Section 1: Basic Syntax Quiz",
+    "time_limit": "25 minutes",
+    "total_points": 35,
+    "sections": [
+        {
+            "section_name": "Multiple Choice Questions",
+            "points": 15,
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Which of the following is the correct way to create a comment in Python?",
+                    "code": null,
+                    "options": {
+                        "a": "// This is a comment",
+                        "b": "# This is a comment",
+                        "c": "/* This is a comment */",
+                        "d": "<!-- This is a comment -->"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "# This is a comment"
+                },
+                {
+                    "id": 2,
+                    "question": "What will be the output of: `print(10 // 3)`?",
+                    "code": null,
+                    "options": {
+                        "a": "3.33",
+                        "b": "3.0",
+                        "c": "3",
+                        "d": "4"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "3"
+                },
+                {
+                    "id": 3,
+                    "question": "Which operator is used for exponentiation in Python?",
+                    "code": null,
+                    "options": {
+                        "a": "^",
+                        "b": "**",
+                        "c": "pow",
+                        "d": "exp"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "**"
+                },
+                {
+                    "id": 4,
+                    "question": "What is the correct way to check if two values are equal?",
+                    "code": null,
+                    "options": {
+                        "a": "=",
+                        "b": "==",
+                        "c": "!=",
+                        "d": "is"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "=="
+                },
+                {
+                    "id": 5,
+                    "question": "Which of the following is NOT a valid Python variable name?",
+                    "code": null,
+                    "options": {
+                        "a": "my_variable",
+                        "b": "_variable",
+                        "c": "2variable",
+                        "d": "variable2"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "2variable"
+                },
+                {
+                    "id": 6,
+                    "question": "What is the correct syntax for a multiline comment (docstring)?",
+                    "code": null,
+                    "options": {
+                        "a": "### comment ###",
+                        "b": "\"\"\"comment\"\"\"",
+                        "c": "// comment //",
+                        "d": "<!-- comment -->"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "\"\"\"comment\"\"\""
+                },
+                {
+                    "id": 7,
+                    "question": "Which data type would '3.14' be in Python?",
+                    "code": null,
+                    "options": {
+                        "a": "int",
+                        "b": "float",
+                        "c": "str",
+                        "d": "bool"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "float"
+                },
+                {
+                    "id": 8,
+                    "question": "What will `type(42)` return?",
+                    "code": null,
+                    "options": {
+                        "a": "<class 'int'>",
+                        "b": "<class 'float'>",
+                        "c": "<class 'str'>",
+                        "d": "42"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "<class 'int'>"
+                },
+                {
+                    "id": 9,
+                    "question": "Which assignment operator would you use to add 5 to a variable x?",
+                    "code": null,
+                    "options": {
+                        "a": "x = 5",
+                        "b": "x += 5",
+                        "c": "x == 5",
+                        "d": "x -= 5"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "x += 5"
+                },
+                {
+                    "id": 10,
+                    "question": "What is the result of '5' + '3' in Python?",
+                    "code": null,
+                    "options": {
+                        "a": "8",
+                        "b": "53",
+                        "c": "'53'",
+                        "d": "Error"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "'53'"
+                }
+            ]
+        },
+        {
+            "section_name": "True/False Questions",
+            "points": 10,
+            "questions": [
+                {
+                    "id": 11,
+                    "question": "Python is case-sensitive. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "True"
+                },
+                {
+                    "id": 12,
+                    "question": "The `print()` function automatically adds a space between multiple arguments. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "True"
+                },
+                {
+                    "id": 13,
+                    "question": "`5.0` and `5` are the same data type in Python. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "False"
+                },
+                {
+                    "id": 14,
+                    "question": "You can use single or double quotes to create strings in Python. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "True"
+                },
+                {
+                    "id": 15,
+                    "question": "Indentation is optional in Python. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "False"
+                },
+                {
+                    "id": 16,
+                    "question": "Python uses curly braces {} to define code blocks. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "False"
+                },
+                {
+                    "id": 17,
+                    "question": "Variable names can start with numbers in Python. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "False"
+                },
+                {
+                    "id": 18,
+                    "question": "The `help()` function can be used to get documentation about Python objects. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "True"
+                },
+                {
+                    "id": 19,
+                    "question": "Python is a dynamically typed language. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "True"
+                },
+                {
+                    "id": 20,
+                    "question": "The `+=` operator can only be used with numbers. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "False"
+                }
+            ]
+        },
+        {
+            "section_name": "Code Output Questions",
+            "points": 10,
+            "questions": [
+                {
+                    "id": 21,
+                    "question": "What will this code output?",
+                    "code": "x = 5\ny = 2\nprint(x % y)",
+                    "options": {
+                        "a": "1",
+                        "b": "2",
+                        "c": "2.5",
+                        "d": "0"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "1"
+                },
+                {
+                    "id": 22,
+                    "question": "What will this code output?",
+                    "code": "name = \"Python\"\nprint(f\"Hello, {name}!\")",
+                    "options": {
+                        "a": "Hello, Python!",
+                        "b": "Hello, {name}!",
+                        "c": "Hello, name!",
+                        "d": "Error"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "Hello, Python!"
+                },
+                {
+                    "id": 23,
+                    "question": "What will this code output?",
+                    "code": "result = (5 > 3) and (2 < 1)\nprint(result)",
+                    "options": {
+                        "a": "True",
+                        "b": "False",
+                        "c": "Error",
+                        "d": "None"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "False"
+                },
+                {
+                    "id": 24,
+                    "question": "What will this code output?",
+                    "code": "x = 10\nx += 5\nprint(x)",
+                    "options": {
+                        "a": "10",
+                        "b": "15",
+                        "c": "5",
+                        "d": "Error"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "15"
+                },
+                {
+                    "id": 25,
+                    "question": "What will this code output?",
+                    "code": "print(\"Hello\", \"World\", sep=\"-\")",
+                    "options": {
+                        "a": "Hello World",
+                        "b": "Hello-World",
+                        "c": "HelloWorld",
+                        "d": "Hello - World"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "Hello-World"
+                },
+                {
+                    "id": 26,
+                    "question": "What will this code output?",
+                    "code": "a = 3\nb = 2\nprint(a ** b)",
+                    "options": {
+                        "a": "6",
+                        "b": "9",
+                        "c": "5",
+                        "d": "8"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "9"
+                },
+                {
+                    "id": 27,
+                    "question": "What will this code output?",
+                    "code": "text = \"Python\"\nprint(text[0])",
+                    "options": {
+                        "a": "P",
+                        "b": "y",
+                        "c": "0",
+                        "d": "Error"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "P"
+                },
+                {
+                    "id": 28,
+                    "question": "What will this code output?",
+                    "code": "x = True\ny = False\nprint(x and y)",
+                    "options": {
+                        "a": "True",
+                        "b": "False",
+                        "c": "None",
+                        "d": "Error"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "False"
+                },
+                {
+                    "id": 29,
+                    "question": "What will this code output?",
+                    "code": "num = 7\nprint(num >= 5)",
+                    "options": {
+                        "a": "7",
+                        "b": "5",
+                        "c": "True",
+                        "d": "False"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "True"
+                },
+                {
+                    "id": 30,
+                    "question": "What will this code output?",
+                    "code": "word = \"code\"\nprint(len(word))",
+                    "options": {
+                        "a": "3",
+                        "b": "4",
+                        "c": "5",
+                        "d": "Error"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "4"
+                }
+            ]
+        }
+    ]
+}

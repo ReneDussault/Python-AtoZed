@@ -1,0 +1,424 @@
+{
+    "quiz_title": "Section 2: Data Structures Quiz",
+    "time_limit": "35 minutes",
+    "total_points": 45,
+    "sections": [
+        {
+            "section_name": "Multiple Choice Questions",
+            "points": 20,
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Which data structure is ordered and mutable?",
+                    "code": null,
+                    "options": {
+                        "a": "Tuple",
+                        "b": "Set",
+                        "c": "List",
+                        "d": "Dictionary"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "List"
+                },
+                {
+                    "id": 2,
+                    "question": "What will this code return?",
+                    "code": "my_list = [1, 2, 3]\nmy_list[1]",
+                    "options": {
+                        "a": "1",
+                        "b": "2",
+                        "c": "3",
+                        "d": "Error"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "2"
+                },
+                {
+                    "id": 3,
+                    "question": "Which method adds an element to the end of a list?",
+                    "code": null,
+                    "options": {
+                        "a": "my_list.add()",
+                        "b": "my_list.insert()",
+                        "c": "my_list.append()",
+                        "d": "my_list.extend()"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "my_list.append()"
+                },
+                {
+                    "id": 4,
+                    "question": "What is the main characteristic of a set?",
+                    "code": null,
+                    "options": {
+                        "a": "Ordered",
+                        "b": "Mutable",
+                        "c": "Unique elements only",
+                        "d": "Key-value pairs"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "Unique elements only"
+                },
+                {
+                    "id": 5,
+                    "question": "How do you access the value associated with key 'name' in dictionary person?",
+                    "code": null,
+                    "options": {
+                        "a": "person[name]",
+                        "b": "person[\"name\"]",
+                        "c": "person.name",
+                        "d": "person->name"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "person[\"name\"]"
+                },
+                {
+                    "id": 6,
+                    "question": "What will this code return?",
+                    "code": "len([1, 2, 3, 4])",
+                    "options": {
+                        "a": "3",
+                        "b": "4",
+                        "c": "5",
+                        "d": "Error"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "4"
+                },
+                {
+                    "id": 7,
+                    "question": "Which method removes and returns the last element from a list?",
+                    "code": null,
+                    "options": {
+                        "a": "my_list.remove()",
+                        "b": "my_list.pop()",
+                        "c": "my_list.delete()",
+                        "d": "my_list.discard()"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "my_list.pop()"
+                },
+                {
+                    "id": 8,
+                    "question": "What is the difference between list.remove() and list.discard()?",
+                    "code": null,
+                    "options": {
+                        "a": "No difference",
+                        "b": "remove() is for lists, discard() is for sets",
+                        "c": "discard() is for lists, remove() is for sets",
+                        "d": "Both work on all data structures"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "remove() is for lists, discard() is for sets"
+                },
+                {
+                    "id": 9,
+                    "question": "Which data structure maintains insertion order in Python 3.7+?",
+                    "code": null,
+                    "options": {
+                        "a": "Set only",
+                        "b": "Dictionary only",
+                        "c": "List and Tuple only",
+                        "d": "List, Tuple, and Dictionary"
+                    },
+                    "correct_answer": "d",
+                    "explanation": "List, Tuple, and Dictionary"
+                },
+                {
+                    "id": 10,
+                    "question": "What happens when you try to add a duplicate element to a set?",
+                    "code": null,
+                    "options": {
+                        "a": "Error is raised",
+                        "b": "Element is added twice",
+                        "c": "Nothing happens, set remains unchanged",
+                        "d": "Set is cleared"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "Nothing happens, set remains unchanged"
+                },
+                {
+                    "id": 11,
+                    "question": "Which operation is NOT supported on tuples?",
+                    "code": null,
+                    "options": {
+                        "a": "Indexing",
+                        "b": "Slicing",
+                        "c": "Item assignment",
+                        "d": "Length checking"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "Item assignment"
+                }
+            ]
+        },
+        {
+            "section_name": "List Comprehension Questions",
+            "points": 10,
+            "questions": [
+                {
+                    "id": 12,
+                    "question": "What does this list comprehension create?",
+                    "code": "result = [x * 2 for x in range(5)]",
+                    "options": {
+                        "a": "[0, 2, 4, 6, 8]",
+                        "b": "[2, 4, 6, 8, 10]",
+                        "c": "[0, 1, 2, 3, 4]",
+                        "d": "[1, 2, 3, 4, 5]"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "[0, 2, 4, 6, 8]"
+                },
+                {
+                    "id": 13,
+                    "question": "Which list comprehension creates a list of even numbers from 0 to 10 (inclusive)?",
+                    "code": null,
+                    "options": {
+                        "a": "[x for x in range(11) if x % 2 == 0]",
+                        "b": "[x for x in range(10) if x % 2 == 1]",
+                        "c": "[x * 2 for x in range(6)]",
+                        "d": "Both a and c"
+                    },
+                    "correct_answer": "d",
+                    "explanation": "Both a and c"
+                },
+                {
+                    "id": 14,
+                    "question": "What will this list comprehension produce?",
+                    "code": "[x for x in 'Python' if x.lower() in 'aeiou']",
+                    "options": {
+                        "a": "['P', 'y', 't', 'h', 'o', 'n']",
+                        "b": "['y', 'o']",
+                        "c": "['P', 't', 'h', 'n']",
+                        "d": "['o']"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "['y', 'o']"
+                },
+                {
+                    "id": 15,
+                    "question": "What is the set comprehension equivalent of [x**2 for x in range(4)]?",
+                    "code": null,
+                    "options": {
+                        "a": "(x**2 for x in range(4))",
+                        "b": "{x**2 for x in range(4)}",
+                        "c": "[x**2 for x in range(4)]",
+                        "d": "dict(x**2 for x in range(4))"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "{x**2 for x in range(4)}"
+                },
+                {
+                    "id": 16,
+                    "question": "What will this dictionary comprehension create?",
+                    "code": "{x: x**2 for x in range(3)}",
+                    "options": {
+                        "a": "{0: 0, 1: 1, 2: 4}",
+                        "b": "[0, 1, 4]",
+                        "c": "{0, 1, 4}",
+                        "d": "Error"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "{0: 0, 1: 1, 2: 4}"
+                }
+            ]
+        },
+        {
+            "section_name": "Code Analysis Questions",
+            "points": 15,
+            "questions": [
+                {
+                    "id": 17,
+                    "question": "What will this code output?",
+                    "code": "my_tuple = (1, 2, 3)\nmy_tuple[0] = 5\nprint(my_tuple)",
+                    "options": {
+                        "a": "(5, 2, 3)",
+                        "b": "(1, 2, 3)",
+                        "c": "Error",
+                        "d": "[5, 2, 3]"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "Error (tuples are immutable)"
+                },
+                {
+                    "id": 18,
+                    "question": "What will this code output?",
+                    "code": "my_dict = {\"a\": 1, \"b\": 2}\nprint(my_dict.get(\"c\", \"Not found\"))",
+                    "options": {
+                        "a": "None",
+                        "b": "\"Not found\"",
+                        "c": "Error",
+                        "d": "\"c\""
+                    },
+                    "correct_answer": "b",
+                    "explanation": "\"Not found\""
+                },
+                {
+                    "id": 19,
+                    "question": "What will this code output?",
+                    "code": "my_set = {1, 2, 2, 3, 3, 3}\nprint(len(my_set))",
+                    "options": {
+                        "a": "6",
+                        "b": "5",
+                        "c": "3",
+                        "d": "4"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "3"
+                },
+                {
+                    "id": 20,
+                    "question": "What will this code output?",
+                    "code": "my_list = [1, 2, 3]\nmy_list.extend([4, 5])\nprint(my_list)",
+                    "options": {
+                        "a": "[1, 2, 3, [4, 5]]",
+                        "b": "[1, 2, 3, 4, 5]",
+                        "c": "Error",
+                        "d": "[4, 5]"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "[1, 2, 3, 4, 5]"
+                },
+                {
+                    "id": 21,
+                    "question": "What will this code output?",
+                    "code": "my_list = ['a', 'b', 'c']\nprint(my_list[-1])",
+                    "options": {
+                        "a": "'a'",
+                        "b": "'b'",
+                        "c": "'c'",
+                        "d": "Error"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "'c'"
+                },
+                {
+                    "id": 22,
+                    "question": "What will this code output?",
+                    "code": "my_list = [1, 2, 3, 4, 5]\nprint(my_list[1:4])",
+                    "options": {
+                        "a": "[1, 2, 3]",
+                        "b": "[2, 3, 4]",
+                        "c": "[1, 2, 3, 4]",
+                        "d": "[2, 3, 4, 5]"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "[2, 3, 4]"
+                },
+                {
+                    "id": 23,
+                    "question": "What will this code output?",
+                    "code": "set_a = {1, 2, 3}\nset_b = {3, 4, 5}\nprint(set_a & set_b)",
+                    "options": {
+                        "a": "{1, 2, 3, 4, 5}",
+                        "b": "{3}",
+                        "c": "{1, 2}",
+                        "d": "{4, 5}"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "{3}"
+                },
+                {
+                    "id": 24,
+                    "question": "What will this code output?",
+                    "code": "my_tuple = (1, 2, 3)\na, b, c = my_tuple\nprint(b)",
+                    "options": {
+                        "a": "1",
+                        "b": "2",
+                        "c": "3",
+                        "d": "Error"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "2"
+                },
+                {
+                    "id": 25,
+                    "question": "What will this code output?",
+                    "code": "nested_dict = {\"person1\": {\"name\": \"Alice\", \"age\": 30}}\nprint(nested_dict[\"person1\"][\"name\"])",
+                    "options": {
+                        "a": "Alice",
+                        "b": "30",
+                        "c": "person1",
+                        "d": "Error"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "Alice"
+                },
+                {
+                    "id": 26,
+                    "question": "What will this code output?",
+                    "code": "my_list = [1, 2, 3]\nnew_list = list(my_list)\nnew_list.append(4)\nprint(len(my_list))",
+                    "options": {
+                        "a": "3",
+                        "b": "4",
+                        "c": "Error",
+                        "d": "None"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "3"
+                }
+            ]
+        },
+        {
+            "section_name": "True/False Questions",
+            "points": 10,
+            "questions": [
+                {
+                    "id": 27,
+                    "question": "Lists can contain elements of different data types. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "True"
+                },
+                {
+                    "id": 28,
+                    "question": "Dictionary keys must be immutable. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "True"
+                },
+                {
+                    "id": 29,
+                    "question": "Sets maintain the insertion order of elements. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "False"
+                },
+                {
+                    "id": 30,
+                    "question": "Tuples can be used as dictionary keys. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "True"
+                },
+                {
+                    "id": 31,
+                    "question": "List comprehensions are always faster than regular for loops. (T/F)",
+                    "code": null,
+                    "options": {
+                        "a": "True",
+                        "b": "False"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "False"
+                }
+            ]
+        }
+    ]
+}
