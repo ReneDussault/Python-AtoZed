@@ -18,7 +18,7 @@
                         "d": "<!-- This is a comment -->"
                     },
                     "correct_answer": "b",
-                    "explanation": "# This is a comment"
+                    "explanation": "In python, comments are created using the hash symbol (#) or for a multiline comment, triple quotes (\"\"\" or ''')."
                 },
                 {
                     "id": 2,
@@ -31,7 +31,7 @@
                         "d": "4"
                     },
                     "correct_answer": "c",
-                    "explanation": "3"
+                    "explanation": "Floor division (//) returns the largest integer less than or equal to the division result, which is 3."
                 },
                 {
                     "id": 3,
@@ -44,7 +44,7 @@
                         "d": "exp"
                     },
                     "correct_answer": "b",
-                    "explanation": "**"
+                    "explanation": "In python, exponentiation is done using the double asterisk (**) operator."
                 },
                 {
                     "id": 4,
@@ -57,7 +57,7 @@
                         "d": "is"
                     },
                     "correct_answer": "b",
-                    "explanation": "=="
+                    "explanation": "In python, the comparison operator for equality is '=='. The single equals sign '=' is used for assignment."
                 },
                 {
                     "id": 5,
@@ -70,7 +70,7 @@
                         "d": "variable2"
                     },
                     "correct_answer": "c",
-                    "explanation": "2variable"
+                    "explanation": "Variable names in Python cannot start with a number. They can contain letters, numbers, and underscores, but must not begin with a digit."
                 },
                 {
                     "id": 6,
@@ -83,11 +83,11 @@
                         "d": "<!-- comment -->"
                     },
                     "correct_answer": "b",
-                    "explanation": "\"\"\"comment\"\"\""
+                    "explanation": "In Python, multiline comments or docstrings are enclosed in triple quotes (\"\"\" or '''). This is often used for documentation purposes."
                 },
                 {
                     "id": 7,
-                    "question": "Which data type would '3.14' be in Python?",
+                    "question": "Which data type would 3.14 be in Python?",
                     "code": null,
                     "options": {
                         "a": "int",
@@ -96,7 +96,7 @@
                         "d": "bool"
                     },
                     "correct_answer": "b",
-                    "explanation": "float"
+                    "explanation": "'3.14' is a floating-point number, which is represented as a float in Python. Integers are whole numbers without a decimal point, while strings are enclosed in quotes."
                 },
                 {
                     "id": 8,
@@ -109,7 +109,7 @@
                         "d": "42"
                     },
                     "correct_answer": "a",
-                    "explanation": "<class 'int'>"
+                    "explanation": "`type(42)` returns `<class 'int'>` because 42 is an integer in Python. The `type()` function returns the type of the object passed to it."
                 },
                 {
                     "id": 9,
@@ -122,7 +122,7 @@
                         "d": "x -= 5"
                     },
                     "correct_answer": "b",
-                    "explanation": "x += 5"
+                    "explanation": "The `+=` operator adds the right operand to the left operand and assigns the result to the left operand. So `x += 5` is equivalent to `x = x + 5`."
                 },
                 {
                     "id": 10,
@@ -135,7 +135,7 @@
                         "d": "Error"
                     },
                     "correct_answer": "c",
-                    "explanation": "'53'"
+                    "explanation": "In Python, when you use the `+` operator with strings, it concatenates them. So '5' + '3' results in '53'. If you want to add numbers, you need to convert them to integers or floats first."
                 }
             ]
         },
@@ -152,7 +152,7 @@
                         "b": "False"
                     },
                     "correct_answer": "a",
-                    "explanation": "True"
+                    "explanation": "In python, variable names and keywords are case-sensitive. For example, `Variable` and `variable` would be considered different identifiers."
                 },
                 {
                     "id": 12,
@@ -163,18 +163,18 @@
                         "b": "False"
                     },
                     "correct_answer": "a",
-                    "explanation": "True"
+                    "explanation": "The `print(*objects, sep=' ', end='\n', ...)` function in Python adds a space between multiple arguments by default. You can change this behavior using the `sep` parameter."
                 },
                 {
                     "id": 13,
-                    "question": "`5.0` and `5` are the same data type in Python. (T/F)",
+                    "question": "5.0 and 5 are the same data type in Python. (T/F)",
                     "code": null,
                     "options": {
                         "a": "True",
                         "b": "False"
                     },
                     "correct_answer": "b",
-                    "explanation": "False"
+                    "explanation": "One is a float (5.0) and the other is an integer (5). They are different data types in Python. The float type can represent decimal numbers, while the int type represents whole numbers."
                 },
                 {
                     "id": 14,
@@ -185,7 +185,7 @@
                         "b": "False"
                     },
                     "correct_answer": "a",
-                    "explanation": "True"
+                    "explanation": "Both single quotes (' ') and double quotes (\" \") can be used to create strings in Python. They are interchangeable, allowing for flexibility in string creation."
                 },
                 {
                     "id": 15,
@@ -196,7 +196,7 @@
                         "b": "False"
                     },
                     "correct_answer": "b",
-                    "explanation": "False"
+                    "explanation": "Indentation is not optional in Python. It is used to define code blocks, such as those for functions, loops, and conditionals. Incorrect indentation will lead to syntax errors."
                 },
                 {
                     "id": 16,
@@ -207,7 +207,7 @@
                         "b": "False"
                     },
                     "correct_answer": "b",
-                    "explanation": "False"
+                    "explanation": "In python, indentation is used to define code blocks, not curly braces. Curly braces are used for sets, dictionaries and in f-strings for formatting."
                 },
                 {
                     "id": 17,
@@ -218,7 +218,7 @@
                         "b": "False"
                     },
                     "correct_answer": "b",
-                    "explanation": "False"
+                    "explanation": "In python, using numbers at the beginning of variable names is not allowed. Variable names must start with a letter (a-z, A-Z) or an underscore (_). They can contain letters, numbers, and underscores, but cannot start with a number."
                 },
                 {
                     "id": 18,
@@ -229,7 +229,7 @@
                         "b": "False"
                     },
                     "correct_answer": "a",
-                    "explanation": "True"
+                    "explanation": "The `help()` function in Python provides access to the documentation of modules, functions, classes, and other objects. It is a built-in function that can be very useful for understanding how to use different parts of Python."
                 },
                 {
                     "id": 19,
@@ -240,7 +240,7 @@
                         "b": "False"
                     },
                     "correct_answer": "a",
-                    "explanation": "True"
+                    "explanation": "In python, types are determined at runtime, meaning you do not need to declare the type of a variable when you create it. This allows for more flexibility but can also lead to runtime errors if types are not handled correctly. Type hinting is available in Python 3.5 and later, but it is optional and does not enforce type checking at runtime."
                 },
                 {
                     "id": 20,
@@ -251,7 +251,7 @@
                         "b": "False"
                     },
                     "correct_answer": "b",
-                    "explanation": "False"
+                    "explanation": "It can also be used with strings and lists. For example, `x += 1` adds 1 to `x`, while `s += 'a'` appends 'a' to the string `s`, and `lst += [4]` appends 4 to the list `lst`. The `+=` operator modifies the object in place, which can be more efficient than creating a new object."
                 }
             ]
         },
@@ -283,7 +283,7 @@
                         "d": "Error"
                     },
                     "correct_answer": "a",
-                    "explanation": "Hello, Python!"
+                    "explanation": "Using an f-string, the variable `name` is evaluated and replaced with its value, resulting in 'Hello, Python!'."
                 },
                 {
                     "id": 23,
@@ -296,7 +296,7 @@
                         "d": "None"
                     },
                     "correct_answer": "b",
-                    "explanation": "False"
+                    "explanation": "Evaluating the expression `(5 > 3)` returns `True`, but `(2 < 1)` returns `False`. The `and` operator requires both conditions to be `True` for the result to be `True`, so the final result is `False`."
                 },
                 {
                     "id": 24,
@@ -309,7 +309,7 @@
                         "d": "Error"
                     },
                     "correct_answer": "b",
-                    "explanation": "15"
+                    "explanation": "The `+=` operator adds the right operand to the left operand and assigns the result to the left operand. So `x += 5` is equivalent to `x = x + 5`."
                 },
                 {
                     "id": 25,
@@ -322,7 +322,7 @@
                         "d": "Hello - World"
                     },
                     "correct_answer": "b",
-                    "explanation": "Hello-World"
+                    "explanation": "Modifying the `sep` parameter in the `print()` function changes the separator between multiple arguments. By default, it is a space, but here it is set to a hyphen ('-'). Therefore, the output will be 'Hello-World'."
                 },
                 {
                     "id": 26,
@@ -335,7 +335,7 @@
                         "d": "8"
                     },
                     "correct_answer": "b",
-                    "explanation": "9"
+                    "explanation": "The `**` operator is used for exponentiation in Python. So `3 ** 2` means 3 raised to the power of 2, which equals 9."
                 },
                 {
                     "id": 27,
@@ -348,7 +348,7 @@
                         "d": "Error"
                     },
                     "correct_answer": "a",
-                    "explanation": "P"
+                    "explanation": "The first character of the string 'Python' is 'P'. In Python, string indexing starts at 0, so `text[0]` accesses the first character."
                 },
                 {
                     "id": 28,
@@ -361,7 +361,7 @@
                         "d": "Error"
                     },
                     "correct_answer": "b",
-                    "explanation": "False"
+                    "explanation": "The comparison operator and returns `True` only if both operands are `True`. Since `y` is `False`, the result of `x and y` is `False`."
                 },
                 {
                     "id": 29,
@@ -374,7 +374,7 @@
                         "d": "False"
                     },
                     "correct_answer": "c",
-                    "explanation": "True"
+                    "explanation": "The expression `num >= 5` checks if `num` is greater than or equal to 5. Since `num` is 7, which is greater than 5, the output will be `True`."
                 },
                 {
                     "id": 30,
@@ -387,7 +387,7 @@
                         "d": "Error"
                     },
                     "correct_answer": "b",
-                    "explanation": "4"
+                    "explanation": "The `len()` function returns the number of characters in the string. The string 'code' has 4 characters, so `len(word)` will return 4."
                 }
             ]
         }
