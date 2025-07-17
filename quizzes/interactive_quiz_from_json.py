@@ -43,10 +43,10 @@ class PythonQuiz:
         while True:
             answer = input("\nYour answer: ").lower().strip()
             
-            if answer == 'quit':
+            if answer in ["quit", "exit"]:
                 return False
                 
-            if answer in ['a', 'b', 'c', 'd']:
+            if answer in ["a", "b", "c", "d"]:
                 correct_answer = question_data["correct_answer"].lower()
                 if answer == correct_answer:
                     print("✅ Correct!")
