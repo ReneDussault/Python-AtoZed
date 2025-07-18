@@ -20,7 +20,7 @@
   - [x] range() function
   - [x] enumerate() and zip()
 - [x] Add detailed explanations for each question
-- [ ] verify zip()
+- [x] verify zip() .. wasn't there, added
 - [ ] verify explanations
 
 ### **Section 4: Functions**
