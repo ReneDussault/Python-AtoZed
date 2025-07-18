@@ -1,0 +1,395 @@
+{
+    "quiz_title": "Section 4: Functions Quiz",
+    "time_limit": "30 minutes",
+    "total_points": 30,
+    "sections": [
+        {
+            "section_name": "Multiple Choice Questions",
+            "points": 15,
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Which keyword is used to define a function in Python?",
+                    "options": {
+                        "a": "function",
+                        "b": "def",
+                        "c": "func",
+                        "d": "define"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "The 'def' keyword is used to define a function in Python. This is shown in the theory with examples like 'def example_function():'. The syntax is 'def function_name():' followed by the function body."
+                },
+                {
+                    "id": 2,
+                    "question": "What does the `return` statement do?",
+                    "options": {
+                        "a": "Prints a value",
+                        "b": "Ends function execution and sends back a value",
+                        "c": "Creates a variable",
+                        "d": "Starts a function"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "The return statement ends function execution and sends the specified value back to where the function was called. As explained in the theory: 'The return statement allows a function to send back a value to the caller.'"
+                },
+                {
+                    "id": 3,
+                    "question": "What happens if a function doesn't have a return statement?",
+                    "options": {
+                        "a": "Error occurs",
+                        "b": "Returns None",
+                        "c": "Returns 0",
+                        "d": "Returns empty string"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "If a function doesn't have a return statement, Python automatically returns None. This is the default behavior for functions that don't explicitly return a value."
+                },
+                {
+                    "id": 4,
+                    "question": "Which is the correct syntax for a lambda function that adds two numbers?",
+                    "options": {
+                        "a": "lambda x, y: x + y",
+                        "b": "lambda(x, y): x + y",
+                        "c": "def lambda x, y: x + y",
+                        "d": "lambda x + y"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "The correct syntax for a lambda function is 'lambda parameters: expression'. The theory shows this exact example: 'add_lambda = lambda x, y: x + y'. Lambda functions are anonymous functions defined with the lambda keyword."
+                },
+                {
+                    "id": 5,
+                    "question": "What is the main advantage of using functions?",
+                    "options": {
+                        "a": "Faster execution",
+                        "b": "Less memory usage",
+                        "c": "Code reusability",
+                        "d": "Better graphics"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "The main advantage of functions is code reusability. Functions allow you to write code once and use it multiple times, making your programs more modular and easier to maintain."
+                },
+                {
+                    "id": 6,
+                    "question": "How do you call a function named 'greet' with no parameters?",
+                    "options": {
+                        "a": "greet",
+                        "b": "greet()",
+                        "c": "call greet",
+                        "d": "greet[]"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "To call a function, you use the function name followed by parentheses. Even if there are no parameters, the parentheses are required. The theory shows this with 'example_function()' calls."
+                },
+                {
+                    "id": 7,
+                    "question": "What are the values passed to a function called?",
+                    "options": {
+                        "a": "Parameters",
+                        "b": "Arguments",
+                        "c": "Variables",
+                        "d": "Returns"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "Values passed when calling a function are 'arguments', while placeholders in the function definition are 'parameters'."
+                },
+                {
+                    "id": 8,
+                    "question": "What are lambda functions also known as?",
+                    "options": {
+                        "a": "Named functions",
+                        "b": "Anonymous functions",
+                        "c": "Class functions",
+                        "d": "Method functions"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "Lambda functions are also known as anonymous functions because they don't have a name. The theory states: 'A lambda function is an anonymous function defined with the lambda keyword.'"
+                },
+                {
+                    "id": 9,
+                    "question": "Which statement about lambda functions is correct?",
+                    "options": {
+                        "a": "They can have multiple expressions",
+                        "b": "They can only have one expression",
+                        "c": "They must have a return statement",
+                        "d": "They cannot take arguments"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "Lambda functions can only have one expression. The theory explains: 'It can take any number of arguments but can only have one expression.' They automatically return the result of that expression."
+                },
+                {
+                    "id": 10,
+                    "question": "In the function definition 'def greet(name):', what is 'name'?",
+                    "options": {
+                        "a": "An argument",
+                        "b": "A parameter",
+                        "c": "A return value",
+                        "d": "A variable"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "In the function definition, 'name' is a parameter. Parameters are placeholders in the function definition that will receive values (arguments) when the function is called."
+                },
+                {
+                    "id": 11,
+                    "question": "What is a docstring?",
+                    "options": {
+                        "a": "A type of string variable",
+                        "b": "A multiline comment that documents a function",
+                        "c": "A function parameter",
+                        "d": "A return statement"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "A docstring is a multiline comment that documents a function. The theory shows this in the example function with triple quotes explaining what the function does. It's accessed with help() or __doc__."
+                },
+                {
+                    "id": 12,
+                    "question": "How many expressions can a lambda function contain?",
+                    "options": {
+                        "a": "None",
+                        "b": "One",
+                        "c": "Two",
+                        "d": "Unlimited"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "A lambda function can contain only one expression. The theory clearly states: 'It can take any number of arguments but can only have one expression.' This is a key limitation of lambda functions."
+                },
+                {
+                    "id": 13,
+                    "question": "What happens when you call a function that prints but doesn't return anything?",
+                    "options": {
+                        "a": "It returns the printed value",
+                        "b": "It returns None",
+                        "c": "It returns an empty string",
+                        "d": "It causes an error"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "When a function prints but doesn't have a return statement, it returns None. This is demonstrated in the theory where functions without explicit return statements automatically return None."
+                },
+                {
+                    "id": 14,
+                    "question": "What keyword is used to define a lambda function?",
+                    "options": {
+                        "a": "def",
+                        "b": "function",
+                        "c": "lambda",
+                        "d": "anonymous"
+                    },
+                    "correct_answer": "c",
+                    "explanation": "The 'lambda' keyword is used to define lambda functions. The theory shows: 'add_lambda = lambda x, y: x + y' and explains that lambda functions are defined with the lambda keyword."
+                },
+                {
+                    "id": 15,
+                    "question": "Which describes functions best?",
+                    "options": {
+                        "a": "Blocks of reusable code that perform specific tasks",
+                        "b": "Variables that store values",
+                        "c": "Loops that repeat code",
+                        "d": "Conditions that check values"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "Functions are blocks of reusable code that perform specific tasks. The theory demonstrates this by showing how functions can be defined once and called multiple times to perform the same operation."
+                }
+            ]
+        },
+        {
+            "section_name": "Code Analysis Questions",
+            "points": 10,
+            "questions": [
+                {
+                    "id": 16,
+                    "question": "What will this function return?",
+                    "code": "def mystery(x):\n    return x * 2\n\nresult = mystery(5)",
+                    "options": {
+                        "a": "5",
+                        "b": "10",
+                        "c": "25",
+                        "d": "Error"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "The function takes x=5 and returns x*2, which is 5*2=10. The return statement sends this value back to the caller, so result will be 10."
+                },
+                {
+                    "id": 17,
+                    "question": "What will this code output?",
+                    "code": "def greet(name=\"World\"):\n    return f\"Hello, {name}!\"\n\nprint(greet())",
+                    "options": {
+                        "a": "Hello, !",
+                        "b": "Hello, World!",
+                        "c": "Error",
+                        "d": "Hello, name!"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "The function has a default parameter value of 'World'. When called without arguments, it uses the default value, so it returns 'Hello, World!' which gets printed."
+                },
+                {
+                    "id": 18,
+                    "question": "What will this code output?",
+                    "code": "def add(a, b):\n    print(a + b)\n\nresult = add(3, 4)\nprint(result)",
+                    "options": {
+                        "a": "7\\nNone",
+                        "b": "7\\n7",
+                        "c": "None\\n7",
+                        "d": "7"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "The function prints 7 (3+4) but doesn't return anything, so it returns None by default. First 7 is printed by the function, then None is printed from the result variable."
+                },
+                {
+                    "id": 19,
+                    "question": "What will this lambda function return when called with (3, 4)?",
+                    "code": "multiply = lambda x, y: x * y\nresult = multiply(3, 4)",
+                    "options": {
+                        "a": "7",
+                        "b": "12",
+                        "c": "34",
+                        "d": "Error"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "The lambda function multiplies x and y. With arguments 3 and 4, it returns 3*4=12. Lambda functions automatically return the result of their expression."
+                },
+                {
+                    "id": 20,
+                    "question": "What will this code output?",
+                    "code": "def example():\n    \"\"\"This is a docstring\"\"\"\n    return \"Hello\"\n\nprint(example())",
+                    "options": {
+                        "a": "This is a docstring",
+                        "b": "Hello",
+                        "c": "None",
+                        "d": "Error"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "The function has a docstring (which is just documentation) and returns 'Hello'. When called, it returns 'Hello' which gets printed. The docstring doesn't affect the function's execution."
+                },
+                {
+                    "id": 21,
+                    "question": "What happens with this code?",
+                    "code": "def test():\n    x = 5\n\nresult = test()\nprint(result)",
+                    "options": {
+                        "a": "Prints 5",
+                        "b": "Prints None",
+                        "c": "Error",
+                        "d": "Prints x"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "The function assigns x=5 but doesn't return anything. Functions without a return statement automatically return None, so None gets printed."
+                },
+                {
+                    "id": 22,
+                    "question": "What will this code output?",
+                    "code": "def calculate(x):\n    return x + 10\n\nprint(calculate(5))\nprint(calculate(3))",
+                    "options": {
+                        "a": "15\\n13",
+                        "b": "5\\n3",
+                        "c": "10\\n10",
+                        "d": "Error"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "The function adds 10 to the input. First call: calculate(5) returns 5+10=15. Second call: calculate(3) returns 3+10=13. Both results are printed on separate lines."
+                },
+                {
+                    "id": 23,
+                    "question": "What does this lambda function do?",
+                    "code": "square = lambda x: x * x\nprint(square(4))",
+                    "options": {
+                        "a": "Prints 8",
+                        "b": "Prints 16",
+                        "c": "Prints 4",
+                        "d": "Error"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "The lambda function squares its input (x * x). When called with 4, it returns 4*4=16, which gets printed."
+                },
+                {
+                    "id": 24,
+                    "question": "What will this code output?",
+                    "code": "def greet(name):\n    print(f\"Hello, {name}!\")\n\ngreet(\"Alice\")",
+                    "options": {
+                        "a": "Hello, Alice!",
+                        "b": "name",
+                        "c": "Alice",
+                        "d": "Error"
+                    },
+                    "correct_answer": "a",
+                    "explanation": "The function takes the parameter 'name' with value 'Alice' and prints it using an f-string, resulting in 'Hello, Alice!' being printed."
+                },
+                {
+                    "id": 25,
+                    "question": "What will this code output?",
+                    "code": "def add_numbers(a, b):\n    result = a + b\n    return result\n\nprint(add_numbers(2, 3))",
+                    "options": {
+                        "a": "result",
+                        "b": "5",
+                        "c": "a + b",
+                        "d": "2, 3"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "The function adds the two parameters (2+3=5) stores it in result, and returns it. The returned value 5 is then printed."
+                }
+            ]
+        },
+        {
+            "section_name": "Advanced Function Concepts",
+            "points": 5,
+            "questions": [
+                {
+                    "id": 26,
+                    "question": "What is the purpose of the `help()` function when used with user-defined functions?",
+                    "options": {
+                        "a": "To execute the function",
+                        "b": "To display the function's docstring and information",
+                        "c": "To delete the function",
+                        "d": "To copy the function"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "The help() function displays documentation about the function, including its docstring. The theory shows this with help(example) displaying the function's docstring and signature information."
+                },
+                {
+                    "id": 27,
+                    "question": "How are lambda functions typically used?",
+                    "options": {
+                        "a": "For complex, multi-line operations",
+                        "b": "For short, throwaway functions",
+                        "c": "To replace all regular functions",
+                        "d": "Only for mathematical operations"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "Lambda functions are typically used for short, throwaway functions. The theory states: 'Lambda functions are often used for short, throwaway functions that are not needed elsewhere in the code.'"
+                },
+                {
+                    "id": 28,
+                    "question": "What makes lambda functions similar to list comprehensions?",
+                    "options": {
+                        "a": "They both use square brackets",
+                        "b": "They are both one-liners that provide concise syntax",
+                        "c": "They both create lists",
+                        "d": "They both use the lambda keyword"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "Both lambda functions and list comprehensions are concise, one-liner syntax features. The theory mentions: 'It's a slick one-liner just like list comprehensions.'"
+                },
+                {
+                    "id": 29,
+                    "question": "What happens when you access a function's `__doc__` attribute?",
+                    "options": {
+                        "a": "It calls the function",
+                        "b": "It returns the function's docstring",
+                        "c": "It returns the function's code",
+                        "d": "It returns the function's parameters"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "The __doc__ attribute returns the function's docstring. The theory demonstrates this with 'print(example.__doc__)' which prints the docstring of the function."
+                },
+                {
+                    "id": 30,
+                    "question": "According to the theory, what is the relationship between function definition and function call?",
+                    "options": {
+                        "a": "They are the same thing",
+                        "b": "Definition creates the function, call executes it",
+                        "c": "Call creates the function, definition executes it",
+                        "d": "Both happen automatically"
+                    },
+                    "correct_answer": "b",
+                    "explanation": "Function definition (using 'def') creates the function, while function call (using parentheses) executes it. The theory shows this pattern throughout section 4 with examples like defining greet() and then calling greet('Alice')."
+                }
+            ]
+        }
+    ]
+}
