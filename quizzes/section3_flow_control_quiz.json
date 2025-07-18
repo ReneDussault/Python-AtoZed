@@ -135,7 +135,7 @@
             "d": "Both b and c"
           },
           "correct_answer": "d",
-          "explanation": "range(5) generates [0,1,2,3,4] (5 numbers starting from 0), while range(1,5) generates [1,2,3,4] (4 numbers starting from 1). So the first includes 0 and generates more numbers."
+          "explanation": "range(5) generates [0,1,2,3,4] (5 numbers total), while range(1,5) generates [1,2,3,4] (4 numbers total). The difference is that range(5) includes 0 as the starting point (by default), giving it one more number than range(1,5)."
         },
         {
           "id": 11,
@@ -350,12 +350,12 @@
           "code": "x = 10\nwhile x > 5:\n    x -= 3\n    if x == 7:\n        continue\n    print(x)",
           "options": {
             "a": "7 4 1",
-            "b": "4 1",
+            "b": "4",
             "c": "7 4",
             "d": "10 7 4 1"
           },
           "correct_answer": "b",
-          "explanation": "x starts at 10. First iteration: x=7, continue skips print. Second iteration: x=4, prints 4. Third iteration: x=1, prints 1. Then x=1 is not > 5, so loop ends."
+          "explanation": "x starts at 10. First iteration: x=7, continue skips print. Second iteration: x=4, prints 4. Then x=4 is not > 5, so loop ends."
         },
         {
           "id": 27,
