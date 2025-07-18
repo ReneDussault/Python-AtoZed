@@ -181,18 +181,15 @@ def run_json_quiz(file_path, quiz_name, num_questions=None, mode="random"):
     quiz.end_quiz()
 
 
-def section1_quiz():
-    """Section 1: Basic Syntax Quiz with different modes"""
-    file_path = "quizzes/section1_basic_syntax_quiz.json"
-    base_name = "Section 1: Basic Syntax Quiz"
-    
-    print(f"\n🎯 {base_name}")
+def create_quiz_mode_selector(section_name, file_path, total_questions=30):
+    """Generic quiz mode selector for JSON quizzes"""
+    print(f"\n🎯 {section_name}")
     print("="*50)
     print("Choose your quiz mode:")
     print("1. Flash Quiz (5 questions) - Quick review")
     print("2. Practice Quiz (10 questions) - Focused practice") 
-    print("3. Standard Quiz (20 questions) - Comprehensive review")
-    print("4. In-Depth Quiz (All 30 questions) - Complete assessment")
+    print("3. Standard Quiz (15 questions) - Balanced review")
+    print(f"4. In-Depth Quiz (All {total_questions} questions) - Complete assessment")
     print("="*50)
     
     choice = input("Select mode (1-4): ").strip()
@@ -200,71 +197,62 @@ def section1_quiz():
     quiz_modes = {
         "1": (5, "Flash Quiz"),
         "2": (10, "Practice Quiz"),
-        "3": (20, "Standard Quiz"),
+        "3": (15, "Standard Quiz"),
         "4": (None, "In-Depth Quiz")  # None means all questions
     }
     
     if choice in quiz_modes:
         num_questions, mode_name = quiz_modes[choice]
-        quiz_name = f"{base_name} - {mode_name}"
+        quiz_name = f"{section_name} - {mode_name}"
         run_json_quiz(file_path, quiz_name, num_questions, "random")
     else:
         print("❌ Invalid choice! Please select 1-4.")
+
+
+def section1_quiz():
+    """Section 1: Basic Syntax Quiz"""
+    file_path = "quizzes/section1_basic_syntax_quiz.json"
+    section_name = "Section 1: Basic Syntax Quiz"
+    create_quiz_mode_selector(section_name, file_path, 30)
 
 
 def section2_quiz():
+    """Section 2: Data Structures Quiz"""
     file_path = "quizzes/section2_data_structures_quiz.json"  
-    base_name = "Section 2: Data Structures Quiz"
-    
-    print(f"\n🎯 {base_name}")
-    print("="*50)
-    print("Choose your quiz mode:")
-    print("1. Flash Quiz (5 questions) - Quick review")
-    print("2. Practice Quiz (10 questions) - Focused practice") 
-    print("3. Standard Quiz (20 questions) - Comprehensive review")
-    print("4. In-Depth Quiz (All 30 questions) - Complete assessment")
-    print("="*50)
-    
-    choice = input("Select mode (1-4): ").strip()
-    
-    quiz_modes = {
-        "1": (5, "Flash Quiz"),
-        "2": (10, "Practice Quiz"),
-        "3": (20, "Standard Quiz"),
-        "4": (None, "In-Depth Quiz")  # None means all questions
-    }
-    
-    if choice in quiz_modes:
-        num_questions, mode_name = quiz_modes[choice]
-        quiz_name = f"{base_name} - {mode_name}"
-        run_json_quiz(file_path, quiz_name, num_questions, "random")
-    else:
-        print("❌ Invalid choice! Please select 1-4.")
+    section_name = "Section 2: Data Structures Quiz"
+    create_quiz_mode_selector(section_name, file_path, 30)
 
 
 def section3_quiz():
-    file_path = "quizzes/Section3_Flow_Control_Quiz.md"  
-    print("📝 Section 3 quiz coming soon! (Will use MD format for now)")
+    """Section 3: Flow Control Quiz"""
+    file_path = "quizzes/section3_flow_control_quiz.json"  
+    section_name = "Section 3: Flow Control Quiz"
+    create_quiz_mode_selector(section_name, file_path, 30)
 
 
 def section4_quiz():
-    file_path = "quizzes/Section4_Functions_Quiz.md"  
-    print("📝 Section 4 quiz coming soon! (Will use MD format for now)")
+    """Section 4: Functions Quiz"""
+    file_path = "quizzes/section4_functions_quiz.json"  
+    section_name = "Section 4: Functions Quiz"
+    create_quiz_mode_selector(section_name, file_path, 30)
 
 
 def section5_quiz():
-    file_path = "quizzes/Section5_OOP_Quiz.md"  
-    print("📝 Section 5 quiz coming soon! (Will use MD format for now)")
+    """Section 5: OOP Quiz"""
+    file_path = "quizzes/section5_oop_quiz.json"  
+    print("📝 Section 5 quiz coming soon! (Converting to JSON format)")
 
 
 def section6_quiz():
-    file_path = "quizzes/Section6_Modules_Libraries_Quiz.md"  
-    print("📝 Section 6 quiz coming soon! (Will use MD format for now)")
+    """Section 6: Modules & Libraries Quiz"""
+    file_path = "quizzes/section6_modules_libraries_quiz.json"  
+    print("📝 Section 6 quiz coming soon! (Converting to JSON format)")
 
 
 def final_quiz():
-    file_path = "quizzes/Final_Comprehensive_Quiz.md"  
-    print("📝 Final quiz coming soon! (Will use MD format for now)")
+    """Final Comprehensive Quiz"""
+    file_path = "quizzes/final_comprehensive_quiz.json"  
+    print("📝 Final quiz coming soon! (Converting to JSON format)")
 
 
 if __name__ == "__main__":
