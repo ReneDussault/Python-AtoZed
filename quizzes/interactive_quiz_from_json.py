@@ -182,7 +182,7 @@ def run_json_quiz(file_path, quiz_name, num_questions=None, mode="random"):
 
 
 def create_quiz_mode_selector(section_name, file_path, total_questions=30):
-    """Generic quiz mode selector for JSON quizzes"""
+    """Generic quiz mode selector for quiz.JSON"""
     print(f"\n🎯 {section_name}")
     print("="*50)
     print("Choose your quiz mode:")
@@ -211,47 +211,47 @@ def create_quiz_mode_selector(section_name, file_path, total_questions=30):
 
 def section1_quiz():
     """Section 1: Basic Syntax Quiz"""
-    file_path = "quizzes/section1_basic_syntax_quiz.json"
+    file_path = "./section1_basic_syntax_quiz.json"
     section_name = "Section 1: Basic Syntax Quiz"
     create_quiz_mode_selector(section_name, file_path, 30)
 
 
 def section2_quiz():
     """Section 2: Data Structures Quiz"""
-    file_path = "quizzes/section2_data_structures_quiz.json"  
+    file_path = "./section2_data_structures_quiz.json"  
     section_name = "Section 2: Data Structures Quiz"
     create_quiz_mode_selector(section_name, file_path, 30)
 
 
 def section3_quiz():
     """Section 3: Flow Control Quiz"""
-    file_path = "quizzes/section3_flow_control_quiz.json"  
+    file_path = "./section3_flow_control_quiz.json"  
     section_name = "Section 3: Flow Control Quiz"
     create_quiz_mode_selector(section_name, file_path, 30)
 
 
 def section4_quiz():
     """Section 4: Functions Quiz"""
-    file_path = "quizzes/section4_functions_quiz.json"  
+    file_path = "./section4_functions_quiz.json"  
     section_name = "Section 4: Functions Quiz"
     create_quiz_mode_selector(section_name, file_path, 30)
 
 
 def section5_quiz():
     """Section 5: OOP Quiz"""
-    file_path = "quizzes/section5_oop_quiz.json"  
+    file_path = "./section5_oop_quiz.json"  
     print("📝 Section 5 quiz coming soon! (Converting to JSON format)")
 
 
 def section6_quiz():
     """Section 6: Modules & Libraries Quiz"""
-    file_path = "quizzes/section6_modules_libraries_quiz.json"  
+    file_path = "./section6_modules_libraries_quiz.json"  
     print("📝 Section 6 quiz coming soon! (Converting to JSON format)")
 
 
 def final_quiz():
     """Final Comprehensive Quiz"""
-    file_path = "quizzes/final_comprehensive_quiz.json"  
+    file_path = "./final_comprehensive_quiz.json"  
     print("📝 Final quiz coming soon! (Converting to JSON format)")
 
 
