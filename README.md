@@ -215,7 +215,7 @@ Your input helps make this course better for everyone!
 
 ## License
 
-- **Code Examples, scripts, tools **: [MIT License](./LICENSE.txt)
+- **Code Examples, scripts, tools**: [MIT License](./LICENSE.txt)
 - **Course Content**: [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE_CC_BY.txt)
 
 ---
