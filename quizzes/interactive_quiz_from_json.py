@@ -35,10 +35,19 @@ class PythonQuiz:
         
         print()
         
-        # Display options
-        for key, value in question_data["options"].items():
-            if value:  # Only show non-empty options
-                print(f"{key}) {value}")
+        # Handle both old and new option formats
+        options = question_data["options"]
+        if isinstance(options, dict):
+            # Old format: {"a": "option1", "b": "option2", ...}
+            for key, value in options.items():
+                if value:  # Only show non-empty options
+                    print(f"{key}) {value}")
+        elif isinstance(options, list):
+            # New format: ["option1", "option2", "option3", "option4"]
+            option_keys = ['a', 'b', 'c', 'd']
+            for i, option in enumerate(options):
+                if i < len(option_keys) and option:
+                    print(f"{option_keys[i]}) {option}")
         
         while True:
             answer = input("\nYour answer: ").lower().strip()
@@ -47,12 +56,23 @@ class PythonQuiz:
                 return False
                 
             if answer in ["a", "b", "c", "d"]:
-                correct_answer = question_data["correct_answer"].lower()
-                if answer == correct_answer:
+                correct_answer = question_data["correct_answer"]
+                
+                # Handle both string and integer correct answers
+                if isinstance(correct_answer, str):
+                    correct_answer_key = correct_answer.lower()
+                elif isinstance(correct_answer, int):
+                    # Convert 0-based index to letter (0->a, 1->b, etc.)
+                    option_keys = ['a', 'b', 'c', 'd']
+                    correct_answer_key = option_keys[correct_answer] if correct_answer < len(option_keys) else 'a'
+                else:
+                    correct_answer_key = 'a'  # fallback
+                
+                if answer == correct_answer_key:
                     print("✅ Correct!")
                     self.score += 1
                 else:
-                    print(f"❌ Incorrect. The correct answer is {question_data['correct_answer'].upper()}")
+                    print(f"❌ Incorrect. The correct answer is {correct_answer_key.upper()}")
                     print(f"Explanation: {question_data['explanation']}")
                 print()
                 return True
@@ -119,15 +139,21 @@ class JSONQuizLoader:
     
     @staticmethod
     def extract_questions(quiz_data):
-        """Extract all questions from quiz data"""
+        """Extract all questions from quiz data - handles both old and new JSON formats"""
         all_questions = []
         
-        if not quiz_data or 'sections' not in quiz_data:
+        if not quiz_data:
             return all_questions
         
-        for section in quiz_data['sections']:
-            if 'questions' in section:
-                all_questions.extend(section['questions'])
+        # New format: direct questions array
+        if 'questions' in quiz_data:
+            return quiz_data['questions']
+        
+        # Old format: sections with nested questions
+        if 'sections' in quiz_data:
+            for section in quiz_data['sections']:
+                if 'questions' in section:
+                    all_questions.extend(section['questions'])
         
         return all_questions
     
@@ -240,7 +266,8 @@ def section4_quiz():
 def section5_quiz():
     """Section 5: OOP Quiz"""
     file_path = "./section5_oop_quiz.json"  
-    print("📝 Section 5 quiz coming soon! (Converting to JSON format)")
+    section_name = "Section 5: Object-Oriented Programming Quiz"
+    create_quiz_mode_selector(section_name, file_path, 30)
 
 
 def section6_quiz():
@@ -264,9 +291,9 @@ if __name__ == "__main__":
     print("="*40)
     print("1. Section 1: Basic Syntax (JSON)")
     print("2. Section 2: Data Structures (JSON)") 
-    print("3. Section 3: Flow Control (Coming Soon)")
-    print("4. Section 4: Functions (Coming Soon)")
-    print("5. Section 5: OOP (Coming Soon)")
+    print("3. Section 3: Flow Control (JSON)")
+    print("4. Section 4: Functions (JSON)")
+    print("5. Section 5: OOP (JSON)")
     print("6. Section 6: Modules (Coming Soon)")
     print("7. Final Comprehensive Quiz (Coming Soon)")
     print("="*40)
