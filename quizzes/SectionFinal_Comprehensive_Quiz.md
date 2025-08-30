@@ -1,6 +1,6 @@
 # Python A-to-Z Final Comprehensive Quiz
 
-**Time Limit: 100 minutes | Total Points: 180**
+**Time Limit: 100 minutes | Total Points: 195**
 
 ---
 
@@ -637,16 +637,16 @@ d) Error
 
 ## Grading Scale
 
-- 162-180: Excellent (A) - 90-100%
-- 144-161: Good (B) - 80-89%
-- 126-143: Satisfactory (C) - 70-79%
-- 108-125: Needs Improvement (D) - 60-69%
-- Below 108: Needs Significant Review (F) - Below 60%
+- 176-195: Excellent (A) - 90-100%
+- 156-175: Good (B) - 80-89%
+- 137-155: Satisfactory (C) - 70-79%
+- 117-136: Needs Improvement (D) - 60-69%
+- Below 117: Needs Significant Review (F) - Below 60%
 
 ## Study Recommendations by Score:
 
-- **Below 108:** Review all sections, practice basic concepts daily
-- **108-125:** Focus on weak areas identified in quiz, revisit fundamentals
-- **126-143:** Practice advanced problems and real-world applications
-- **144-161:** Explore Python libraries, frameworks, and advanced topics
-- **162-180:** Ready for professional Python development and complex projects!
+- **Below 117:** Review all sections, practice basic concepts daily
+- **117-136:** Focus on weak areas identified in quiz, revisit fundamentals
+- **137-155:** Practice advanced problems and real-world applications
+- **156-175:** Explore Python libraries, frameworks, and advanced topics
+- **176-195:** Ready for professional Python development and complex projects!
