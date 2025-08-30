@@ -6,10 +6,10 @@
       "id": 1,
       "question": "What is the primary purpose of the `__init__` method in a Python class?",
       "options": [
-        "To delete objects from memory",
-        "To initialize object attributes when an instance is created",
         "To define class variables",
-        "To create static methods"
+        "To initialize object attributes when an instance is created",
+        "To create static methods",
+        "To delete objects from memory"
       ],
       "correct_answer": 1,
       "explanation": "The `__init__` method is a constructor that is automatically called when an object is created. It initializes the object's attributes with the provided values, setting up the initial state of the object."
@@ -18,69 +18,69 @@
       "id": 2,
       "question": "Given this class definition:\n```python\nclass Dog:\n    def __init__(self, name, breed):\n        self.name = name\n        self.breed = breed\n    \n    def bark(self):\n        return f\"{self.name} the {self.breed} is barking.\"\n```\nWhat will `Dog(\"Fido\", \"Labrador\").bark()` return?",
       "options": [
-        "\"Fido is barking.\"",
-        "\"Fido the Labrador is barking.\"",
+        "\"Dog is barking.\"",
         "\"The Labrador is barking.\"",
-        "\"Dog is barking.\""
+        "\"Fido is barking.\"",
+        "\"Fido the Labrador is barking.\""
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The bark method uses an f-string that interpolates both `self.name` (\"Fido\") and `self.breed` (\"Labrador\") to create the complete message \"Fido the Labrador is barking.\""
     },
     {
       "id": 3,
       "question": "What is encapsulation in Object-Oriented Programming?",
       "options": [
-        "Creating multiple objects from a single class",
         "Restricting direct access to an object's attributes and methods",
+        "Overloading operators for custom classes",
         "Inheriting methods from a parent class",
-        "Overloading operators for custom classes"
+        "Creating multiple objects from a single class"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Encapsulation is the principle of restricting direct access to an object's internal attributes and methods, providing controlled access through public methods. This protects the object's internal state and ensures data integrity."
     },
     {
       "id": 4,
       "question": "In Python, how do you make an attribute private using naming conventions?",
       "options": [
-        "Prefix it with a single underscore (_)",
         "Prefix it with double underscores (__)",
         "Suffix it with double underscores (__)",
+        "Prefix it with a single underscore (_)",
         "Use the 'private' keyword"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "In Python, attributes prefixed with double underscores (__) are considered private through name mangling. This makes them harder to access directly from outside the class, promoting encapsulation."
     },
     {
       "id": 5,
       "question": "What will happen if you try to access a private attribute directly?\n```python\nclass BankAccount:\n    def __init__(self, balance):\n        self.__balance = balance\n\naccount = BankAccount(1000)\nprint(account.__balance)\n```",
       "options": [
-        "It will print 1000",
         "It will raise an AttributeError",
         "It will print None",
-        "It will print 0"
+        "It will print 0",
+        "It will print 1000"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Accessing a private attribute (prefixed with __) directly from outside the class will raise an AttributeError because Python uses name mangling to make these attributes inaccessible through their original names."
     },
     {
       "id": 6,
       "question": "What is inheritance in Object-Oriented Programming?",
       "options": [
-        "Creating multiple instances of the same class",
         "A class acquiring attributes and methods from another class",
+        "Defining multiple methods with the same name",
         "Hiding implementation details from the user",
-        "Defining multiple methods with the same name"
+        "Creating multiple instances of the same class"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Inheritance allows a class (child/derived class) to acquire attributes and methods from another class (parent/base class). This promotes code reuse and establishes hierarchical relationships between classes."
     },
     {
       "id": 7,
       "question": "Given this inheritance example:\n```python\nclass Vehicle:\n    def __init__(self, make, model):\n        self.make = make\n        self.model = model\n    \n    def start(self):\n        return f\"{self.make} {self.model} is starting.\"\n\nclass Car(Vehicle):\n    def __init__(self, make, model, num_doors):\n        super().__init__(make, model)\n        self.num_doors = num_doors\n```\nWhat does `super().__init__(make, model)` do?",
       "options": [
-        "Creates a new Vehicle object",
-        "Calls the parent class constructor to initialize inherited attributes",
         "Deletes the parent class",
+        "Calls the parent class constructor to initialize inherited attributes",
+        "Creates a new Vehicle object",
         "Creates a copy of the parent class"
       ],
       "correct_answer": 1,
@@ -90,12 +90,12 @@
       "id": 8,
       "question": "What is polymorphism in Object-Oriented Programming?",
       "options": [
-        "Creating multiple constructors for a class",
         "Using a common interface for different data types",
-        "Making attributes private",
-        "Combining multiple classes into one"
+        "Combining multiple classes into one",
+        "Creating multiple constructors for a class",
+        "Making attributes private"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Polymorphism allows objects of different classes to be treated as objects of a common superclass, enabling methods to operate on objects of different types through a shared interface. This provides flexibility and code reuse."
     },
     {
@@ -103,33 +103,33 @@
       "question": "In this polymorphism example:\n```python\nclass Animal:\n    def speak(self):\n        raise NotImplementedError\n\nclass Dog(Animal):\n    def speak(self):\n        return \"Woof!\"\n\nclass Cat(Animal):\n    def speak(self):\n        return \"Meow!\"\n\nanimals = [Dog(), Cat()]\nfor animal in animals:\n    print(animal.speak())\n```\nWhat will be printed?",
       "options": [
         "Woof!\\nWoof!",
-        "Woof!\\nMeow!",
         "Meow!\\nMeow!",
+        "Woof!\\nMeow!",
         "Error"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "Each object in the list calls its own implementation of the speak() method: Dog().speak() returns \"Woof!\" and Cat().speak() returns \"Meow!\", demonstrating polymorphism in action."
     },
     {
       "id": 10,
       "question": "What is composition in Object-Oriented Programming?",
       "options": [
-        "Inheriting from multiple parent classes",
-        "A class containing instances of other classes as attributes",
         "Creating abstract methods",
-        "Overriding parent class methods"
+        "Overriding parent class methods",
+        "Inheriting from multiple parent classes",
+        "A class containing instances of other classes as attributes"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "Composition is a design principle where a class contains instances of other classes as attributes, creating a 'has-a' relationship. This allows building complex objects by combining simpler ones."
     },
     {
       "id": 11,
       "question": "In this composition example:\n```python\nclass Engine:\n    def __init__(self, horsepower):\n        self.horsepower = horsepower\n\nclass Car:\n    def __init__(self, make, engine):\n        self.make = make\n        self.engine = engine\n\nengine = Engine(150)\ncar = Car(\"Toyota\", engine)\n```\nWhat relationship does this demonstrate?",
       "options": [
-        "Car is-a Engine",
-        "Car has-a Engine",
         "Engine is-a Car",
-        "Car inherits from Engine"
+        "Car has-a Engine",
+        "Car inherits from Engine",
+        "Car is-a Engine"
       ],
       "correct_answer": 1,
       "explanation": "This demonstrates composition where Car 'has-a' Engine. The Car class contains an Engine instance as an attribute, rather than inheriting from Engine. This is a 'has-a' relationship typical of composition."
@@ -138,22 +138,22 @@
       "id": 12,
       "question": "What are magic methods (dunder methods) in Python?",
       "options": [
-        "Methods that automatically delete objects",
-        "Special methods that define behavior for built-in operations",
+        "Private methods that cannot be accessed",
         "Methods that can only be called once",
-        "Private methods that cannot be accessed"
+        "Special methods that define behavior for built-in operations",
+        "Methods that automatically delete objects"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "Magic methods (dunder methods) are special methods prefixed and suffixed with double underscores that define how objects behave with built-in operations like addition, string representation, comparison, etc."
     },
     {
       "id": 13,
       "question": "What does the `__str__` magic method do?",
       "options": [
-        "Converts an object to an integer",
+        "Deletes string attributes",
         "Defines the string representation of an object",
-        "Creates a new string object",
-        "Deletes string attributes"
+        "Converts an object to an integer",
+        "Creates a new string object"
       ],
       "correct_answer": 1,
       "explanation": "The `__str__` magic method defines how an object should be represented as a string when printed or converted to a string. It returns a human-readable string representation of the object."
@@ -162,12 +162,12 @@
       "id": 14,
       "question": "Given this class with magic methods:\n```python\nclass Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n    \n    def __str__(self):\n        return f\"Point({self.x}, {self.y})\"\n    \n    def __add__(self, other):\n        return Point(self.x + other.x, self.y + other.y)\n\np1 = Point(2, 3)\np2 = Point(4, 5)\nresult = p1 + p2\n```\nWhat will `str(result)` return?",
       "options": [
-        "Point(2, 3)",
-        "Point(4, 5)",
         "Point(6, 8)",
-        "Point(8, 15)"
+        "Point(8, 15)",
+        "Point(4, 5)",
+        "Point(2, 3)"
       ],
-      "correct_answer": 2,
+      "correct_answer": 0,
       "explanation": "The `__add__` method adds the x and y coordinates: Point(2+4, 3+5) = Point(6, 8). The `__str__` method then formats it as \"Point(6, 8)\"."
     },
     {
@@ -176,8 +176,8 @@
       "options": [
         "They are the same thing",
         "A class is a blueprint, an object is an instance of that class",
-        "An object is a blueprint, a class is an instance",
-        "Classes are for data, objects are for methods"
+        "Classes are for data, objects are for methods",
+        "An object is a blueprint, a class is an instance"
       ],
       "correct_answer": 1,
       "explanation": "A class is a blueprint or template that defines the structure and behavior, while an object is a specific instance created from that class blueprint. You can create multiple objects from one class."
@@ -186,48 +186,48 @@
       "id": 16,
       "question": "What is the purpose of the `self` parameter in Python class methods?",
       "options": [
+        "To access class variables only",
         "To make methods static",
-        "To refer to the current instance of the class",
         "To create new instances",
-        "To access class variables only"
+        "To refer to the current instance of the class"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The `self` parameter refers to the current instance of the class, allowing methods to access and modify the instance's attributes and call other methods on the same object."
     },
     {
       "id": 17,
       "question": "Which of the following best describes the relationship in inheritance?",
       "options": [
-        "has-a relationship",
         "is-a relationship",
+        "contains-a relationship",
         "uses-a relationship",
-        "contains-a relationship"
+        "has-a relationship"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Inheritance represents an 'is-a' relationship. For example, if Car inherits from Vehicle, then Car 'is-a' Vehicle. This is different from composition which represents 'has-a' relationships."
     },
     {
       "id": 18,
       "question": "What will this code output?\n```python\nclass Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n    \n    def area(self):\n        return self.width * self.height\n\nrect = Rectangle(5, 8)\nprint(rect.area())\n```",
       "options": [
-        "13",
         "26",
-        "40",
-        "Error"
+        "Error",
+        "13",
+        "40"
       ],
-      "correct_answer": 2,
+      "correct_answer": 3,
       "explanation": "The area method calculates width * height = 5 * 8 = 40. The method is called on the Rectangle instance with width=5 and height=8."
     },
     {
       "id": 19,
       "question": "In encapsulation, what is the recommended way to access private attributes?",
       "options": [
-        "Access them directly using the private name",
-        "Use public getter and setter methods",
+        "Access them through inheritance only",
         "Use the del keyword",
-        "Access them through inheritance only"
+        "Use public getter and setter methods",
+        "Access them directly using the private name"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "The recommended way to access private attributes is through public getter and setter methods. This provides controlled access while maintaining encapsulation and allowing validation of data."
     },
     {
@@ -247,11 +247,11 @@
       "question": "What is the main advantage of using inheritance?",
       "options": [
         "Faster execution speed",
-        "Code reuse and hierarchical organization",
         "Reduced memory usage",
-        "Automatic error handling"
+        "Automatic error handling",
+        "Code reuse and hierarchical organization"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The main advantage of inheritance is code reuse and hierarchical organization. Child classes can reuse code from parent classes while adding their own specific functionality, reducing code duplication."
     },
     {
@@ -259,93 +259,93 @@
       "question": "Which magic method would you override to make objects of your class comparable with the `==` operator?",
       "options": [
         "__str__",
-        "__eq__",
+        "__init__",
         "__add__",
-        "__init__"
+        "__eq__"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The `__eq__` magic method defines the behavior for the equality operator (==). When you use == to compare two objects, Python calls the `__eq__` method to determine if they are equal."
     },
     {
       "id": 23,
       "question": "What will this polymorphism code print?\n```python\nclass Shape:\n    def area(self):\n        return 0\n\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n    \n    def area(self):\n        return 3.14 * self.radius ** 2\n\nclass Rectangle(Shape):\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n    \n    def area(self):\n        return self.width * self.height\n\nshapes = [Circle(2), Rectangle(3, 4)]\nfor shape in shapes:\n    print(shape.area())\n```",
       "options": [
-        "0\\n0",
         "12.56\\n12",
+        "Error",
         "6.28\\n7",
-        "Error"
+        "0\\n0"
       ],
-      "correct_answer": 1,
-      "explanation": "Circle(2).area() = 3.14 * 2² = 3.14 * 4 = 12.56, and Rectangle(3, 4).area() = 3 * 4 = 12. Each object calls its own implementation of the area method."
+      "correct_answer": 0,
+      "explanation": "Circle(2).area() = 3.14 * 2\u00c2\u00b2 = 3.14 * 4 = 12.56, and Rectangle(3, 4).area() = 3 * 4 = 12. Each object calls its own implementation of the area method."
     },
     {
       "id": 24,
       "question": "What is method overriding in inheritance?",
       "options": [
-        "Creating multiple methods with the same name",
-        "A child class providing a specific implementation of a parent class method",
         "Deleting methods from the parent class",
-        "Making methods private"
+        "Making methods private",
+        "Creating multiple methods with the same name",
+        "A child class providing a specific implementation of a parent class method"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "Method overriding occurs when a child class provides its own implementation of a method that exists in the parent class. The child class method 'overrides' the parent class method for that specific class."
     },
     {
       "id": 25,
       "question": "In this composition example, what does the Car class demonstrate?\n```python\nclass Engine:\n    def start(self):\n        return \"Engine starting\"\n\nclass Car:\n    def __init__(self, engine):\n        self.engine = engine\n    \n    def start(self):\n        return self.engine.start()\n```",
       "options": [
+        "Overriding Engine methods",
         "Inheritance from Engine",
         "Delegation to the Engine object",
-        "Overriding Engine methods",
         "Creating multiple Engine objects"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "The Car class demonstrates delegation by forwarding the start() method call to its Engine object. This is a common pattern in composition where the container object delegates operations to its contained objects."
     },
     {
       "id": 26,
       "question": "What is the difference between instance attributes and class attributes?",
       "options": [
-        "There is no difference",
         "Instance attributes belong to specific objects, class attributes are shared by all instances",
-        "Class attributes are private, instance attributes are public",
-        "Instance attributes are faster to access"
+        "Instance attributes are faster to access",
+        "There is no difference",
+        "Class attributes are private, instance attributes are public"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Instance attributes (defined in __init__ with self) belong to specific object instances and can have different values for each object. Class attributes are defined at the class level and are shared by all instances of the class."
     },
     {
       "id": 27,
       "question": "What will this encapsulation code output?\n```python\nclass BankAccount:\n    def __init__(self, balance):\n        self.__balance = balance\n    \n    def deposit(self, amount):\n        self.__balance += amount\n    \n    def get_balance(self):\n        return self.__balance\n\naccount = BankAccount(100)\naccount.deposit(50)\nprint(account.get_balance())\n```",
       "options": [
-        "100",
-        "150",
+        "Error",
         "50",
-        "Error"
+        "150",
+        "100"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "The account starts with 100, then 50 is deposited (100 + 50 = 150). The get_balance() method returns the current private balance of 150."
     },
     {
       "id": 28,
       "question": "Which of the following is NOT a core principle of Object-Oriented Programming?",
       "options": [
-        "Encapsulation",
         "Inheritance",
-        "Polymorphism",
-        "Compilation"
+        "Compilation",
+        "Encapsulation",
+        "Polymorphism"
       ],
-      "correct_answer": 3,
+      "correct_answer": 1,
       "explanation": "Compilation is not a core principle of OOP. The four main principles of OOP are: Encapsulation (data hiding), Inheritance (code reuse), Polymorphism (common interface), and Abstraction (hiding complexity)."
     },
     {
       "id": 29,
       "question": "What is the purpose of raising `NotImplementedError` in a base class method?",
       "options": [
-        "To handle runtime errors",
+        "To make the method private",
         "To indicate that subclasses must provide their own implementation",
-        "To prevent the class from being instantiated",
-        "To make the method private"
+        "To handle runtime errors",
+        "To prevent the class from being instantiated"
       ],
       "correct_answer": 1,
       "explanation": "Raising `NotImplementedError` in a base class method indicates that the method is abstract and must be implemented by subclasses. It forces derived classes to provide their own specific implementation."

@@ -1,424 +1,434 @@
 {
-    "quiz_title": "Section 2: Data Structures Quiz",
-    "time_limit": "35 minutes",
-    "total_points": 45,
-    "sections": [
+  "quiz_title": "Section 2: Data Structures Quiz",
+  "time_limit": "35 minutes",
+  "total_points": 45,
+  "sections": [
+    {
+      "section_name": "Multiple Choice Questions",
+      "points": 20,
+      "questions": [
         {
-            "section_name": "Multiple Choice Questions",
-            "points": 20,
-            "questions": [
-                {
-                    "id": 1,
-                    "question": "Which data structure is ordered and mutable?",
-                    "code": null,
-                    "options": {
-                        "a": "Tuple",
-                        "b": "Set",
-                        "c": "List",
-                        "d": "Dictionary"
-                    },
-                    "correct_answer": "c",
-                    "explanation": "List is ordered and mutable, meaning you can change its elements and their order."
-                },
-                {
-                    "id": 2,
-                    "question": "What will this code return?",
-                    "code": "my_list = [1, 2, 3]\nmy_list[1]",
-                    "options": {
-                        "a": "1",
-                        "b": "2",
-                        "c": "3",
-                        "d": "Error"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "Indexing starts at 0, so my_list[1] is the second element."
-                },
-                {
-                    "id": 3,
-                    "question": "Which method adds an element to the end of a list?",
-                    "code": null,
-                    "options": {
-                        "a": "my_list.add()",
-                        "b": "my_list.insert()",
-                        "c": "my_list.append()",
-                        "d": "my_list.extend()"
-                    },
-                    "correct_answer": "c",
-                    "explanation": "my_list.append() adds an element to the end of the list. insert() adds at a specific index, extend() adds multiple elements, and add() is not a valid list method."
-                },
-                {
-                    "id": 4,
-                    "question": "What is the main characteristic of a set?",
-                    "code": null,
-                    "options": {
-                        "a": "Ordered",
-                        "b": "Mutable",
-                        "c": "Unique elements only",
-                        "d": "Key-value pairs"
-                    },
-                    "correct_answer": "c",
-                    "explanation": "Sets do not allow duplicate values, and they are unordered collections."
-                },
-                {
-                    "id": 5,
-                    "question": "How do you access the value associated with key 'name' in dictionary person?",
-                    "code": null,
-                    "options": {
-                        "a": "person[name]",
-                        "b": "person[\"name\"]",
-                        "c": "person.name",
-                        "d": "person->name"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "person[\"name\"] is the correct way to access a value in a dictionary using a key. The other options are incorrect syntax."
-                },
-                {
-                    "id": 6,
-                    "question": "What will this code return?",
-                    "code": "len([1, 2, 3, 4])",
-                    "options": {
-                        "a": "3",
-                        "b": "4",
-                        "c": "5",
-                        "d": "Error"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "len() returns the number of elements in a list. Here, it returns 4 because there are four elements in the list."
-                },
-                {
-                    "id": 7,
-                    "question": "Which method removes and returns the last element from a list?",
-                    "code": null,
-                    "options": {
-                        "a": "my_list.remove()",
-                        "b": "my_list.pop()",
-                        "c": "my_list.delete()",
-                        "d": "my_list.discard()"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "my_list.pop() removes and returns the last element of the list. remove() removes a specific element, delete() is not a valid list method, and discard() is used with sets."
-                },
-                {
-                    "id": 8,
-                    "question": "What is the difference between .remove() and .discard()?",
-                    "code": null,
-                    "options": {
-                        "a": "No difference",
-                        "b": ".remove() is for lists, .discard() is for sets",
-                        "c": ".discard() is for lists, .remove() is for sets",
-                        "d": "Both work on all data structures"
-                    },
-                    "correct_answer": "b",
-                    "explanation": ".remove() is for lists, .discard() is for sets"
-                },
-                {
-                    "id": 9,
-                    "question": "Which data structure maintains insertion order in Python 3.7+?",
-                    "code": null,
-                    "options": {
-                        "a": "Set only",
-                        "b": "Dictionary only",
-                        "c": "List and Tuple only",
-                        "d": "List, Tuple, and Dictionary"
-                    },
-                    "correct_answer": "d",
-                    "explanation": "List, Tuple, and Dictionary maintain insertion order in Python 3.7 and later versions. Sets do not maintain order."
-                },
-                {
-                    "id": 10,
-                    "question": "What happens when you try to add a duplicate element to a set?",
-                    "code": null,
-                    "options": {
-                        "a": "Error is raised",
-                        "b": "Element is added twice",
-                        "c": "Nothing happens, set remains unchanged",
-                        "d": "Set is cleared"
-                    },
-                    "correct_answer": "c",
-                    "explanation": "Sets automatically ignore duplicate elements."
-                },
-                {
-                    "id": 11,
-                    "question": "Which operation is NOT supported on tuples?",
-                    "code": null,
-                    "options": {
-                        "a": "Indexing",
-                        "b": "Slicing",
-                        "c": "Item assignment",
-                        "d": "Length checking"
-                    },
-                    "correct_answer": "c",
-                    "explanation": "Tuples are immutable, meaning you cannot change their elements after creation. Indexing, slicing, and length checking are supported."
-                }
-            ]
+          "id": 1,
+          "question": "Which data structure is ordered and mutable?",
+          "code": null,
+          "options": {
+            "a": "Set",
+            "b": "List",
+            "c": "Tuple",
+            "d": "Dictionary"
+          },
+          "correct_answer": "b",
+          "explanation": "List is ordered and mutable, meaning you can change its elements and their order."
         },
         {
-            "section_name": "List Comprehension Questions",
-            "points": 10,
-            "questions": [
-                {
-                    "id": 12,
-                    "question": "What does this list comprehension create?",
-                    "code": "result = [x * 2 for x in range(5)]",
-                    "options": {
-                        "a": "[0, 2, 4, 6, 8]",
-                        "b": "[2, 4, 6, 8, 10]",
-                        "c": "[0, 1, 2, 3, 4]",
-                        "d": "[1, 2, 3, 4, 5]"
-                    },
-                    "correct_answer": "a",
-                    "explanation": "Each number from 0 to 4 is multiplied by 2"
-                },
-                {
-                    "id": 13,
-                    "question": "Which list comprehension creates a list of even numbers from 0 to 10 (inclusive)?",
-                    "code": null,
-                    "options": {
-                        "a": "[x for x in range(11) if x % 2 == 0]",
-                        "b": "[x for x in range(10) if x % 2 == 1]",
-                        "c": "[x * 2 for x in range(6)]",
-                        "d": "Both a and c"
-                    },
-                    "correct_answer": "d",
-                    "explanation": "Option 'a' directly filters even numbers, while option 'c' generates even numbers by multiplying the range by 2."
-                },
-                {
-                    "id": 14,
-                    "question": "What will this list comprehension produce?",
-                    "code": "[x for x in 'Python' if x.lower() in 'aeiou']",
-                    "options": {
-                        "a": "['P', 'y', 't', 'h', 'o', 'n']",
-                        "b": "['y', 'o']",
-                        "c": "['P', 't', 'h', 'n']",
-                        "d": "['o']"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "Only lowercase vowels are generated with this list comprehension, which results in ['y', 'o']."
-                },
-                {
-                    "id": 15,
-                    "question": "What is the set comprehension equivalent of [x**2 for x in range(4)]?",
-                    "code": null,
-                    "options": {
-                        "a": "(x**2 for x in range(4))",
-                        "b": "{x**2 for x in range(4)}",
-                        "c": "[x**2 for x in range(4)]",
-                        "d": "dict(x**2 for x in range(4))"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "Set comprehension uses curly braces, so {x**2 for x in range(4)} creates a set of squares."
-                },
-                {
-                    "id": 16,
-                    "question": "What will this dictionary comprehension create?",
-                    "code": "{x: x**2 for x in range(3)}",
-                    "options": {
-                        "a": "{0: 0, 1: 1, 2: 4}",
-                        "b": "[0, 1, 4]",
-                        "c": "{0, 1, 4}",
-                        "d": "Error"
-                    },
-                    "correct_answer": "a",
-                    "explanation": "{x: x**2 for x in range(3)} creates a dictionary where keys are numbers from 0 to 2 and values are their squares."
-                }
-            ]
+          "id": 2,
+          "question": "What will this code return?",
+          "code": "my_list = [1, 2, 3]\nmy_list[1]",
+          "options": {
+            "a": "2",
+            "b": "Error",
+            "c": "1",
+            "d": "3"
+          },
+          "correct_answer": "a",
+          "explanation": "Indexing starts at 0, so my_list[1] is the second element."
         },
         {
-            "section_name": "Code Analysis Questions",
-            "points": 15,
-            "questions": [
-                {
-                    "id": 17,
-                    "question": "What will this code output?",
-                    "code": "my_tuple = (1, 2, 3)\nmy_tuple[0] = 5\nprint(my_tuple)",
-                    "options": {
-                        "a": "(5, 2, 3)",
-                        "b": "(1, 2, 3)",
-                        "c": "Error",
-                        "d": "[5, 2, 3]"
-                    },
-                    "correct_answer": "c",
-                    "explanation": "Tuples are immutable, meaning you cannot change their elements after creation. Indexing, slicing, and length checking are supported."
-                },
-                {
-                    "id": 18,
-                    "question": "What will this code output?",
-                    "code": "my_dict = {\"a\": 1, \"b\": 2}\nprint(my_dict.get(\"c\", \"Not found\"))",
-                    "options": {
-                        "a": "None",
-                        "b": "\"Not found\"",
-                        "c": "Error",
-                        "d": "\"c\""
-                    },
-                    "correct_answer": "b",
-                    "explanation": "The get() method returns the value for the specified key if it exists, otherwise it returns the default value provided, which is \"Not found\" in this case."
-                },
-                {
-                    "id": 19,
-                    "question": "What will this code output?",
-                    "code": "my_set = {1, 2, 2, 3, 3, 3}\nprint(len(my_set))",
-                    "options": {
-                        "a": "6",
-                        "b": "5",
-                        "c": "3",
-                        "d": "4"
-                    },
-                    "correct_answer": "c",
-                    "explanation": "The count of unique elements in a set is returned. Here, my_set contains 1, 2, and 3, so the length is 3."
-                },
-                {
-                    "id": 20,
-                    "question": "What will this code output?",
-                    "code": "my_list = [1, 2, 3]\nmy_list.extend([4, 5])\nprint(my_list)",
-                    "options": {
-                        "a": "[1, 2, 3, [4, 5]]",
-                        "b": "[1, 2, 3, 4, 5]",
-                        "c": "Error",
-                        "d": "[4, 5]"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "The extend() method adds elements from the iterable (in this case, the list [4, 5]) to the end of the list. So, my_list becomes [1, 2, 3, 4, 5]."
-                },
-                {
-                    "id": 21,
-                    "question": "What will this code output?",
-                    "code": "my_list = ['a', 'b', 'c']\nprint(my_list[-1])",
-                    "options": {
-                        "a": "'a'",
-                        "b": "'b'",
-                        "c": "'c'",
-                        "d": "Error"
-                    },
-                    "correct_answer": "c",
-                    "explanation": "-1 index accesses the last element in the list."
-                },
-                {
-                    "id": 22,
-                    "question": "What will this code output?",
-                    "code": "my_list = [1, 2, 3, 4, 5]\nprint(my_list[1:4])",
-                    "options": {
-                        "a": "[1, 2, 3]",
-                        "b": "[2, 3, 4]",
-                        "c": "[1, 2, 3, 4]",
-                        "d": "[2, 3, 4, 5]"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "This slice skips the first element and returns elements from index 1 to index 4 (exclusive). my_list[start:end(exclusive):step]"
-                },
-                {
-                    "id": 23,
-                    "question": "What will this code output?",
-                    "code": "set_a = {1, 2, 3}\nset_b = {3, 4, 5}\nprint(set_a & set_b)",
-                    "options": {
-                        "a": "{1, 2, 3, 4, 5}",
-                        "b": "{3}",
-                        "c": "{1, 2}",
-                        "d": "{4, 5}"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "The & operator computes the intersection of two sets, which results in a set containing only the elements that are present in both sets."
-                },
-                {
-                    "id": 24,
-                    "question": "What will this code output?",
-                    "code": "my_tuple = (1, 2, 3)\na, b, c = my_tuple\nprint(b)",
-                    "options": {
-                        "a": "1",
-                        "b": "2",
-                        "c": "3",
-                        "d": "Error"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "Tuple unpacking assigns the second element of my_tuple to variable b."
-                },
-                {
-                    "id": 25,
-                    "question": "What will this code output?",
-                    "code": "nested_dict = {\"person1\": {\"name\": \"Alice\", \"age\": 30}}\nprint(nested_dict[\"person1\"][\"name\"])",
-                    "options": {
-                        "a": "Alice",
-                        "b": "30",
-                        "c": "person1",
-                        "d": "Error"
-                    },
-                    "correct_answer": "a",
-                    "explanation": "The expression nested_dict[\"person1\"][\"name\"] accesses the 'name' key within the 'person1' dictionary."
-                },
-                {
-                    "id": 26,
-                    "question": "What will this code output?",
-                    "code": "my_list = [1, 2, 3]\nnew_list = list(my_list)\nnew_list.append(4)\nprint(len(my_list))",
-                    "options": {
-                        "a": "3",
-                        "b": "4",
-                        "c": "Error",
-                        "d": "None"
-                    },
-                    "correct_answer": "a",
-                    "explanation": "The original list my_list remains unchanged, so its length is still 3. The new_list is a separate copy of my_list."
-                }
-            ]
+          "id": 3,
+          "question": "Which method adds an element to the end of a list?",
+          "code": null,
+          "options": {
+            "a": "my_list.extend()",
+            "b": "my_list.append()",
+            "c": "my_list.insert()",
+            "d": "my_list.add()"
+          },
+          "correct_answer": "b",
+          "explanation": "my_list.append() adds an element to the end of the list. insert() adds at a specific index, extend() adds multiple elements, and add() is not a valid list method."
         },
         {
-            "section_name": "True/False Questions",
-            "points": 10,
-            "questions": [
-                {
-                    "id": 27,
-                    "question": "Lists can contain elements of different data types. (T/F)",
-                    "code": null,
-                    "options": {
-                        "a": "True",
-                        "b": "False"
-                    },
-                    "correct_answer": "a",
-                    "explanation": "Integers, floats, strings, sets, tuples, dictionaries, booleans, NoneType (None), functions, classes and even other lists can all be elements of a list."
-                },
-                {
-                    "id": 28,
-                    "question": "Dictionary keys must be immutable. (T/F)",
-                    "code": null,
-                    "options": {
-                        "a": "True",
-                        "b": "False"
-                    },
-                    "correct_answer": "a",
-                    "explanation": "Dictionary keys must be immutable types, such as strings, numbers, or tuples."
-                },
-                {
-                    "id": 29,
-                    "question": "Sets maintain the insertion order of elements. (T/F)",
-                    "code": null,
-                    "options": {
-                        "a": "True",
-                        "b": "False"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "Sets do not maintain the insertion order of elements. They are unordered collections."
-                },
-                {
-                    "id": 30,
-                    "question": "Tuples can be used as dictionary keys. (T/F)",
-                    "code": null,
-                    "options": {
-                        "a": "True",
-                        "b": "False"
-                    },
-                    "correct_answer": "a",
-                    "explanation": "Tuples are immutable and can be used as dictionary keys, while lists cannot."
-                },
-                {
-                    "id": 31,
-                    "question": "List comprehensions are always faster than regular for loops. (T/F)",
-                    "code": null,
-                    "options": {
-                        "a": "True",
-                        "b": "False"
-                    },
-                    "correct_answer": "b",
-                    "explanation": "While list comprehensions can be faster for simple cases, regular for loops may be more efficient for complex operations. And don't forget that readability is also important."
-                }
-            ]
+          "id": 4,
+          "question": "What is the main characteristic of a set?",
+          "code": null,
+          "options": {
+            "a": "Mutable",
+            "b": "Key-value pairs",
+            "c": "Ordered",
+            "d": "Unique elements only"
+          },
+          "correct_answer": "d",
+          "explanation": "Sets do not allow duplicate values, and they are unordered collections."
+        },
+        {
+          "id": 5,
+          "question": "How do you access the value associated with key 'name' in dictionary person?",
+          "code": null,
+          "options": {
+            "a": "person.name",
+            "b": "person[\"name\"]",
+            "c": "person->name",
+            "d": "person[name]"
+          },
+          "correct_answer": "b",
+          "explanation": "person[\"name\"] is the correct way to access a value in a dictionary using a key. The other options are incorrect syntax."
+        },
+        {
+          "id": 6,
+          "question": "What will this code return?",
+          "code": "len([1, 2, 3, 4])",
+          "options": {
+            "a": "3",
+            "b": "4",
+            "c": "5",
+            "d": "Error"
+          },
+          "correct_answer": "b",
+          "explanation": "len() returns the number of elements in a list. Here, it returns 4 because there are four elements in the list."
+        },
+        {
+          "id": 7,
+          "question": "Which method removes and returns the last element from a list?",
+          "code": null,
+          "options": {
+            "a": "my_list.delete()",
+            "b": "my_list.remove()",
+            "c": "my_list.discard()",
+            "d": "my_list.pop()"
+          },
+          "correct_answer": "d",
+          "explanation": "my_list.pop() removes and returns the last element of the list. remove() removes a specific element, delete() is not a valid list method, and discard() is used with sets."
+        },
+        {
+          "id": 8,
+          "question": "What is the difference between .remove() and .discard()?",
+          "code": null,
+          "options": {
+            "a": "No difference",
+            "b": "Both work on all data structures",
+            "c": ".discard() is for lists, .remove() is for sets",
+            "d": ".remove() is for lists, .discard() is for sets"
+          },
+          "correct_answer": "d",
+          "explanation": ".remove() is for lists, .discard() is for sets"
+        },
+        {
+          "id": 9,
+          "question": "Which data structure maintains insertion order in Python 3.7+?",
+          "code": null,
+          "options": {
+            "a": "Set only",
+            "b": "Dictionary only",
+            "c": "List and Tuple only",
+            "d": "List, Tuple, and Dictionary"
+          },
+          "correct_answer": "d",
+          "explanation": "List, Tuple, and Dictionary maintain insertion order in Python 3.7 and later versions. Sets do not maintain order."
+        },
+        {
+          "id": 10,
+          "question": "What happens when you try to add a duplicate element to a set?",
+          "code": null,
+          "options": {
+            "a": "Element is added twice",
+            "b": "Set is cleared",
+            "c": "Error is raised",
+            "d": "Nothing happens, set remains unchanged"
+          },
+          "correct_answer": "d",
+          "explanation": "Sets automatically ignore duplicate elements."
+        },
+        {
+          "id": 11,
+          "question": "Which operation is NOT supported on tuples?",
+          "code": null,
+          "options": {
+            "a": "Item assignment",
+            "b": "Indexing",
+            "c": "Slicing",
+            "d": "Length checking"
+          },
+          "correct_answer": "a",
+          "explanation": "Tuples are immutable, meaning you cannot change their elements after creation. Indexing, slicing, and length checking are supported."
         }
-    ]
+      ]
+    },
+    {
+      "section_name": "List Comprehension Questions",
+      "points": 10,
+      "questions": [
+        {
+          "id": 12,
+          "question": "What does this list comprehension create?",
+          "code": "result = [x * 2 for x in range(5)]",
+          "options": {
+            "a": "[2, 4, 6, 8, 10]",
+            "b": "[0, 1, 2, 3, 4]",
+            "c": "[1, 2, 3, 4, 5]",
+            "d": "[0, 2, 4, 6, 8]"
+          },
+          "correct_answer": "d",
+          "explanation": "Each number from 0 to 4 is multiplied by 2"
+        },
+        {
+          "id": 13,
+          "question": "Which list comprehension creates a list of even numbers from 0 to 10 (inclusive)?",
+          "code": null,
+          "options": {
+            "a": "[x for x in range(10) if x % 2 == 1]",
+            "b": "[x for x in range(11) if x % 2 == 0]",
+            "c": "[x * 2 for x in range(6)]",
+            "d": "Both a and c"
+          },
+          "correct_answer": "d",
+          "explanation": "Option 'a' directly filters even numbers, while option 'c' generates even numbers by multiplying the range by 2."
+        },
+        {
+          "id": 14,
+          "question": "What will this list comprehension produce?",
+          "code": "[x for x in 'Python' if x.lower() in 'aeiou']",
+          "options": {
+            "a": "['P', 'y', 't', 'h', 'o', 'n']",
+            "b": "['P', 't', 'h', 'n']",
+            "c": "['y', 'o']",
+            "d": "['o']"
+          },
+          "correct_answer": "c",
+          "explanation": "Only lowercase vowels are generated with this list comprehension, which results in ['y', 'o']."
+        },
+        {
+          "id": 15,
+          "question": "What is the set comprehension equivalent of [x**2 for x in range(4)]?",
+          "code": null,
+          "options": {
+            "a": "{x**2 for x in range(4)}",
+            "b": "(x**2 for x in range(4))",
+            "c": "dict(x**2 for x in range(4))",
+            "d": "[x**2 for x in range(4)]"
+          },
+          "correct_answer": "a",
+          "explanation": "Set comprehension uses curly braces, so {x**2 for x in range(4)} creates a set of squares."
+        },
+        {
+          "id": 16,
+          "question": "What will this dictionary comprehension create?",
+          "code": "{x: x**2 for x in range(3)}",
+          "options": {
+            "a": "Error",
+            "b": "[0, 1, 4]",
+            "c": "{0, 1, 4}",
+            "d": "{0: 0, 1: 1, 2: 4}"
+          },
+          "correct_answer": "d",
+          "explanation": "{x: x**2 for x in range(3)} creates a dictionary where keys are numbers from 0 to 2 and values are their squares."
+        }
+      ]
+    },
+    {
+      "section_name": "Code Analysis Questions",
+      "points": 15,
+      "questions": [
+        {
+          "id": 17,
+          "question": "What will this code output?",
+          "code": "my_tuple = (1, 2, 3)\nmy_tuple[0] = 5\nprint(my_tuple)",
+          "options": {
+            "a": "Error",
+            "b": "(1, 2, 3)",
+            "c": "[5, 2, 3]",
+            "d": "(5, 2, 3)"
+          },
+          "correct_answer": "a",
+          "explanation": "Tuples are immutable, meaning you cannot change their elements after creation. Indexing, slicing, and length checking are supported."
+        },
+        {
+          "id": 18,
+          "question": "What will this code output?",
+          "code": "my_dict = {\"a\": 1, \"b\": 2}\nprint(my_dict.get(\"c\", \"Not found\"))",
+          "options": {
+            "a": "Error",
+            "b": "\"Not found\"",
+            "c": "None",
+            "d": "\"c\""
+          },
+          "correct_answer": "b",
+          "explanation": "The get() method returns the value for the specified key if it exists, otherwise it returns the default value provided, which is \"Not found\" in this case."
+        },
+        {
+          "id": 19,
+          "question": "What will this code output?",
+          "code": "my_set = {1, 2, 2, 3, 3, 3}\nprint(len(my_set))",
+          "options": {
+            "a": "4",
+            "b": "5",
+            "c": "3",
+            "d": "6"
+          },
+          "correct_answer": "c",
+          "explanation": "The count of unique elements in a set is returned. Here, my_set contains 1, 2, and 3, so the length is 3."
+        },
+        {
+          "id": 20,
+          "question": "What will this code output?",
+          "code": "my_list = [1, 2, 3]\nmy_list.extend([4, 5])\nprint(my_list)",
+          "options": {
+            "a": "[1, 2, 3, 4, 5]",
+            "b": "[4, 5]",
+            "c": "Error",
+            "d": "[1, 2, 3, [4, 5]]"
+          },
+          "correct_answer": "a",
+          "explanation": "The extend() method adds elements from the iterable (in this case, the list [4, 5]) to the end of the list. So, my_list becomes [1, 2, 3, 4, 5]."
+        },
+        {
+          "id": 21,
+          "question": "What will this code output?",
+          "code": "my_list = ['a', 'b', 'c']\nprint(my_list[-1])",
+          "options": {
+            "a": "'b'",
+            "b": "'a'",
+            "c": "Error",
+            "d": "'c'"
+          },
+          "correct_answer": "d",
+          "explanation": "-1 index accesses the last element in the list."
+        },
+        {
+          "id": 22,
+          "question": "What will this code output?",
+          "code": "my_list = [1, 2, 3, 4, 5]\nprint(my_list[1:4])",
+          "options": {
+            "a": "[1, 2, 3, 4]",
+            "b": "[1, 2, 3]",
+            "c": "[2, 3, 4, 5]",
+            "d": "[2, 3, 4]"
+          },
+          "correct_answer": "d",
+          "explanation": "This slice skips the first element and returns elements from index 1 to index 4 (exclusive). my_list[start:end(exclusive):step]"
+        },
+        {
+          "id": 23,
+          "question": "What will this code output?",
+          "code": "set_a = {1, 2, 3}\nset_b = {3, 4, 5}\nprint(set_a & set_b)",
+          "options": {
+            "a": "{4, 5}",
+            "b": "{3}",
+            "c": "{1, 2}",
+            "d": "{1, 2, 3, 4, 5}"
+          },
+          "correct_answer": "b",
+          "explanation": "The & operator computes the intersection of two sets, which results in a set containing only the elements that are present in both sets."
+        },
+        {
+          "id": 24,
+          "question": "What will this code output?",
+          "code": "my_tuple = (1, 2, 3)\na, b, c = my_tuple\nprint(b)",
+          "options": {
+            "a": "3",
+            "b": "1",
+            "c": "2",
+            "d": "Error"
+          },
+          "correct_answer": "c",
+          "explanation": "Tuple unpacking assigns the second element of my_tuple to variable b."
+        },
+        {
+          "id": 25,
+          "question": "What will this code output?",
+          "code": "nested_dict = {\"person1\": {\"name\": \"Alice\", \"age\": 30}}\nprint(nested_dict[\"person1\"][\"name\"])",
+          "options": {
+            "a": "Error",
+            "b": "Alice",
+            "c": "30",
+            "d": "person1"
+          },
+          "correct_answer": "b",
+          "explanation": "The expression nested_dict[\"person1\"][\"name\"] accesses the 'name' key within the 'person1' dictionary."
+        },
+        {
+          "id": 26,
+          "question": "What will this code output?",
+          "code": "my_list = [1, 2, 3]\nnew_list = list(my_list)\nnew_list.append(4)\nprint(len(my_list))",
+          "options": {
+            "a": "4",
+            "b": "Error",
+            "c": "None",
+            "d": "3"
+          },
+          "correct_answer": "d",
+          "explanation": "The original list my_list remains unchanged, so its length is still 3. The new_list is a separate copy of my_list."
+        }
+      ]
+    },
+    {
+      "section_name": "True/False Questions",
+      "points": 10,
+      "questions": [
+        {
+          "id": 27,
+          "question": "Lists can contain elements of different data types. (T/F)",
+          "code": null,
+          "options": {
+            "a": "False",
+            "b": "True",
+            "c": "",
+            "d": ""
+          },
+          "correct_answer": "b",
+          "explanation": "Integers, floats, strings, sets, tuples, dictionaries, booleans, NoneType (None), functions, classes and even other lists can all be elements of a list."
+        },
+        {
+          "id": 28,
+          "question": "Dictionary keys must be immutable. (T/F)",
+          "code": null,
+          "options": {
+            "a": "True",
+            "b": "False",
+            "c": "",
+            "d": ""
+          },
+          "correct_answer": "a",
+          "explanation": "Dictionary keys must be immutable types, such as strings, numbers, or tuples."
+        },
+        {
+          "id": 29,
+          "question": "Sets maintain the insertion order of elements. (T/F)",
+          "code": null,
+          "options": {
+            "a": "False",
+            "b": "True",
+            "c": "",
+            "d": ""
+          },
+          "correct_answer": "a",
+          "explanation": "Sets do not maintain the insertion order of elements. They are unordered collections."
+        },
+        {
+          "id": 30,
+          "question": "Tuples can be used as dictionary keys. (T/F)",
+          "code": null,
+          "options": {
+            "a": "False",
+            "b": "True",
+            "c": "",
+            "d": ""
+          },
+          "correct_answer": "b",
+          "explanation": "Tuples are immutable and can be used as dictionary keys, while lists cannot."
+        },
+        {
+          "id": 31,
+          "question": "List comprehensions are always faster than regular for loops. (T/F)",
+          "code": null,
+          "options": {
+            "a": "False",
+            "b": "True",
+            "c": "",
+            "d": ""
+          },
+          "correct_answer": "a",
+          "explanation": "While list comprehensions can be faster for simple cases, regular for loops may be more efficient for complex operations. And don't forget that readability is also important."
+        }
+      ]
+    }
+  ]
 }

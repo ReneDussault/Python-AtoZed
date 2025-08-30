@@ -6,12 +6,12 @@
       "id": 1,
       "question": "Which of the following correctly imports the entire math module?",
       "options": [
-        "include math",
-        "import math",
         "from math import *",
-        "Both b and c"
+        "include math",
+        "Both b and c",
+        "import math"
       ],
-      "correct_answer": 3,
+      "correct_answer": 2,
       "explanation": "Both 'import math' and 'from math import *' import the entire math module. However, 'import math' is generally preferred as it avoids namespace pollution and potential naming conflicts."
     },
     {
@@ -19,11 +19,11 @@
       "question": "What is the correct way to import only the sqrt function from the math module?",
       "options": [
         "import math.sqrt",
-        "from math import sqrt",
+        "include sqrt",
         "import sqrt from math",
-        "include sqrt"
+        "from math import sqrt"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The syntax 'from math import sqrt' imports only the sqrt function from the math module, allowing you to use it directly as sqrt() without the math prefix."
     },
     {
@@ -42,48 +42,48 @@
       "id": 4,
       "question": "How do you import the random module with an alias 'rnd'?",
       "options": [
-        "import random as rnd",
         "from random import rnd",
-        "import random = rnd",
-        "alias random as rnd"
+        "alias random as rnd",
+        "import random as rnd",
+        "import random = rnd"
       ],
-      "correct_answer": 0,
+      "correct_answer": 2,
       "explanation": "The syntax 'import random as rnd' imports the random module and gives it the alias 'rnd', allowing you to use rnd.function() instead of random.function()."
     },
     {
       "id": 5,
       "question": "What will this code output?\n```python\nimport math\nprint(math.pi)\n```",
       "options": [
-        "3.14",
         "3.141592653589793",
         "pi",
+        "3.14",
         "Error"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "math.pi returns the mathematical constant pi as a float with full precision: 3.141592653589793."
     },
     {
       "id": 6,
       "question": "What does this code do?\n```python\nfrom datetime import datetime\nnow = datetime.now()\n```",
       "options": [
-        "Creates a datetime object with current time",
         "Prints current time",
         "Imports the time",
-        "Error"
+        "Error",
+        "Creates a datetime object with current time"
       ],
-      "correct_answer": 0,
+      "correct_answer": 3,
       "explanation": "This code imports the datetime class from the datetime module and creates a datetime object containing the current date and time, stored in the variable 'now'."
     },
     {
       "id": 7,
       "question": "If you have a module my_module.py with a function hello(), how do you call it after 'import my_module'?",
       "options": [
-        "hello()",
         "my_module.hello()",
+        "hello()",
         "my_module->hello()",
         "call my_module.hello()"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "After importing with 'import my_module', you access functions using dot notation: my_module.hello(). The module name acts as a namespace."
     },
     {
@@ -91,33 +91,33 @@
       "question": "What is the purpose of 'if __name__ == \"__main__\":' in a module?",
       "options": [
         "Define the main function",
-        "Code runs only when file is executed directly",
         "Import other modules",
+        "Code runs only when file is executed directly",
         "Create a class"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "The 'if __name__ == \"__main__\":' block ensures code runs only when the file is executed directly, not when it's imported as a module. __name__ equals \"__main__\" only for the main script."
     },
     {
       "id": 9,
       "question": "Which standard library module is used for generating random numbers?",
       "options": [
-        "math",
         "random",
-        "numbers",
-        "generate"
+        "math",
+        "generate",
+        "numbers"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "The 'random' module provides functions for generating random numbers, including randint(), choice(), shuffle(), and random()."
     },
     {
       "id": 10,
       "question": "What will this code output?\n```python\nfrom math import sqrt\nprint(sqrt(25))\n```",
       "options": [
-        "5",
+        "Error",
         "5.0",
         "25",
-        "Error"
+        "5"
       ],
       "correct_answer": 1,
       "explanation": "The sqrt() function from the math module returns the square root as a float. sqrt(25) returns 5.0."
@@ -126,10 +126,10 @@
       "id": 11,
       "question": "Which module provides functions for interacting with the operating system?",
       "options": [
-        "sys",
+        "platform",
         "os",
-        "system",
-        "platform"
+        "sys",
+        "system"
       ],
       "correct_answer": 1,
       "explanation": "The 'os' module provides functions for interacting with the operating system, such as os.getcwd() for getting the current working directory and os.listdir() for listing directory contents."
@@ -138,9 +138,9 @@
       "id": 12,
       "question": "What does 'from math import *' do?",
       "options": [
-        "Imports only the math constants",
-        "Imports all functions and constants from math",
         "Creates a math variable",
+        "Imports all functions and constants from math",
+        "Imports only the math constants",
         "Imports the math module with an alias"
       ],
       "correct_answer": 1,
@@ -150,58 +150,58 @@
       "id": 13,
       "question": "Which module is used for working with dates and times in Python?",
       "options": [
-        "time",
+        "All of the above",
         "datetime",
         "calendar",
-        "All of the above"
+        "time"
       ],
-      "correct_answer": 3,
+      "correct_answer": 0,
       "explanation": "Python has multiple modules for working with dates and times: 'datetime' for date/time objects, 'time' for time-related functions, and 'calendar' for calendar-related operations."
     },
     {
       "id": 14,
       "question": "What will this code output?\n```python\nimport random\nprint(type(random.randint(1, 10)))\n```",
       "options": [
+        "<class 'number'>",
         "<class 'float'>",
-        "<class 'int'>",
         "<class 'random'>",
-        "<class 'number'>"
+        "<class 'int'>"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "random.randint() returns a random integer within the specified range, so type() will return <class 'int'>."
     },
     {
       "id": 15,
       "question": "How do you access the command-line arguments in a Python script?",
       "options": [
-        "sys.args",
         "sys.argv",
-        "os.args",
-        "args.sys"
+        "sys.args",
+        "args.sys",
+        "os.args"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "Command-line arguments are accessible through sys.argv, which is a list where sys.argv[0] is the script name and sys.argv[1:] contains the arguments."
     },
     {
       "id": 16,
       "question": "What is the difference between a module and a package in Python?",
       "options": [
-        "No difference, they are the same",
-        "A module is a file, a package is a directory containing modules",
         "A package is a file, a module is a directory",
-        "Modules are built-in, packages are custom"
+        "No difference, they are the same",
+        "Modules are built-in, packages are custom",
+        "A module is a file, a package is a directory containing modules"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "A module is a single Python file (.py), while a package is a directory containing multiple modules and an __init__.py file that makes it importable."
     },
     {
       "id": 17,
       "question": "Which function from the time module can be used to measure execution time?",
       "options": [
-        "time.sleep()",
+        "time.measure()",
         "time.time()",
         "time.clock()",
-        "time.measure()"
+        "time.sleep()"
       ],
       "correct_answer": 1,
       "explanation": "time.time() returns the current time in seconds since the epoch. You can use it before and after code execution and subtract to measure elapsed time."
@@ -210,46 +210,46 @@
       "id": 18,
       "question": "What will this code output?\n```python\nimport sys\nprint(len(sys.argv))\n# Assume script is run as: python script.py arg1 arg2\n```",
       "options": [
-        "2",
         "3",
         "4",
+        "2",
         "1"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "sys.argv contains ['script.py', 'arg1', 'arg2'], so len(sys.argv) returns 3. sys.argv[0] is always the script name."
     },
     {
       "id": 19,
       "question": "How do you import multiple specific functions from a module?",
       "options": [
+        "Both a and c",
         "from math import sqrt, pi, cos",
         "import math.sqrt, math.pi, math.cos",
-        "from math import (sqrt, pi, cos)",
-        "Both a and c"
+        "from math import (sqrt, pi, cos)"
       ],
-      "correct_answer": 3,
+      "correct_answer": 0,
       "explanation": "Both 'from math import sqrt, pi, cos' and 'from math import (sqrt, pi, cos)' are correct. The parentheses version is useful for longer import lists."
     },
     {
       "id": 20,
       "question": "What happens when you import a module that contains executable code outside of functions?",
       "options": [
-        "The code is ignored",
         "The code runs immediately when imported",
         "The code runs only when called",
-        "An error occurs"
+        "An error occurs",
+        "The code is ignored"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "When a module is imported, all code at the module level (outside functions/classes) executes immediately. This is why 'if __name__ == \"__main__\":' is used to prevent certain code from running during import."
     },
     {
       "id": 21,
       "question": "Which module would you use to create temporary files?",
       "options": [
-        "os",
+        "io",
         "sys",
         "tempfile",
-        "io"
+        "os"
       ],
       "correct_answer": 2,
       "explanation": "The 'tempfile' module provides functions for creating temporary files and directories, such as tempfile.TemporaryFile() and tempfile.mkdtemp()."
@@ -258,12 +258,12 @@
       "id": 22,
       "question": "What will this code do?\n```python\nimport os\nprint(os.getcwd())\n```",
       "options": [
-        "Print the Python version",
         "Print the current working directory",
+        "Print the user's home directory",
         "Print the operating system name",
-        "Print the user's home directory"
+        "Print the Python version"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "os.getcwd() returns the current working directory as a string, which is then printed."
     },
     {
@@ -271,11 +271,11 @@
       "question": "How do you check if a module is being run directly or imported?",
       "options": [
         "Check if __file__ exists",
-        "Check if __name__ == '__main__'",
+        "Check if __import__ is True",
         "Check if sys.argv[0] exists",
-        "Check if __import__ is True"
+        "Check if __name__ == '__main__'"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "You check 'if __name__ == '__main__':' to determine if a module is being run directly. When imported, __name__ equals the module name; when run directly, it equals '__main__'."
     },
     {
@@ -283,23 +283,23 @@
       "question": "What is the purpose of the sys module?",
       "options": [
         "System administration tasks",
-        "File system operations",
         "Python interpreter specific functions and variables",
-        "Network system calls"
+        "Network system calls",
+        "File system operations"
       ],
-      "correct_answer": 2,
+      "correct_answer": 1,
       "explanation": "The sys module provides access to variables and functions that interact specifically with the Python interpreter, such as sys.argv, sys.path, sys.version, and sys.exit()."
     },
     {
       "id": 25,
       "question": "What will this code output?\n```python\nfrom datetime import date\ntoday = date.today()\nprint(type(today))\n```",
       "options": [
+        "<class 'datetime.datetime'>",
         "<class 'str'>",
-        "<class 'datetime.date'>",
         "<class 'date'>",
-        "<class 'datetime.datetime'>"
+        "<class 'datetime.date'>"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "date.today() returns a date object, so type() returns <class 'datetime.date'>. The full module path is shown in the type representation."
     },
     {
@@ -307,11 +307,11 @@
       "question": "Which statement about Python packages is correct?",
       "options": [
         "__init__.py must contain code",
+        "Package names must be uppercase",
         "__init__.py can be empty",
-        "Packages cannot contain other packages",
-        "Package names must be uppercase"
+        "Packages cannot contain other packages"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "__init__.py can be completely empty - its presence alone marks the directory as a package. It can also contain initialization code that runs when the package is imported."
     },
     {
@@ -330,36 +330,36 @@
       "id": 28,
       "question": "What will this code output?\n```python\nimport math as m\nfrom random import randint\nprint(type(m.pi))\nprint(type(randint))\n```",
       "options": [
-        "<class 'float'>, <class 'int'>",
         "<class 'float'>, <class 'function'>",
         "<class 'math'>, <class 'random'>",
-        "Error"
+        "Error",
+        "<class 'float'>, <class 'int'>"
       ],
-      "correct_answer": 1,
+      "correct_answer": 0,
       "explanation": "m.pi is a float constant (mathematical pi), and randint is a function object. So the output is <class 'float'>, <class 'function'>."
     },
     {
       "id": 29,
       "question": "In a custom module, what happens to variables defined at module level?",
       "options": [
-        "They are private and cannot be accessed",
-        "They become module attributes accessible via dot notation",
         "They are automatically deleted after import",
-        "They only exist during import"
+        "They only exist during import",
+        "They become module attributes accessible via dot notation",
+        "They are private and cannot be accessed"
       ],
-      "correct_answer": 1,
+      "correct_answer": 2,
       "explanation": "Variables defined at module level become module attributes and can be accessed using dot notation (e.g., my_module.my_variable) after importing the module."
     },
     {
       "id": 30,
-      "question": "Consider this package structure:\n```\nmy_package/\n├── __init__.py\n├── module1.py\n└── module2.py\n```\nHow do you import a function 'hello' from module1?",
+      "question": "Consider this package structure:\n```\nmy_package/\n\u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac __init__.py\n\u00e2\u201d\u0153\u00e2\u201d\u20ac\u00e2\u201d\u20ac module1.py\n\u00e2\u201d\u201d\u00e2\u201d\u20ac\u00e2\u201d\u20ac module2.py\n```\nHow do you import a function 'hello' from module1?",
       "options": [
+        "from my_package import hello",
         "from my_package import module1.hello",
-        "from my_package.module1 import hello",
         "import my_package.module1.hello",
-        "from my_package import hello"
+        "from my_package.module1 import hello"
       ],
-      "correct_answer": 1,
+      "correct_answer": 3,
       "explanation": "The correct syntax is 'from my_package.module1 import hello'. This imports the hello function from module1 within the my_package package using dot notation to specify the path."
     }
   ]

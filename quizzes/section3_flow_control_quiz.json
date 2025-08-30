@@ -12,12 +12,12 @@
           "question": "Which statement is used to exit a loop prematurely?",
           "code": null,
           "options": {
-            "a": "continue",
-            "b": "break",
+            "a": "break",
+            "b": "continue",
             "c": "pass",
             "d": "return"
           },
-          "correct_answer": "b",
+          "correct_answer": "a",
           "explanation": "The 'break' statement immediately exits the current loop and continues execution after the loop. 'continue' skips to the next iteration, 'pass' does nothing, and 'return' exits a function."
         },
         {
@@ -27,8 +27,8 @@
           "options": {
             "a": "Exits the loop",
             "b": "Skips the current iteration",
-            "c": "Does nothing",
-            "d": "Restarts the loop"
+            "c": "Restarts the loop",
+            "d": "Does nothing"
           },
           "correct_answer": "b",
           "explanation": "The 'continue' statement skips the remaining code in the current iteration and jumps to the next iteration of the loop. It doesn't exit the loop entirely like 'break' does."
@@ -38,12 +38,12 @@
           "question": "What will range(1, 5) generate?",
           "code": null,
           "options": {
-            "a": "[1, 2, 3, 4]",
-            "b": "[1, 2, 3, 4, 5]",
+            "a": "[1, 2, 3, 4, 5]",
+            "b": "[2, 3, 4, 5]",
             "c": "[0, 1, 2, 3, 4]",
-            "d": "[2, 3, 4, 5]"
+            "d": "[1, 2, 3, 4]"
           },
-          "correct_answer": "a",
+          "correct_answer": "d",
           "explanation": "range(1, 5) generates numbers from 1 (inclusive) to 5 (exclusive), so it produces 1, 2, 3, 4. The stop value is never included in the range."
         },
         {
@@ -52,11 +52,11 @@
           "code": null,
           "options": {
             "a": "for loop",
-            "b": "while loop",
-            "c": "do-while loop",
-            "d": "foreach loop"
+            "b": "do-while loop",
+            "c": "foreach loop",
+            "d": "while loop"
           },
-          "correct_answer": "b",
+          "correct_answer": "d",
           "explanation": "A while loop is ideal when the number of iterations depends on a condition that may change during execution. For loops are better when you know the exact number of iterations or are iterating over a collection."
         },
         {
@@ -77,12 +77,12 @@
           "question": "What happens in a for-else loop when the loop completes normally?",
           "code": null,
           "options": {
-            "a": "The else block is skipped",
-            "b": "The else block executes",
-            "c": "An error is raised",
-            "d": "The loop restarts"
+            "a": "The else block executes",
+            "b": "An error is raised",
+            "c": "The loop restarts",
+            "d": "The else block is skipped"
           },
-          "correct_answer": "b",
+          "correct_answer": "a",
           "explanation": "In a for-else construct, the else block executes when the loop completes normally (without encountering a break statement). If break is used to exit the loop, the else block is skipped."
         },
         {
@@ -90,12 +90,12 @@
           "question": "Which function would you use to iterate over both indices and values of a list?",
           "code": null,
           "options": {
-            "a": "range()",
-            "b": "len()",
-            "c": "enumerate()",
-            "d": "zip()"
+            "a": "enumerate()",
+            "b": "zip()",
+            "c": "len()",
+            "d": "range()"
           },
-          "correct_answer": "c",
+          "correct_answer": "a",
           "explanation": "enumerate() returns pairs of (index, value) for each item in an iterable. This is more Pythonic than using range(len(list)) to get indices manually."
         },
         {
@@ -103,12 +103,12 @@
           "question": "What does zip() function do with two lists?",
           "code": null,
           "options": {
-            "a": "Combines them into one list",
-            "b": "Pairs corresponding elements",
+            "a": "Pairs corresponding elements",
+            "b": "Finds common elements",
             "c": "Sorts both lists",
-            "d": "Finds common elements"
+            "d": "Combines them into one list"
           },
-          "correct_answer": "b",
+          "correct_answer": "a",
           "explanation": "zip() pairs corresponding elements from multiple iterables. For example, zip([1,2], ['a','b']) produces (1,'a'), (2,'b'). It stops when the shortest iterable is exhausted."
         },
         {
@@ -116,12 +116,12 @@
           "question": "Which exception would you catch for invalid user input when converting to int?",
           "code": null,
           "options": {
-            "a": "ValueError",
-            "b": "TypeError",
-            "c": "IndexError",
-            "d": "KeyError"
+            "a": "TypeError",
+            "b": "IndexError",
+            "c": "KeyError",
+            "d": "ValueError"
           },
-          "correct_answer": "a",
+          "correct_answer": "d",
           "explanation": "ValueError is raised when int() receives a string that cannot be converted to an integer (like 'abc'). TypeError occurs with wrong data types, IndexError with invalid list indices, and KeyError with missing dictionary keys."
         },
         {
@@ -129,12 +129,12 @@
           "question": "What's the difference between range(5) and range(1, 5)?",
           "code": null,
           "options": {
-            "a": "No difference",
-            "b": "First includes 0, second starts from 1",
-            "c": "First generates 5 numbers, second generates 4",
-            "d": "Both b and c"
+            "a": "Both b and c",
+            "b": "First generates 5 numbers, second generates 4",
+            "c": "No difference",
+            "d": "First includes 0, second starts from 1"
           },
-          "correct_answer": "d",
+          "correct_answer": "a",
           "explanation": "range(5) generates [0,1,2,3,4] (5 numbers total), while range(1,5) generates [1,2,3,4] (4 numbers total). The difference is that range(5) includes 0 as the starting point (by default), giving it one more number than range(1,5)."
         },
         {
@@ -142,12 +142,12 @@
           "question": "What does the pass statement do?",
           "code": null,
           "options": {
-            "a": "Skips the current iteration",
-            "b": "Exits the loop",
-            "c": "Does nothing (placeholder)",
-            "d": "Raises an exception"
+            "a": "Exits the loop",
+            "b": "Raises an exception",
+            "c": "Skips the current iteration",
+            "d": "Does nothing (placeholder)"
           },
-          "correct_answer": "c",
+          "correct_answer": "d",
           "explanation": "The 'pass' statement is a null operation - it does nothing when executed. It's used as a placeholder where Python syntax requires a statement but no action is needed, like in empty function definitions or incomplete code."
         }
       ]
@@ -163,8 +163,8 @@
           "options": {
             "a": "0, 1, 2",
             "b": "0, 2",
-            "c": "1, 2",
-            "d": "0, 1"
+            "c": "0, 1",
+            "d": "1, 2"
           },
           "correct_answer": "b",
           "explanation": "The loop iterates i=0,1,2. When i=1, continue skips the print statement and goes to the next iteration. So only 0 and 2 are printed."
@@ -174,12 +174,12 @@
           "question": "What will this code output?",
           "code": "x = 0\nwhile x < 3:\n    print(x)\n    x += 1",
           "options": {
-            "a": "0, 1, 2",
-            "b": "0, 1, 2, 3",
+            "a": "0, 1, 2, 3",
+            "b": "Infinite loop",
             "c": "1, 2, 3",
-            "d": "Infinite loop"
+            "d": "0, 1, 2"
           },
-          "correct_answer": "a",
+          "correct_answer": "d",
           "explanation": "x starts at 0. The loop prints x then increments it. When x becomes 3, the condition x < 3 is false, so the loop stops. Output: 0, 1, 2."
         },
         {
@@ -187,9 +187,9 @@
           "question": "What will this code output?",
           "code": "for i in range(5):\n    if i == 3:\n        break\n    print(i)",
           "options": {
-            "a": "0, 1, 2, 3",
+            "a": "0, 1, 2, 3, 4",
             "b": "0, 1, 2",
-            "c": "0, 1, 2, 3, 4",
+            "c": "0, 1, 2, 3",
             "d": "1, 2, 3"
           },
           "correct_answer": "b",
@@ -200,12 +200,12 @@
           "question": "What will this code output?",
           "code": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print(\"Error caught\")",
           "options": {
-            "a": "10",
-            "b": "0",
-            "c": "Error caught",
+            "a": "Error caught",
+            "b": "10",
+            "c": "0",
             "d": "Program crashes"
           },
-          "correct_answer": "c",
+          "correct_answer": "a",
           "explanation": "Division by zero raises a ZeroDivisionError exception. The except block catches this specific exception and prints 'Error caught', preventing the program from crashing."
         },
         {
@@ -213,10 +213,10 @@
           "question": "What will this code output?",
           "code": "numbers = [1, 2, 3]\nfor i, num in enumerate(numbers):\n    print(f\"{i}: {num}\")",
           "options": {
-            "a": "1: 1, 2: 2, 3: 3",
+            "a": "0, 1, 2",
             "b": "0: 1, 1: 2, 2: 3",
             "c": "1, 2, 3",
-            "d": "0, 1, 2"
+            "d": "1: 1, 2: 2, 3: 3"
           },
           "correct_answer": "b",
           "explanation": "enumerate() returns (index, value) pairs starting from index 0. So it produces (0,1), (1,2), (2,3), which prints as '0: 1', '1: 2', '2: 3'."
@@ -227,9 +227,9 @@
           "code": "for i in range(2):\n    for j in range(2):\n        print(f\"{i},{j}\")",
           "options": {
             "a": "0,0 0,1 1,0 1,1",
-            "b": "0,0 1,1",
-            "c": "1,1 2,2",
-            "d": "0,1 1,0"
+            "b": "1,1 2,2",
+            "c": "0,1 1,0",
+            "d": "0,0 1,1"
           },
           "correct_answer": "a",
           "explanation": "This is a nested loop. For each i (0,1), j iterates through (0,1). So we get all combinations: (0,0), (0,1), (1,0), (1,1)."
@@ -239,12 +239,12 @@
           "question": "What will this code output?",
           "code": "for i in range(3):\n    pass\nelse:\n    print(\"Loop completed\")",
           "options": {
-            "a": "Nothing",
-            "b": "Loop completed",
+            "a": "Loop completed",
+            "b": "Nothing",
             "c": "Error",
             "d": "0, 1, 2"
           },
-          "correct_answer": "b",
+          "correct_answer": "a",
           "explanation": "The for-else construct executes the else block when the loop completes normally (without break). Since no break is used, 'Loop completed' is printed."
         },
         {
@@ -252,12 +252,12 @@
           "question": "What will this code output?",
           "code": "x = 5\nif x > 3:\n    print(\"A\")\nelif x > 1:\n    print(\"B\")\nelse:\n    print(\"C\")",
           "options": {
-            "a": "A",
+            "a": "A B",
             "b": "B",
-            "c": "C",
-            "d": "A B"
+            "c": "A",
+            "d": "C"
           },
-          "correct_answer": "a",
+          "correct_answer": "c",
           "explanation": "In if-elif-else chains, only the first true condition executes. Since x=5 > 3 is true, 'A' is printed and the elif/else blocks are skipped."
         },
         {
@@ -265,12 +265,12 @@
           "question": "What will this code output?",
           "code": "try:\n    x = int(\"abc\")\nexcept ValueError:\n    print(\"Invalid\")\nfinally:\n    print(\"Done\")",
           "options": {
-            "a": "Invalid",
-            "b": "Done",
-            "c": "Invalid Done",
-            "d": "Error"
+            "a": "Done",
+            "b": "Error",
+            "c": "Invalid",
+            "d": "Invalid Done"
           },
-          "correct_answer": "c",
+          "correct_answer": "d",
           "explanation": "int('abc') raises ValueError, so 'Invalid' is printed. The finally block always executes regardless of exceptions, so 'Done' is also printed."
         }
       ]
@@ -284,12 +284,12 @@
           "question": "What will this code output?",
           "code": "names = ['Alice', 'Bob']\nages = [25, 30]\nfor name, age in zip(names, ages):\n    print(f\"{name}: {age}\")",
           "options": {
-            "a": "Alice: 25 Bob: 30",
-            "b": "Alice Bob 25 30",
-            "c": "25: Alice 30: Bob",
-            "d": "Error"
+            "a": "25: Alice 30: Bob",
+            "b": "Error",
+            "c": "Alice: 25 Bob: 30",
+            "d": "Alice Bob 25 30"
           },
-          "correct_answer": "a",
+          "correct_answer": "c",
           "explanation": "zip() pairs corresponding elements from both lists: ('Alice', 25) and ('Bob', 30). The loop unpacks these pairs and prints each name with its corresponding age."
         },
         {
@@ -297,12 +297,12 @@
           "question": "Which statement about nested loops is correct?",
           "code": null,
           "options": {
-            "a": "break only exits the innermost loop",
-            "b": "break exits all nested loops",
-            "c": "continue affects all loops",
-            "d": "Nested loops are not allowed"
+            "a": "continue affects all loops",
+            "b": "break only exits the innermost loop",
+            "c": "Nested loops are not allowed",
+            "d": "break exits all nested loops"
           },
-          "correct_answer": "a",
+          "correct_answer": "b",
           "explanation": "In nested loops, break only exits the innermost loop where it's placed. To exit multiple levels, you need additional logic like flags or exception handling."
         },
         {
@@ -310,12 +310,12 @@
           "question": "What happens when you use 'continue' in a while loop?",
           "code": null,
           "options": {
-            "a": "Skips to the next iteration",
-            "b": "Exits the loop",
-            "c": "Restarts from the beginning",
-            "d": "Causes an infinite loop"
+            "a": "Causes an infinite loop",
+            "b": "Skips to the next iteration",
+            "c": "Exits the loop",
+            "d": "Restarts from the beginning"
           },
-          "correct_answer": "a",
+          "correct_answer": "b",
           "explanation": "In a while loop, 'continue' skips the remaining code in the current iteration and jumps back to the condition check. Be careful to ensure the loop variable is updated to avoid infinite loops."
         },
         {
@@ -323,12 +323,12 @@
           "question": "What will this code output?",
           "code": "for i in range(3):\n    if i == 1:\n        break\nelse:\n    print(\"No break\")",
           "options": {
-            "a": "No break",
-            "b": "Nothing",
-            "c": "0",
-            "d": "Error"
+            "a": "0",
+            "b": "Error",
+            "c": "Nothing",
+            "d": "No break"
           },
-          "correct_answer": "b",
+          "correct_answer": "c",
           "explanation": "The else block in a for-else only executes if the loop completes without encountering a break. Since break is executed when i=1, the else block is skipped and nothing is printed."
         },
         {
@@ -336,12 +336,12 @@
           "question": "Which exception handling approach is best practice?",
           "code": null,
           "options": {
-            "a": "Catch all exceptions with except:",
-            "b": "Catch specific exceptions",
+            "a": "Use multiple except blocks for the same exception",
+            "b": "Catch all exceptions with except:",
             "c": "Avoid try-except blocks",
-            "d": "Use multiple except blocks for the same exception"
+            "d": "Catch specific exceptions"
           },
-          "correct_answer": "b",
+          "correct_answer": "d",
           "explanation": "Best practice is to catch specific exceptions (like ValueError, FileNotFoundError) rather than using bare 'except:' which catches all exceptions, potentially hiding bugs and making debugging difficult."
         },
         {
@@ -349,12 +349,12 @@
           "question": "What will this code output?",
           "code": "x = 10\nwhile x > 5:\n    x -= 3\n    if x == 7:\n        continue\n    print(x)",
           "options": {
-            "a": "7 4 1",
-            "b": "4",
-            "c": "7 4",
-            "d": "10 7 4 1"
+            "a": "4",
+            "b": "7 4",
+            "c": "10 7 4 1",
+            "d": "7 4 1"
           },
-          "correct_answer": "b",
+          "correct_answer": "a",
           "explanation": "x starts at 10. First iteration: x=7, continue skips print. Second iteration: x=4, prints 4. Then x=4 is not > 5, so loop ends."
         },
         {
@@ -363,11 +363,11 @@
           "code": null,
           "options": {
             "a": "To set the starting value",
-            "b": "To set the ending value",
-            "c": "To set the increment/decrement",
+            "b": "To set the increment/decrement",
+            "c": "To set the ending value",
             "d": "To reverse the range"
           },
-          "correct_answer": "c",
+          "correct_answer": "b",
           "explanation": "The third parameter in range(start, stop, step) controls the increment (or decrement if negative). For example, range(0, 10, 2) generates 0, 2, 4, 6, 8."
         },
         {
@@ -375,12 +375,12 @@
           "question": "What will this code output?",
           "code": "try:\n    print(1/1)\nexcept ZeroDivisionError:\n    print(\"Error\")\nelse:\n    print(\"Success\")",
           "options": {
-            "a": "1.0",
-            "b": "1.0 Success",
-            "c": "Error",
-            "d": "Success"
+            "a": "Error",
+            "b": "1.0",
+            "c": "Success",
+            "d": "1.0 Success"
           },
-          "correct_answer": "b",
+          "correct_answer": "d",
           "explanation": "Since 1/1 doesn't raise an exception, the try block executes successfully printing 1.0. The else block in try-except executes only when no exception occurs, so 'Success' is also printed."
         }
       ]
@@ -394,10 +394,12 @@
           "question": "A while loop will always execute at least once. (T/F)",
           "code": null,
           "options": {
-            "a": "True",
-            "b": "False"
+            "a": "False",
+            "b": "True",
+            "c": "",
+            "d": ""
           },
-          "correct_answer": "b",
+          "correct_answer": "a",
           "explanation": "False. A while loop checks the condition before executing. If the condition is initially false, the loop body never executes. This differs from do-while loops in other languages."
         },
         {
@@ -406,7 +408,9 @@
           "code": null,
           "options": {
             "a": "True",
-            "b": "False"
+            "b": "False",
+            "c": "",
+            "d": ""
           },
           "correct_answer": "a",
           "explanation": "True. range() can generate negative numbers using negative start values or negative step values. For example, range(-3, 1) generates -3, -2, -1, 0."
