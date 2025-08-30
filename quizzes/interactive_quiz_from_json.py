@@ -25,6 +25,10 @@ class PythonQuiz:
         self.total_questions += 1
         print(f"Question {self.total_questions}:")
         
+        # Show section info if available (for comprehensive quiz)
+        if 'section' in question_data:
+            print(f"📚 Section: {question_data['section']}")
+        
         # Display question text
         print(question_data["question"])
         
@@ -273,13 +277,106 @@ def section5_quiz():
 def section6_quiz():
     """Section 6: Modules & Libraries Quiz"""
     file_path = "./section6_modules_libraries_quiz.json"  
-    print("📝 Section 6 quiz coming soon! (Converting to JSON format)")
+    section_name = "Section 6: Modules and Libraries Quiz"
+    create_quiz_mode_selector(section_name, file_path, 30)
+
+
+def run_comprehensive_quiz(sections, questions_per_section, mode_name):
+    """Load questions from multiple sections and run comprehensive quiz"""
+    import random
+    
+    print(f"\n🚀 Starting {mode_name}")
+    print("Loading questions from all sections...")
+    
+    all_questions = []
+    
+    # Load questions from each section
+    for file_path, section_name in sections:
+        try:
+            quiz_data = JSONQuizLoader.load_quiz_from_json(file_path)
+            if not quiz_data:
+                print(f"⚠️  Warning: Could not load {section_name}")
+                continue
+                
+            section_questions = JSONQuizLoader.extract_questions(quiz_data)
+            
+            if questions_per_section is None:
+                # Use all questions for complete assessment
+                selected_questions = section_questions
+            else:
+                # Randomly sample specified number of questions
+                selected_questions = random.sample(
+                    section_questions, 
+                    min(questions_per_section, len(section_questions))
+                )
+            
+            # Add section info to each question for context
+            for q in selected_questions:
+                q['section'] = section_name
+            
+            all_questions.extend(selected_questions)
+            print(f"✓ Loaded {len(selected_questions)} questions from {section_name}")
+            
+        except Exception as e:
+            print(f"⚠️  Warning: Could not load {section_name}: {e}")
+    
+    if not all_questions:
+        print("❌ No questions loaded! Please check the quiz files.")
+        return
+    
+    # Shuffle all questions for random order
+    random.shuffle(all_questions)
+    
+    print(f"\n📊 Total questions loaded: {len(all_questions)}")
+    print("Questions will be presented in random order from all sections.")
+    
+    # Run the quiz using the same pattern as existing code
+    quiz = PythonQuiz()
+    actual_quiz_name = f"{mode_name} ({len(all_questions)} Questions)"
+    quiz.start_quiz(actual_quiz_name)
+    
+    for question_data in all_questions:
+        if not quiz.ask_question(question_data):
+            break
+    
+    quiz.end_quiz()
 
 
 def final_quiz():
-    """Final Comprehensive Quiz"""
-    file_path = "./final_comprehensive_quiz.json"  
-    print("📝 Final quiz coming soon! (Converting to JSON format)")
+    """Final Comprehensive Quiz - Combines questions from all sections"""
+    print("\n🎯 Final Comprehensive Quiz")
+    print("="*50)
+    print("Choose your comprehensive quiz mode:")
+    print("1. Quick Review (30 questions) - 5 from each section")
+    print("2. Standard Review (60 questions) - 10 from each section") 
+    print("3. Thorough Review (90 questions) - 15 from each section")
+    print("4. Complete Assessment (All 180 questions) - All questions from all sections")
+    print("="*50)
+    
+    choice = input("Select mode (1-4): ").strip()
+    
+    # Define section files and names
+    sections = [
+        ("./section1_basic_syntax_quiz.json", "Basic Syntax"),
+        ("./section2_data_structures_quiz.json", "Data Structures"),
+        ("./section3_flow_control_quiz.json", "Flow Control"),
+        ("./section4_functions_quiz.json", "Functions"),
+        ("./section5_oop_quiz.json", "Object-Oriented Programming"),
+        ("./section6_modules_libraries_quiz.json", "Modules & Libraries")
+    ]
+    
+    mode_configs = {
+        "1": (5, "Quick Review"),
+        "2": (10, "Standard Review"),
+        "3": (15, "Thorough Review"),
+        "4": (None, "Complete Assessment")  # None means all questions
+    }
+    
+    if choice in mode_configs:
+        questions_per_section, mode_name = mode_configs[choice]
+        run_comprehensive_quiz(sections, questions_per_section, mode_name)
+    else:
+        print("❌ Invalid choice! Please select 1-4.")
 
 
 if __name__ == "__main__":
@@ -294,8 +391,8 @@ if __name__ == "__main__":
     print("3. Section 3: Flow Control (JSON)")
     print("4. Section 4: Functions (JSON)")
     print("5. Section 5: OOP (JSON)")
-    print("6. Section 6: Modules (Coming Soon)")
-    print("7. Final Comprehensive Quiz (Coming Soon)")
+    print("6. Section 6: Modules & Libraries (JSON)")
+    print("7. Final Comprehensive Quiz")
     print("="*40)
     
     choice = input("Choose a quiz (1-7): ").strip()
